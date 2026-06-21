@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 520" role="img" aria-labelledby="title desc">
+  <title id="title">Bright pink red plasma placeholder</title>
+  <desc id="desc">Illustrated blood tube with bright pink to red plasma suggesting possible ex vivo hemolysis.</desc>
+  <rect width="920" height="520" fill="#f8fbfc"/>
+  <rect x="60" y="54" width="800" height="412" rx="8" fill="#ffffff" stroke="#d8e1e7" stroke-width="3"/>
+  <text x="460" y="112" text-anchor="middle" fill="#17212b" font-family="Georgia, Times New Roman, serif" font-size="32" font-weight="700">Bright Pink / Red Plasma</text>
+  <text x="460" y="150" text-anchor="middle" fill="#5b6773" font-family="Arial, Helvetica, sans-serif" font-size="18">Placeholder specimen image: consider collection or handling artifact</text>
+  <g transform="translate(350 190)">
+    <rect x="0" y="0" width="220" height="248" rx="42" fill="#eef4f6" stroke="#9fb5c0" stroke-width="5"/>
+    <rect x="28" y="52" width="164" height="156" rx="28" fill="#ce2f48"/>
+    <path d="M31 76 C70 48 122 107 190 70 L190 52 L31 52 Z" fill="#f69aaa" opacity="0.72"/>
+    <path d="M38 145 C83 122 121 174 184 141" fill="none" stroke="#f4c1c8" stroke-width="12" stroke-linecap="round" opacity="0.55"/>
+    <rect x="54" y="-30" width="112" height="42" rx="12" fill="#dbe5ea" stroke="#9fb5c0" stroke-width="4"/>
+  </g>
+  <g transform="translate(124 220)">
+    <rect width="168" height="86" rx="8" fill="#f8e4e7" stroke="#e2b7be"/>
+    <text x="84" y="35" text-anchor="middle" fill="#7f2732" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700">Ex vivo clue</text>
+    <text x="84" y="62" text-anchor="middle" fill="#5b6773" font-family="Arial, Helvetica, sans-serif" font-size="15">Line draw / artifact</text>
+  </g>
+  <g transform="translate(628 220)">
+    <rect width="168" height="86" rx="8" fill="#f8e4e7" stroke="#e2b7be"/>
+    <text x="84" y="35" text-anchor="middle" fill="#7f2732" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700">Redraw focus</text>
+    <text x="84" y="62" text-anchor="middle" fill="#5b6773" font-family="Arial, Helvetica, sans-serif" font-size="15">Troubleshoot source</text>
+  </g>
+</svg>

@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 520" role="img" aria-labelledby="title desc">
+  <title id="title">Brown dark plasma placeholder</title>
+  <desc id="desc">Illustrated blood tube with dark brown plasma suggesting possible in vivo hemolysis when clinically correlated.</desc>
+  <rect width="920" height="520" fill="#f8fbfc"/>
+  <rect x="60" y="54" width="800" height="412" rx="8" fill="#ffffff" stroke="#d8e1e7" stroke-width="3"/>
+  <text x="460" y="112" text-anchor="middle" fill="#17212b" font-family="Georgia, Times New Roman, serif" font-size="32" font-weight="700">Brown / Dark Plasma</text>
+  <text x="460" y="150" text-anchor="middle" fill="#5b6773" font-family="Arial, Helvetica, sans-serif" font-size="18">Placeholder specimen image: correlate with ECMO, dialysis, or intravascular hemolysis</text>
+  <g transform="translate(350 190)">
+    <rect x="0" y="0" width="220" height="248" rx="42" fill="#eef4f6" stroke="#9fb5c0" stroke-width="5"/>
+    <rect x="28" y="52" width="164" height="156" rx="28" fill="#4f2a24"/>
+    <path d="M31 78 C78 45 124 110 190 72 L190 52 L31 52 Z" fill="#8d5740" opacity="0.74"/>
+    <path d="M40 148 C84 119 126 176 184 139" fill="none" stroke="#b58363" stroke-width="12" stroke-linecap="round" opacity="0.44"/>
+    <rect x="54" y="-30" width="112" height="42" rx="12" fill="#dbe5ea" stroke="#9fb5c0" stroke-width="4"/>
+  </g>
+  <g transform="translate(124 220)">
+    <rect width="168" height="86" rx="8" fill="#fbf1dc" stroke="#dfc286"/>
+    <text x="84" y="35" text-anchor="middle" fill="#6c421d" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700">In vivo clue</text>
+    <text x="84" y="62" text-anchor="middle" fill="#5b6773" font-family="Arial, Helvetica, sans-serif" font-size="15">Clinical correlation</text>
+  </g>
+  <g transform="translate(628 220)">
+    <rect width="168" height="86" rx="8" fill="#e3f0f6" stroke="#b5d0df"/>
+    <text x="84" y="35" text-anchor="middle" fill="#2f6688" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700">Limited release</text>
+    <text x="84" y="62" text-anchor="middle" fill="#5b6773" font-family="Arial, Helvetica, sans-serif" font-size="15">Document caution</text>
+  </g>
+</svg>

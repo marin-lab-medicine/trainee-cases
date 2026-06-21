@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hemolysis Case 2: Consultation Simulator</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="mobile-header">
+    <a class="brand" href="#home" aria-label="Hemolysis consultation simulator home">
+      <span class="brand-mark">H2</span>
+      <span>Hemolysis Consult</span>
+    </a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span class="sr-only">Toggle navigation</span>
+    </button>
+  </header>
+
+  <aside class="sidebar">
+    <a class="brand desktop-brand" href="#home" aria-label="Hemolysis consultation simulator home">
+      <span class="brand-mark">H2</span>
+      <span>Hemolysis Consult</span>
+    </a>
+    <nav id="site-nav" class="site-nav" aria-label="Simulator navigation">
+      <a class="nav-link active" href="#home">Home</a>
+      <a class="nav-link" href="#objectives">Objectives</a>
+      <a class="nav-link" href="#basics">Basics</a>
+      <a class="nav-link" href="#evaluation">Lab Evaluation</a>
+      <a class="nav-link" href="#workflow">Consult Workflow</a>
+      <a class="nav-link" href="#algorithm">Algorithm</a>
+      <a class="nav-link" href="#cases">Cases</a>
+      <a class="nav-link" href="#scripts">Scripts</a>
+      <a class="nav-link" href="#quiz">Quiz</a>
+      <a class="nav-link" href="#summary">Summary</a>
+    </nav>
+    <div class="sidebar-panel">
+      <span>Progress</span>
+      <div class="progress-track" aria-hidden="true">
+        <div id="progress-bar" class="progress-bar"></div>
+      </div>
+      <strong><span id="progress-count">0</span>/10 sections viewed</strong>
+    </div>
+  </aside>
+
+  <main>
+    <section id="home" class="page hero" data-section-name="Home">
+      <div class="page-inner hero-grid">
+        <div>
+          <p class="eyebrow">Pathology Resident On-Call Simulator</p>
+          <h1>Hemolyzed Specimen Consultation: Safe Release or Redraw?</h1>
+          <p class="lead">Practice the consultation workflow for severe hemolysis, with emphasis on in vivo versus ex vivo patterns, patient safety, clinical correlation, and clear communication.</p>
+          <div class="action-row">
+            <a class="button primary" href="#cases">Start Cases</a>
+            <a class="button secondary" href="#algorithm">Review Algorithm</a>
+          </div>
+        </div>
+        <div class="hero-specimens" aria-label="Specimen color placeholders">
+          <figure>
+            <img src="assets/specimen-pink-red.svg" alt="Placeholder specimen with bright pink red plasma">
+            <figcaption>Bright pink/red plasma: consider ex vivo collection or handling artifact.</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/specimen-brown-dark.svg" alt="Placeholder specimen with brown dark plasma">
+            <figcaption>Brown/dark plasma: correlate for in vivo mechanical or intravascular hemolysis.</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section id="objectives" class="page" data-section-name="Objectives">
+      <div class="page-inner">
+        <p class="eyebrow">Learning Objectives</p>
+        <h2>By the end of this simulator, residents should be able to:</h2>
+        <div class="card-grid four">
+          <article class="info-card">
+            <span class="card-number">01</span>
+            <h3>Classify hemolysis</h3>
+            <p>Distinguish in vivo hemolysis from ex vivo collection or processing artifact using plasma color, hemolysis index, and patient history.</p>
+          </article>
+          <article class="info-card">
+            <span class="card-number">02</span>
+            <h3>Assess release risk</h3>
+            <p>Recognize when severe hemolysis makes potassium, AST, ALT, LDH, bilirubin, magnesium, phosphorus, CK, and troponin unsafe to release.</p>
+          </article>
+          <article class="info-card">
+            <span class="card-number">03</span>
+            <h3>Run the consult</h3>
+            <p>Ask targeted questions of the technologist, review the chart when needed, and decide when to call the clinical team.</p>
+          </article>
+          <article class="info-card">
+            <span class="card-number">04</span>
+            <h3>Communicate clearly</h3>
+            <p>Document limitations, recommend redraw or limited release, and explain patient-safety concerns in professional language.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="basics" class="page alt" data-section-name="Basics">
+      <div class="page-inner">
+        <p class="eyebrow">Hemolysis Basics</p>
+        <h2>Interpret hemolysis as a clinical and preanalytical signal, not just a color.</h2>
+        <div class="split">
+          <article class="teaching-card">
+            <h3>Ex vivo hemolysis</h3>
+            <p>Suggested by collection or processing artifact, bright pink/red plasma, line draws, difficult venipuncture, and improvement after proper recollection.</p>
+            <ul class="compact-list">
+              <li>Usually favors redraw over result release.</li>
+              <li>Requires collection troubleshooting.</li>
+              <li>Can create dangerous pseudohyperkalemia.</li>
+            </ul>
+          </article>
+          <article class="teaching-card">
+            <h3>In vivo hemolysis</h3>
+            <p>Suggested by ECMO, dialysis, mechanical hemolysis, severe intravascular RBC destruction, dark or brown plasma, and clinical correlation across repeat specimens.</p>
+            <ul class="compact-list">
+              <li>May reflect the patient's actual clinical state.</li>
+              <li>May require limited result release despite severe hemolysis.</li>
+              <li>Requires careful comments and clinician discussion.</li>
+            </ul>
+          </article>
+        </div>
+
+        <div class="color-clue-grid">
+          <figure class="specimen-card">
+            <img src="assets/specimen-pink-red.svg" alt="Bright pink red plasma placeholder">
+            <figcaption><strong>Bright pink/red:</strong> often ex vivo, especially with line draws or traumatic collection.</figcaption>
+          </figure>
+          <figure class="specimen-card">
+            <img src="assets/specimen-brown-dark.svg" alt="Brown dark plasma placeholder">
+            <figcaption><strong>Brown/dark:</strong> may support in vivo mechanical or intravascular hemolysis when clinically consistent.</figcaption>
+          </figure>
+        </div>
+
+        <details class="expandable">
+          <summary>Common clinical contexts to check</summary>
+          <p>Look for ECMO, ventricular assist devices, dialysis, recent transfusion, mechanical valves, microangiopathy, crush injury, thermal injury, severe intravascular RBC destruction, repeated line draws, transport delay, and whether a clean peripheral recollection improves the hemolysis index.</p>
+        </details>
+      </div>
+    </section>
+
+    <section id="evaluation" class="page" data-section-name="Lab Evaluation">
+      <div class="page-inner">
+        <p class="eyebrow">Laboratory Evaluation</p>
+        <h2>Start with the instrument signal, then ask whether the value is clinically usable.</h2>
+        <div class="workflow-grid">
+          <article class="step-card">
+            <span>1</span>
+            <h3>Hemolysis index</h3>
+            <p>Confirm the hemolysis level, trend across specimens, and whether the value is in the 3+ to 6+ caution range or 7+ severe range.</p>
+          </article>
+          <article class="step-card">
+            <span>2</span>
+            <h3>Instrument flags</h3>
+            <p>Ask which assays are flagged, rejected, outside validated interference limits, or generated but suppressed by middleware.</p>
+          </article>
+          <article class="step-card">
+            <span>3</span>
+            <h3>Value generated?</h3>
+            <p>A numeric result is not automatically releasable. Determine whether local validation supports release, comment, or cancellation.</p>
+          </article>
+          <article class="step-card">
+            <span>4</span>
+            <h3>Analyte sensitivity</h3>
+            <p>High-risk analytes include potassium, AST, ALT, LDH, total bilirubin, direct bilirubin, magnesium, phosphorus, CK, and troponin.</p>
+          </article>
+        </div>
+
+        <div class="warning-box">
+          <h3>Patient safety warning</h3>
+          <p>Gross ex vivo hemolysis can produce dangerous false results. A generated potassium or LDH may be analytically misleading even when the instrument returns a number.</p>
+        </div>
+
+        <article class="quick-check question-block" data-group="practice">
+          <h3>Quick decision: A sample is 7+ hemolyzed and potassium is generated. What is the next best step?</h3>
+          <div class="answers">
+            <button type="button" data-correct="false" data-explanation="A number alone is not enough. Severe hemolysis requires interpretation with specimen appearance, collection context, and clinical need.">Release the number because it exists</button>
+            <button type="button" data-correct="true" data-explanation="Correct. Determine whether severe hemolysis is likely in vivo or ex vivo, then decide redraw, cancellation, or limited release with comment.">Classify likely in vivo versus ex vivo before release</button>
+            <button type="button" data-correct="false" data-explanation="Automatic cancellation may be unsafe in true in vivo hemolysis, where limited release may help the team manage the patient.">Cancel all tests automatically</button>
+          </div>
+          <p class="feedback" aria-live="polite"></p>
+        </article>
+      </div>
+    </section>
+
+    <section id="workflow" class="page alt" data-section-name="Consult Workflow">
+      <div class="page-inner">
+        <p class="eyebrow">Consultation Workflow</p>
+        <h2>Answer the lab call like a structured patient-safety consult.</h2>
+        <div class="timeline">
+          <article>
+            <h3>1. Clarify the laboratory problem</h3>
+            <p>Ask the technologist: hemolysis index, plasma color, specimen type, collection source, repeated rejection history, affected tests, instrument flags, and whether values were generated.</p>
+          </article>
+          <article>
+            <h3>2. Decide whether chart review is needed</h3>
+            <p>Review the chart when hemolysis is 7+, repeatedly present, brown/dark, discordant with collection history, or when release may influence urgent management.</p>
+          </article>
+          <article>
+            <h3>3. Contact the clinical team when needed</h3>
+            <p>Call when severe in vivo hemolysis is likely, redraw is not feasible, the team requests high-risk analytes, or limited release is being considered.</p>
+          </article>
+          <article>
+            <h3>4. Document the decision</h3>
+            <p>Record whether hemolysis is likely ex vivo or in vivo, what was released or suppressed, what comment was used, and who was notified.</p>
+          </article>
+        </div>
+
+        <details class="expandable">
+          <summary>Questions to ask the technologist</summary>
+          <ul class="compact-list">
+            <li>What is the hemolysis index: 3+ to 6+, or 7+?</li>
+            <li>Is plasma bright pink/red or brown/dark?</li>
+            <li>Was this a line draw, peripheral venipuncture, dialysis line, or ECMO circuit sample?</li>
+            <li>Are multiple specimens affected, and did any improve after redraw?</li>
+            <li>Which analytes are generated, flagged, or blocked?</li>
+          </ul>
+        </details>
+      </div>
+    </section>
+
+    <section id="algorithm" class="page" data-section-name="Algorithm">
+      <div class="page-inner">
+        <p class="eyebrow">Decision Algorithm</p>
+        <h2>Use hemolysis severity plus clinical context to choose redraw, suppression, or limited release.</h2>
+        <div class="algorithm-grid">
+          <article class="algorithm-card caution">
+            <span class="badge">3+ to 6+</span>
+            <h3>Caution range</h3>
+            <p>Results may be released with cautionary comments when local policy permits and the affected analyte is within validated interference limits.</p>
+            <button class="next-action" type="button" data-message="For 3+ to 6+ hemolysis: check analyte-specific limits, release only supported results, and append a hemolysis caution comment.">What would you do next?</button>
+          </article>
+          <article class="algorithm-card danger">
+            <span class="badge">7+ ex vivo</span>
+            <h3>Severe artifact likely</h3>
+            <p>Bright red plasma, line draw, traumatic collection, or improvement after recollection strongly favors redraw and collection troubleshooting.</p>
+            <button class="next-action" type="button" data-message="For 7+ ex vivo hemolysis: suppress high-risk analytes, strongly encourage recollection, and help troubleshoot collection technique.">What would you do next?</button>
+          </article>
+          <article class="algorithm-card severe">
+            <span class="badge">7+ in vivo</span>
+            <h3>Patient state likely</h3>
+            <p>ECMO, dialysis, mechanical hemolysis, dark/brown plasma, and consistent repeat specimens may require limited release with explicit comments.</p>
+            <button class="next-action" type="button" data-message="For 7+ in vivo hemolysis: review the chart, call the clinical team, consider limited release, and document that hemolysis may reflect the patient state.">What would you do next?</button>
+          </article>
+        </div>
+        <div id="algorithm-feedback" class="algorithm-feedback" aria-live="polite"></div>
+
+        <details class="expandable">
+          <summary>Tests that may be considered for limited release</summary>
+          <p>Depending on local validation and clinical need, limited release testing may include blood gas, ionized calcium, lactic acid, plasma free hemoglobin, TEG, BMP, magnesium, and phosphorus. Use caution for hemolysis-sensitive analytes and document limitations.</p>
+        </details>
+      </div>
+    </section>
+
+    <section id="cases" class="page alt" data-section-name="Cases">
+      <div class="page-inner">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Interactive Clinical Cases</p>
+            <h2>Choose the safest next action during the consult.</h2>
+          </div>
+          <div class="score-card">
+            <span>Case score</span>
+            <strong><span id="case-score">0</span>/<span id="case-total">0</span></strong>
+          </div>
+        </div>
+
+        <div class="case-grid">
+          <article class="case-card question-block" data-group="cases">
+            <figure class="specimen-card">
+              <img src="assets/specimen-brown-dark.svg" alt="Dark brown plasma placeholder for ECMO case">
+              <figcaption>Case 1 specimen placeholder</figcaption>
+            </figure>
+            <h3>Case 1: ECMO patient with dark plasma and 7+ hemolysis</h3>
+            <p>The chemistry analyzer flags 7+ hemolysis. Plasma is brown/dark. The patient is on ECMO with rising plasma free hemoglobin.</p>
+            <div class="answers">
+              <button type="button" data-correct="false" data-explanation="Treating this as artifact alone may delay care. ECMO and dark plasma support possible in vivo mechanical hemolysis.">Reject all testing as collection artifact</button>
+              <button type="button" data-correct="true" data-explanation="Correct. Review the chart, call the team, and consider limited release with explicit hemolysis comments because hemolysis may reflect the patient's clinical state.">Review chart and discuss limited release with the team</button>
+              <button type="button" data-correct="false" data-explanation="Unqualified release is unsafe because multiple analytes may be biased by severe hemolysis.">Release all generated results without comment</button>
+            </div>
+            <p class="feedback" aria-live="polite"></p>
+          </article>
+
+          <article class="case-card question-block" data-group="cases">
+            <figure class="specimen-card">
+              <img src="assets/specimen-pink-red.svg" alt="Bright red plasma placeholder for line draw case">
+              <figcaption>Case 2 specimen placeholder</figcaption>
+            </figure>
+            <h3>Case 2: Line draw with bright red plasma and repeated rejected specimens</h3>
+            <p>Three specimens from a central line are 7+ hemolyzed with bright red plasma. A peripheral redraw has not yet been attempted.</p>
+            <div class="answers">
+              <button type="button" data-correct="true" data-explanation="Correct. This pattern strongly suggests ex vivo hemolysis. Recommend peripheral recollection if feasible and troubleshoot the line draw technique.">Recommend proper recollection and collection troubleshooting</button>
+              <button type="button" data-correct="false" data-explanation="Bright red repeated line draws suggest artifact. Limited release is not the first choice when a better specimen is feasible.">Assume in vivo hemolysis and release broadly</button>
+              <button type="button" data-correct="false" data-explanation="Dilution does not correct hemolysis interference and can create additional analytical error.">Dilute the sample and report the corrected values</button>
+            </div>
+            <p class="feedback" aria-live="polite"></p>
+          </article>
+
+          <article class="case-card question-block" data-group="cases">
+            <figure class="specimen-card">
+              <img src="assets/specimen-pink-red.svg" alt="Grossly hemolyzed plasma placeholder for potassium request">
+              <figcaption>Case 3 specimen placeholder</figcaption>
+            </figure>
+            <h3>Case 3: Clinical team requests potassium release despite gross hemolysis</h3>
+            <p>A grossly hemolyzed specimen has a generated potassium result. The team asks for release because the patient needs urgent management.</p>
+            <div class="answers">
+              <button type="button" data-correct="false" data-explanation="Potassium is highly hemolysis-sensitive. Unqualified release can lead to inappropriate treatment.">Release potassium without comment</button>
+              <button type="button" data-correct="true" data-explanation="Correct. Explain the risk of pseudohyperkalemia, ask about immediate recollection or blood gas potassium, and document any limited release decision with caution.">Discuss risk and seek a safer alternate specimen or limited release path</button>
+              <button type="button" data-correct="false" data-explanation="Ignoring the request does not meet the consult obligation. The resident should communicate risk and help find a safe pathway.">Decline the call and take no further action</button>
+            </div>
+            <p class="feedback" aria-live="polite"></p>
+          </article>
+
+          <article class="case-card question-block" data-group="cases">
+            <figure class="specimen-card">
+              <img src="assets/specimen-brown-dark.svg" alt="Dark plasma placeholder for CBC interference case">
+              <figcaption>Case 4 specimen placeholder</figcaption>
+            </figure>
+            <h3>Case 4: CBC interference with plasma free hemoglobin &gt;500 mg/dL</h3>
+            <p>The CBC analyzer has severe hemolysis interference. Plasma free hemoglobin is greater than 500 mg/dL and several RBC indices are unreliable.</p>
+            <div class="answers">
+              <button type="button" data-correct="false" data-explanation="Severe plasma free hemoglobin can interfere with CBC parameters. Full release may mislead the team.">Release the full CBC normally</button>
+              <button type="button" data-correct="true" data-explanation="Correct. Only limited CBC parameters such as WBC, hematocrit, and platelets may be reportable, with spun hematocrit confirmation and clear comments per local policy.">Limit CBC reporting and confirm hematocrit by spun method</button>
+              <button type="button" data-correct="false" data-explanation="Do not change results to force internal consistency. Report only validated parameters with explanation.">Manually adjust RBC indices until they look plausible</button>
+            </div>
+            <p class="feedback" aria-live="polite"></p>
+          </article>
+        </div>
+
+        <button id="reset-cases" class="button secondary" type="button">Reset Cases</button>
+      </div>
+    </section>
+
+    <section id="scripts" class="page" data-section-name="Scripts">
+      <div class="page-inner">
+        <p class="eyebrow">Communication Scripts</p>
+        <h2>Use clear, calm language that protects patients and supports the team.</h2>
+        <div class="script-grid">
+          <article class="script-card">
+            <h3>Resident to technologist</h3>
+            <p class="template-text">Can you confirm the hemolysis index, plasma color, specimen source, affected tests, whether values were generated or blocked, and whether prior specimens showed the same pattern?</p>
+            <button class="copy-button" type="button">Copy</button>
+          </article>
+          <article class="script-card">
+            <h3>Resident to clinical team</h3>
+            <p class="template-text">This specimen is severely hemolyzed. Some results may be falsely affected, especially potassium and intracellular enzymes. Based on the specimen appearance and clinical context, we recommend redraw if feasible; if not feasible, we can discuss limited release with clear interpretive comments.</p>
+            <button class="copy-button" type="button">Copy</button>
+          </article>
+          <article class="script-card">
+            <h3>Result comment: ex vivo suspected</h3>
+            <p class="template-text">Specimen is severely hemolyzed, likely due to collection or handling artifact. Hemolysis-sensitive results may be unreliable. Recollection is recommended if clinically feasible.</p>
+            <button class="copy-button" type="button">Copy</button>
+          </article>
+          <article class="script-card">
+            <h3>Result comment: in vivo suspected</h3>
+            <p class="template-text">Specimen is severely hemolyzed. Clinical context suggests hemolysis may reflect the patient's in vivo condition. Results are released with caution; hemolysis-sensitive analytes may be affected and should be interpreted with clinical correlation.</p>
+            <button class="copy-button" type="button">Copy</button>
+          </article>
+          <article class="script-card">
+            <h3>Result comment: limited CBC</h3>
+            <p class="template-text">Severe hemolysis/plasma free hemoglobin interferes with CBC parameters. Limited results are reported per laboratory policy; hematocrit should be confirmed by spun hematocrit when indicated.</p>
+            <button class="copy-button" type="button">Copy</button>
+          </article>
+        </div>
+        <p id="copy-status" class="copy-status" aria-live="polite"></p>
+      </div>
+    </section>
+
+    <section id="quiz" class="page alt" data-section-name="Quiz">
+      <div class="page-inner">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Final Quiz</p>
+            <h2>Check your readiness for the hemolysis consult call.</h2>
+          </div>
+          <div class="score-card">
+            <span>Quiz score</span>
+            <strong><span id="quiz-score">0</span>/<span id="quiz-total">0</span></strong>
+          </div>
+        </div>
+
+        <div class="quiz-list">
+          <article class="quiz-card question-block" data-group="quiz">
+            <h3>1. Which pattern most supports ex vivo hemolysis?</h3>
+            <div class="answers">
+              <button type="button" data-correct="true" data-explanation="Correct. Bright pink/red plasma from repeated line draws that improves after proper recollection strongly supports ex vivo artifact.">Bright red line-draw specimens that improve after peripheral recollection</button>
+              <button type="button" data-correct="false" data-explanation="ECMO, dark plasma, and rising plasma free hemoglobin support possible in vivo hemolysis.">ECMO with dark plasma and rising plasma free hemoglobin</button>
+              <button type="button" data-correct="false" data-explanation="Mechanical intravascular RBC destruction is an in vivo context.">Mechanical hemolysis with consistent repeat specimens</button>
+            </div>
+            <p class="feedback" aria-live="polite"></p>
+          </article>
+
+          <article class="quiz-card question-block" data-group="quiz">
+            <h3>2. Which analyte is especially unsafe to release unqualified from a grossly hemolyzed specimen?</h3>
+            <div class="answers">
+              <button type="button" data-correct="false" data-explanation="Sodium is usually less affected than intracellular analytes, though local policy still matters.">Sodium</button>
+              <button type="button" data-correct="true" data-explanation="Correct. Potassium is highly concentrated in red cells and can be falsely elevated by ex vivo hemolysis.">Potassium</button>
+              <button type="button" data-correct="false" data-explanation="Albumin is not the classic hemolysis-sensitive analyte in this consult scenario.">Albumin</button>
+            </div>
+            <p class="feedback" aria-live="polite"></p>
+          </article>
+
+          <article class="quiz-card question-block" data-group="quiz">
+            <h3>3. What is the best approach for 7+ hemolysis?</h3>
+            <div class="answers">
+              <button type="button" data-correct="false" data-explanation="Automatic release ignores major patient-safety risks.">Release all generated results</button>
+              <button type="button" data-correct="true" data-explanation="Correct. For 7+ hemolysis, determine whether the pattern is likely in vivo or ex vivo, then decide redraw, suppression, or limited release.">Evaluate likely in vivo versus ex vivo hemolysis</button>
+              <button type="button" data-correct="false" data-explanation="Automatic cancellation may be unsafe when severe hemolysis reflects the patient state and limited release is clinically needed.">Cancel every result automatically</button>
+            </div>
+            <p class="feedback" aria-live="polite"></p>
+          </article>
+
+          <article class="quiz-card question-block" data-group="quiz">
+            <h3>4. In severe CBC interference with plasma free hemoglobin &gt;500 mg/dL, what may be reportable?</h3>
+            <div class="answers">
+              <button type="button" data-correct="false" data-explanation="Severe free hemoglobin may make multiple RBC-related parameters unreliable.">All CBC parameters without comment</button>
+              <button type="button" data-correct="true" data-explanation="Correct. Limited reporting may include WBC, hematocrit, and platelets, with spun hematocrit confirmation per policy.">WBC, hematocrit, and platelets with spun hematocrit confirmation</button>
+              <button type="button" data-correct="false" data-explanation="Manual adjustment is not a valid way to solve severe analytical interference.">Manually corrected RBC indices</button>
+            </div>
+            <p class="feedback" aria-live="polite"></p>
+          </article>
+        </div>
+
+        <button id="reset-quiz" class="button secondary" type="button">Reset Quiz</button>
+      </div>
+    </section>
+
+    <section id="summary" class="page" data-section-name="Summary">
+      <div class="page-inner">
+        <p class="eyebrow">Summary</p>
+        <h2>Key take-home points for the on-call resident</h2>
+        <div class="takeaway-list">
+          <article>
+            <h3>Color plus context beats color alone</h3>
+            <p>Interpret hemolysis index and plasma color with patient history, collection source, repeat patterns, and instrument flags.</p>
+          </article>
+          <article>
+            <h3>Ex vivo hemolysis usually means redraw</h3>
+            <p>Bright pink/red plasma, line draws, and improvement after recollection support artifact. Encourage recollection and troubleshoot technique.</p>
+          </article>
+          <article>
+            <h3>In vivo hemolysis may need limited release</h3>
+            <p>ECMO, dialysis, mechanical hemolysis, dark/brown plasma, and clinical correlation may justify limited release with explicit caution.</p>
+          </article>
+          <article>
+            <h3>Communicate the limitation</h3>
+            <p>State which results are affected, why release is limited, what specimen is preferred, and who was notified.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
