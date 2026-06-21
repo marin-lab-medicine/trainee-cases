@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coagulation Case Academy | Lupus Anticoagulant Case</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="mobile-header">
+    <button class="icon-button" id="menuToggle" aria-label="Open navigation" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <div>
+      <p class="eyebrow">Pathology Resident Module</p>
+      <h1>Coagulation Case Consultation</h1>
+    </div>
+  </header>
+
+  <aside class="sidebar" id="sidebar">
+    <div class="brand">
+      <p class="eyebrow">Laboratory Medicine</p>
+      <h2>Coagulation Case Academy</h2>
+      <p class="brand-copy">A focused interactive case for pathology residents.</p>
+    </div>
+    <nav aria-label="Primary navigation">
+      <a href="#home" class="nav-link active">Home</a>
+      <a href="#objectives" class="nav-link">Learning Objectives</a>
+      <a href="#methods" class="nav-link">Test Method Selection</a>
+      <a href="#mechanisms" class="nav-link">Mechanisms</a>
+      <a href="#cases" class="nav-link">Clinical Cases</a>
+      <a href="#quiz" class="nav-link">Final Quiz</a>
+    </nav>
+    <div class="score-card" aria-live="polite">
+      <span>Score</span>
+      <strong><span id="score">0</span>/<span id="attempted">0</span></strong>
+    </div>
+  </aside>
+
+  <main class="content">
+    <section id="home" class="page-section hero-section">
+      <div class="hero-copy">
+        <p class="eyebrow">Interactive Case</p>
+        <h1>The Bleeding Patient with a Lupus Anticoagulant</h1>
+        <p class="lead">Start like a coagulation laboratory director: interpret the isolated prolonged aPTT, evaluate inhibitor patterns, choose the right FVIII and vWF assays, and decide whether the results reflect interference, real disease, or both.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#cases">Begin Case</a>
+          <a class="button secondary" href="#methods">Review Assay Choices</a>
+        </div>
+      </div>
+      <div class="specimen-panel" aria-label="Coagulation specimen and assay placeholders">
+        <div class="tube-card">
+          <div class="tube normal"></div>
+          <h3>Citrated Plasma</h3>
+          <p>Coagulation testing begins with properly collected platelet-poor plasma and careful correlation with PT, aPTT, and platelet count.</p>
+        </div>
+        <div class="tube-card">
+          <div class="tube factor"></div>
+          <h3>Assay Result Pattern</h3>
+          <p>Discordant clot-based, chromogenic, and vWF results should trigger method review rather than premature diagnostic closure.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="objectives" class="page-section">
+      <div class="section-heading">
+        <p class="eyebrow">Learning Objectives</p>
+        <h2>What Residents Should Be Able To Do</h2>
+      </div>
+      <div class="objective-grid">
+        <article>
+          <span class="number">01</span>
+          <h3>Interpret coagulation screening tests</h3>
+          <p>Use PT, aPTT, platelet count, and clinical bleeding history to frame the initial coagulation differential.</p>
+        </article>
+        <article>
+          <span class="number">02</span>
+          <h3>Interpret an isolated prolonged aPTT</h3>
+          <p>Use PT, platelet count, aPTT, and mixing studies to separate factor deficiency from inhibitor patterns.</p>
+        </article>
+        <article>
+          <span class="number">03</span>
+          <h3>Select fit-for-purpose assays</h3>
+          <p>Explain why chromogenic FVIII testing and vWF studies matter when lupus anticoagulant is present.</p>
+        </article>
+        <article>
+          <span class="number">04</span>
+          <h3>Resolve discordant data</h3>
+          <p>Escalate from a single abnormal result to a coherent diagnosis using methodology review and repeat testing.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="methods" class="page-section">
+      <div class="section-heading">
+        <p class="eyebrow">Test Method Selection</p>
+        <h2>Choose the Next Laboratory Move</h2>
+        <p>The resident is acting as the coagulation laboratory director. Each method answers a different question.</p>
+      </div>
+      <div class="method-layout">
+        <div class="method-list" id="methodButtons" aria-label="Test method options"></div>
+        <article class="method-detail" id="methodDetail" aria-live="polite">
+          <h3>Select a method</h3>
+          <p>Pick an assay to see when it helps, what it can miss, and why lupus anticoagulant interference should be considered before final interpretation.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="mechanisms" class="page-section">
+      <div class="section-heading">
+        <p class="eyebrow">Mechanisms of Disease</p>
+        <h2>Why This Case Is a Diagnostic Trap</h2>
+      </div>
+      <div class="mechanism-grid">
+        <article class="mechanism-card">
+          <h3>Assay Interference</h3>
+          <p>Coagulation assays are method-dependent. Phospholipid-dependent clotting tests can be distorted by inhibitors, so the laboratory must know when to confirm results with alternate methodology.</p>
+        </article>
+        <article class="mechanism-card">
+          <h3>Lupus Anticoagulant</h3>
+          <p>Lupus anticoagulants prolong phospholipid-dependent clotting assays. They usually correlate with thrombosis risk rather than bleeding, and they can interfere with clot-based factor assays.</p>
+        </article>
+        <article class="mechanism-card">
+          <h3>Low Factor VIII</h3>
+          <p>A very low FVIII result raises concern for hemophilia A, acquired FVIII inhibitor, vWF-related FVIII instability, or assay interference. Method selection changes the differential.</p>
+        </article>
+        <article class="mechanism-card">
+          <h3>Acquired von Willebrand Syndrome</h3>
+          <p>New-onset bleeding in an older adult with absent vWF antigen, absent activity, absent multimers, and response to IVIG supports acquired rather than inherited disease.</p>
+        </article>
+      </div>
+      <div class="flow">
+        <div>Patient bleeding</div>
+        <span></span>
+        <div>Prolonged aPTT</div>
+        <span></span>
+        <div>Mixing study fails to correct</div>
+        <span></span>
+        <div>LAC identified</div>
+        <span></span>
+        <div>Do not stop</div>
+        <span></span>
+        <div>FVIII and vWF are profoundly low</div>
+        <span></span>
+        <div>Type 3 acquired VWD</div>
+      </div>
+    </section>
+
+    <section id="cases" class="page-section">
+      <div class="section-heading">
+        <p class="eyebrow">Interactive Clinical Cases</p>
+        <h2>Work Through the Consultation</h2>
+        <p>Answer each question, read the explanation, and continue the investigation.</p>
+      </div>
+      <div class="case-shell">
+        <div class="case-stage" id="caseStage"></div>
+        <div class="question-card" id="caseQuestion"></div>
+      </div>
+    </section>
+
+    <section id="quiz" class="page-section">
+      <div class="section-heading">
+        <p class="eyebrow">Final Quiz</p>
+        <h2>Board-Style Review</h2>
+        <p>Ten short questions reinforce the main interpretive lessons from the case.</p>
+      </div>
+      <div class="quiz-grid" id="quizGrid"></div>
+      <div class="quiz-summary">
+        <button class="button primary" id="resetScore" type="button">Reset Score</button>
+        <p id="summaryText">Answer questions to build your score.</p>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
