@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Case 3: Blood Tube Contamination</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+
+  <aside class="sidebar" aria-label="Course navigation">
+    <div class="brand">
+      <p class="eyebrow">Preanalytics Module</p>
+      <h1>Case 3</h1>
+      <p>Blood Tube Contamination</p>
+    </div>
+    <nav>
+      <a class="nav-link active" href="#home">Home</a>
+      <a class="nav-link" href="#objectives">Learning Objectives</a>
+      <a class="nav-link" href="#tube-basics">Tube Basics</a>
+      <a class="nav-link" href="#mechanisms">Contamination Mechanisms</a>
+      <a class="nav-link" href="#cases">Clinical Cases</a>
+      <a class="nav-link" href="#quiz">Final Quiz</a>
+    </nav>
+    <div class="score-panel" aria-live="polite">
+      <span>Total Score</span>
+      <strong id="total-score">0 / 0</strong>
+    </div>
+  </aside>
+
+  <main>
+    <section id="home" class="page-section hero">
+      <div class="hero-copy">
+        <p class="eyebrow">Pathology Resident Education</p>
+        <h2>Preanalytical Errors: Blood Tube Contamination</h2>
+        <p class="lede">
+          Laboratory testing is shaped by preanalytical, analytical, and post-analytical phases. This case focuses on
+          contamination during collection and handling, a preanalytical problem that can lead to canceled results,
+          misleading patterns, and avoidable clinical confusion.
+        </p>
+        <div class="fact-strip" aria-label="Key teaching point">
+          <strong>Teaching anchor:</strong>
+          <span>Most laboratory-related errors occur outside the analytical phase, making collection practices central to patient safety.</span>
+        </div>
+        <div class="hero-actions">
+          <a class="button primary" href="#tube-basics">Review Tube Basics</a>
+          <a class="button secondary" href="#cases">Try Clinical Cases</a>
+        </div>
+      </div>
+      <div class="specimen-board" aria-label="Specimen and tube placeholders">
+        <div class="tube-card">
+          <div class="tube citrate"></div>
+          <span>Blue top: citrate, coagulation testing</span>
+        </div>
+        <div class="tube-card">
+          <div class="tube heparin"></div>
+          <span>Green top: heparin, plasma chemistry</span>
+        </div>
+        <div class="tube-card">
+          <div class="tube edta"></div>
+          <span>Purple top: EDTA, hematology testing</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="objectives" class="page-section">
+      <div class="section-heading">
+        <p class="eyebrow">Learning Objectives</p>
+        <h2>By the end of this case, residents should be able to:</h2>
+      </div>
+      <div class="objective-grid">
+        <article>
+          <span>01</span>
+          <h3>Place errors by testing phase</h3>
+          <p>Distinguish preanalytical collection and handling problems from analytical and post-analytical issues.</p>
+        </article>
+        <article>
+          <span>02</span>
+          <h3>Use tube basics</h3>
+          <p>Relate tube additive, specimen type, processing, and test menu to contamination risk.</p>
+        </article>
+        <article>
+          <span>03</span>
+          <h3>Recognize contamination patterns</h3>
+          <p>Identify heparin, EDTA, and IV-line contamination patterns using paired laboratory abnormalities.</p>
+        </article>
+        <article>
+          <span>04</span>
+          <h3>Recommend mitigation</h3>
+          <p>Suggest redraws, discard volumes, order-of-draw review, or interpretive comments when results are suspect.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="tube-basics" class="page-section">
+      <div class="section-heading">
+        <p class="eyebrow">Collection Tubes and Order of Draw</p>
+        <h2>Tube additives explain many contamination patterns</h2>
+      </div>
+      <div class="two-column">
+        <div>
+          <p>
+            Collection tubes are designed for specific specimen types and test families. Citrate tubes support
+            coagulation testing, serum tubes are used for many chemistry, drug, serology, and protein studies, and
+            anticoagulated plasma tubes support selected chemistry or specialized assays.
+          </p>
+          <p>
+            The order of draw matters because additives can carry into subsequent tubes through backflow, needle or
+            syringe contamination, improper transfer, or mislabeling. Residents should interpret implausible results in
+            the context of the tube sequence and specimen processing history.
+          </p>
+        </div>
+        <div class="callout">
+          <h3>Specimen vocabulary</h3>
+          <p><strong>Plasma</strong> contains clotting factors. <strong>Serum</strong> is plasma after clotting factors are removed during clot formation.</p>
+        </div>
+      </div>
+
+      <div class="tube-grid">
+        <article>
+          <div class="tube citrate small-tube"></div>
+          <h3>Blue top</h3>
+          <p>Citrated plasma for coagulation studies. Underfilling or contamination can alter clotting times.</p>
+        </article>
+        <article>
+          <div class="tube serum small-tube"></div>
+          <h3>Red or gold top</h3>
+          <p>Serum for drugs, serology, serum protein electrophoresis, and other chemistry assays. Carry over can shorten clotting times, and cause micro-clots.</p>
+        </article>
+        <article>
+          <div class="tube heparin small-tube"></div>
+          <h3>Green top</h3>
+          <p>Heparinized plasma for chemistry testing. Carryover can prolong coagulation tests.</p>
+        </article>
+        <article>
+          <div class="tube edta small-tube"></div>
+          <h3>Purple top</h3>
+          <p>EDTA specimens for hematology and selected specialized tests. Carryover can raise potassium and chelate divalent ions.</p>
+        </article>
+      </div>
+
+      <div class="mini-check question-block" data-question-id="tube-check" data-points="1">
+        <h3>Quick Check</h3>
+        <p>Why can incorrect order of draw create clinically misleading results?</p>
+        <div class="answer-list">
+          <button data-correct="false" data-explanation="Tube color alone does not change analytes unless additive or handling effects are introduced.">Tube stopper color directly changes analyzer calibration</button>
+          <button data-correct="true" data-explanation="Additive carryover can contaminate later specimens and create characteristic result patterns.">Additives may carry over into the next tube</button>
+          <button data-correct="false" data-explanation="Processing time matters, but this is not the core order-of-draw mechanism.">All tubes clot at the same rate</button>
+        </div>
+        <p class="feedback" aria-live="polite"></p>
+      </div>
+    </section>
+
+    <section id="mechanisms" class="page-section">
+      <div class="section-heading">
+        <p class="eyebrow">Contamination Mechanisms</p>
+        <h2>Common routes and laboratory signatures</h2>
+      </div>
+      <div class="mechanism-list">
+        <article>
+          <h3>Incorrect order of draw</h3>
+          <p>A non-heparin or chemistry tube collected after an additive tube may receive residual additive through backflow or shared collection equipment.</p>
+        </article>
+        <article>
+          <h3>Improper transfer</h3>
+          <p>Pouring blood between tubes or transferring from a contaminated syringe can introduce heparin or EDTA into the wrong specimen.</p>
+        </article>
+        <article>
+          <h3>Line contamination</h3>
+          <p>Drawing from an IV catheter or central line without adequate flushing and discard can dilute blood with IV fluid or heparin flush.</p>
+        </article>
+        <article>
+          <h3>Labeling or handling error</h3>
+          <p>A tube may be mislabeled, handled as the wrong specimen type, or exposed to equipment that previously contacted an additive.</p>
+        </article>
+        <article>
+          <h3>Incomplete clotting</h3>
+          <p>Recent heparin exposure or inadequate clotting time can leave residual fibrinogen in serum and create confusing protein electrophoresis patterns.</p>
+        </article>
+      </div>
+
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Contaminant</th>
+              <th>Typical Clue</th>
+              <th>Affected Results</th>
+              <th>Likely Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Heparin</td>
+              <td>Unexpected prolonged clotting time</td>
+              <td>Coagulation assays may be prolonged</td>
+              <td>Review line draw, heparin flush, transfer, and order of draw</td>
+            </tr>
+            <tr>
+              <td>EDTA</td>
+              <td>High potassium with low divalent ions</td>
+              <td>Potassium increased; ionized calcium, magnesium, and zinc decreased; enzymes may be affected</td>
+              <td>Request recollection and investigate tube carryover</td>
+            </tr>
+            <tr>
+              <td>IV fluid</td>
+              <td>Dilution plus fluid composition pattern</td>
+              <td>Sodium and chloride increased; potassium, protein, albumin, creatinine, Hgb, platelets, and WBC decreased; osmolality increased</td>
+              <td>Confirm draw site, flush/discard practice, and recollect per policy</td>
+            </tr>
+            <tr>
+              <td>Residual fibrinogen</td>
+              <td>Apparent SPE M-spike with negative IFE</td>
+              <td>Fibrinogen may migrate at the beta-gamma interface and mimic a monoclonal protein</td>
+              <td>Verify specimen type, heparin exposure, clotting adequacy, and repeat SPE with a properly clotted serum specimen</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section id="cases" class="page-section">
+      <div class="section-heading">
+        <p class="eyebrow">Interactive Clinical Cases</p>
+        <h2>Match the pattern to the contamination source</h2>
+      </div>
+      <div class="case-grid">
+        <article class="case-card question-block" data-question-id="case-1" data-points="1">
+          <div class="specimen-placeholder heparin-sample">Case A</div>
+          <h3>Case A: Unexpected Prolonged Clotting Time</h3>
+          <p>
+            A citrated plasma specimen shows a markedly prolonged clotting time. The patient is not anticoagulated, and
+            the sample was collected through a line previously flushed with heparin.
+          </p>
+          <div class="answer-list">
+            <button data-correct="true" data-explanation="Heparin flush or heparin carryover can prolong clotting assays and should prompt recollection or neutralization per local policy.">Suspect heparin contamination</button>
+            <button data-correct="false" data-explanation="EDTA contamination is better known for high potassium and low divalent ions, not isolated clotting prolongation.">Suspect EDTA contamination only</button>
+            <button data-correct="false" data-explanation="This pattern should not be released without comment when the collection history strongly suggests contamination.">Release without collection review</button>
+          </div>
+          <p class="feedback" aria-live="polite"></p>
+        </article>
+
+        <article class="case-card question-block" data-question-id="case-2" data-points="1">
+          <div class="specimen-placeholder edta-sample">Case B</div>
+          <h3>Case B: Chemistry Panel Flag</h3>
+          <p>
+            Potassium is unexpectedly high, while ionized calcium and magnesium are low. The requisition suggests a
+            chemistry tube was drawn after a purple-top tube.
+          </p>
+          <div class="answer-list">
+            <button data-correct="false" data-explanation="Hemolysis can raise potassium, but the low divalent ions strongly suggest chelation by EDTA.">Attribute the entire pattern to hemolysis</button>
+            <button data-correct="true" data-explanation="EDTA can introduce potassium salts and chelate divalent ions such as calcium and magnesium.">Suspect EDTA contamination and recollect</button>
+            <button data-correct="false" data-explanation="A mathematical correction is not appropriate when the specimen is contaminated.">Correct calcium mathematically</button>
+          </div>
+          <p class="feedback" aria-live="polite"></p>
+        </article>
+
+        <article class="case-card question-block" data-question-id="case-3" data-points="1">
+          <div class="specimen-placeholder iv-sample">Case C</div>
+          <h3>Case C: Line Draw Pattern</h3>
+          <p>
+            Sodium, chloride, and osmolality are increased. Potassium, creatinine, albumin, hemoglobin, platelets, and
+            WBC are decreased compared with baseline.
+          </p>
+          <div class="answer-list">
+            <button data-correct="false" data-explanation="EDTA contamination does not usually produce broad dilution of CBC and chemistry values with high sodium and chloride.">EDTA carryover is most likely</button>
+            <button data-correct="true" data-explanation="The paired dilution pattern plus increased sodium, chloride, and osmolality is characteristic of IV-line contamination.">IV-line contamination is most likely</button>
+            <button data-correct="false" data-explanation="A true acute disease process should fit the clinical context; this broad paired pattern points first to collection contamination.">Release all results as acute disease</button>
+          </div>
+          <p class="feedback" aria-live="polite"></p>
+        </article>
+
+        <article class="case-card question-block" data-question-id="case-4" data-points="1">
+          <div class="specimen-placeholder spe-sample">Case D</div>
+          <h3>Case D: Apparent M-spike on SPE</h3>
+          <p>
+            A 31-year-old woman with acute renal failure and pancytopenia is undergoing hemodialysis. SPE shows a
+            discrete beta-gamma region band suspicious for an M-spike, but reflex IFE detects no monoclonal immunoglobulin.
+          </p>
+          <div class="answer-list">
+            <button data-correct="false" data-explanation="A negative IFE argues against a monoclonal immunoglobulin and should prompt review for specimen-related mimics.">Diagnose monoclonal gammopathy based on SPE alone</button>
+            <button data-correct="true" data-explanation="Recent heparin exposure or inadequate clotting can leave fibrinogen in serum; fibrinogen may migrate at the beta-gamma interface and mimic an M-spike while IFE remains negative.">Suspect residual fibrinogen from incomplete clotting</button>
+            <button data-correct="false" data-explanation="EDTA carryover is more associated with potassium and divalent ion abnormalities than an SPE band with negative IFE.">Attribute the finding to EDTA carryover</button>
+          </div>
+          <p class="feedback" aria-live="polite"></p>
+        </article>
+      </div>
+    </section>
+
+    <section id="quiz" class="page-section">
+      <div class="section-heading">
+        <p class="eyebrow">Final Quiz</p>
+        <h2>Check your readiness</h2>
+      </div>
+      <div class="quiz-panel">
+        <div class="quiz-score">
+          <span>Quiz Score</span>
+          <strong id="quiz-score">0 / 0</strong>
+        </div>
+
+        <div class="question-block quiz-question" data-question-id="quiz-1" data-points="1">
+          <h3>1. Which pairing best describes serum?</h3>
+          <div class="answer-list">
+            <button data-correct="false" data-explanation="Plasma contains clotting factors because anticoagulation prevents clot formation.">Plasma plus additional clotting factors</button>
+            <button data-correct="true" data-explanation="Serum is produced after clotting, so clotting factors are removed from the liquid component.">Plasma minus clotting factors</button>
+            <button data-correct="false" data-explanation="EDTA plasma is anticoagulated whole-blood-derived plasma, not serum.">EDTA plasma with platelets removed only</button>
+          </div>
+          <p class="feedback" aria-live="polite"></p>
+        </div>
+
+        <div class="question-block quiz-question" data-question-id="quiz-2" data-points="1">
+          <h3>2. EDTA contamination is classically associated with:</h3>
+          <div class="answer-list">
+            <button data-correct="false" data-explanation="This is the opposite of the expected EDTA carryover pattern.">Low potassium and high calcium</button>
+            <button data-correct="true" data-explanation="EDTA salts may contribute potassium while EDTA chelates divalent ions.">High potassium with decreased calcium and magnesium</button>
+            <button data-correct="false" data-explanation="High sodium and chloride with broad dilution suggests IV-line contamination instead.">High sodium and high chloride with low osmolality</button>
+          </div>
+          <p class="feedback" aria-live="polite"></p>
+        </div>
+
+        <div class="question-block quiz-question" data-question-id="quiz-3" data-points="1">
+          <h3>3. A specimen drawn from an IV catheter without adequate discard may show:</h3>
+          <div class="answer-list">
+            <button data-correct="true" data-explanation="IV fluid contamination can increase sodium, chloride, and osmolality while diluting proteins, creatinine, cells, and platelets.">Increased sodium, chloride, and osmolality with decreased CBC values</button>
+            <button data-correct="false" data-explanation="This pattern is more consistent with EDTA contamination than IV-fluid dilution.">High potassium with low ionized calcium only</button>
+            <button data-correct="false" data-explanation="A line contamination pattern often affects multiple chemistry and hematology values.">No effect on chemistry or hematology testing</button>
+          </div>
+          <p class="feedback" aria-live="polite"></p>
+        </div>
+
+        <div class="question-block quiz-question" data-question-id="quiz-4" data-points="1">
+          <h3>4. The best next step for an implausible contamination pattern is usually:</h3>
+          <div class="answer-list">
+            <button data-correct="false" data-explanation="Reporting suspicious results without context can create patient safety risk.">Release all values without comment</button>
+            <button data-correct="true" data-explanation="Contamination investigation should include collection sequence, line draw history, discard practice, and recollection when indicated.">Review collection details and request recollection if needed</button>
+            <button data-correct="false" data-explanation="Analyzer calibration does not explain a tube-specific additive or line-dilution pattern by itself.">Calibrate the analyzer and ignore collection history</button>
+          </div>
+          <p class="feedback" aria-live="polite"></p>
+        </div>
+
+        <div class="question-block quiz-question" data-question-id="quiz-5" data-points="1">
+          <h3>5. SPE shows a beta-gamma band suspicious for an M-spike, but IFE is negative. Which specimen issue should be considered?</h3>
+          <div class="answer-list">
+            <button data-correct="false" data-explanation="EDTA contamination typically causes electrolyte and divalent ion artifacts, not a fibrinogen band on SPE.">EDTA carryover into a chemistry tube</button>
+            <button data-correct="true" data-explanation="Residual fibrinogen from incomplete clotting can migrate at the beta-gamma interface and mimic an M-spike on SPE while IFE remains negative.">Residual fibrinogen from incomplete clotting after heparin exposure</button>
+            <button data-correct="false" data-explanation="IV fluid dilution would not specifically create a beta-gamma band with negative immunofixation.">IV-line dilution with saline</button>
+          </div>
+          <p class="feedback" aria-live="polite"></p>
+        </div>
+
+        <button id="reset-scores" class="button secondary" type="button">Reset Scores</button>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
