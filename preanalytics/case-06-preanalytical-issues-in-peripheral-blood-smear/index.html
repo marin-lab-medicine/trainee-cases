@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Case 6: Preanalytical Issues in Peripheral Blood Smears and CBCs</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+
+  <aside class="sidebar" aria-label="Course navigation">
+    <div class="brand">
+      <p class="eyebrow">Preanalytics Module</p>
+      <h1>Case 6</h1>
+      <p>Peripheral Blood Smears and CBCs</p>
+    </div>
+
+    <div class="progress-panel" aria-live="polite">
+      <div class="progress-row">
+        <span>Module Progress</span>
+        <strong id="progress-label">0%</strong>
+      </div>
+      <div class="progress-track" aria-hidden="true">
+        <div id="progress-bar"></div>
+      </div>
+    </div>
+
+    <nav>
+      <a class="nav-link active" href="#home">Home</a>
+      <a class="nav-link" href="#objectives">Learning Objectives</a>
+      <a class="nav-link" href="#background">Background</a>
+      <a class="nav-link" href="#content">Core Content</a>
+      <a class="nav-link" href="#mechanisms">Mechanisms</a>
+      <a class="nav-link" href="#cases">Clinical Cases</a>
+      <a class="nav-link" href="#quiz">Knowledge Check</a>
+      <a class="nav-link" href="#summary">Summary</a>
+    </nav>
+
+    <div class="score-panel" aria-live="polite">
+      <span>Question Score</span>
+      <strong id="total-score">0 / 0</strong>
+    </div>
+  </aside>
+
+  <main>
+    <section id="home" class="page-section hero" data-section>
+      <div class="hero-copy">
+        <p class="eyebrow">Practical Laboratory Medicine for Pathology Residents</p>
+        <h2>Preanalytical Issues in Peripheral Blood Smears and CBCs</h2>
+        <p class="lede">
+          A peripheral smear is only diagnostically meaningful when the specimen, slide, stain, and field selection are
+          suitable for interpretation. This module trains residents to recognize artifacts before they become diagnoses.
+        </p>
+        <div class="fact-strip">
+          <strong>Board pearl:</strong>
+          <span>Before interpreting morphology, first decide whether the specimen and smear are interpretable.</span>
+        </div>
+        <div class="hero-actions">
+          <a class="button primary" href="#content">Start Module</a>
+          <a class="button secondary" href="#cases">Try Cases</a>
+        </div>
+      </div>
+
+      <div class="smear-visual" aria-label="Illustration of CBC and smear quality workflow">
+        <div class="analyzer-card">
+          <div class="screen-header">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="result-line danger">
+            <strong>PLT</strong>
+            <span>24 x10^9/L</span>
+            <em>Clump?</em>
+          </div>
+          <div class="result-line warning">
+            <strong>MCHC</strong>
+            <span>39.2 g/dL</span>
+            <em>Agglutinin?</em>
+          </div>
+          <div class="result-line">
+            <strong>Flag</strong>
+            <span>Blast</span>
+            <em>Smear review</em>
+          </div>
+        </div>
+        <div class="slide-card">
+          <div class="smear-zone feather">Feather edge</div>
+          <div class="smear-zone morphology">Zone of morphology</div>
+          <div class="smear-zone thick">Thick area</div>
+        </div>
+        <div class="workflow-strip">
+          <article><span>1</span><p>Inspect</p></article>
+          <article><span>2</span><p>Correlate</p></article>
+          <article><span>3</span><p>Decide</p></article>
+          <article><span>4</span><p>Communicate</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="objectives" class="page-section" data-section>
+      <div class="section-heading">
+        <p class="eyebrow">Learning Objectives</p>
+        <h2>By the end of this module, residents should be able to:</h2>
+      </div>
+      <div class="objective-grid">
+        <article>
+          <span>01</span>
+          <h3>Recognize error patterns</h3>
+          <p>Identify common preanalytical errors that affect CBC parameters and smear interpretation.</p>
+        </article>
+        <article>
+          <span>02</span>
+          <h3>Separate artifact from disease</h3>
+          <p>Distinguish platelet clumping, RBC agglutination, staining problems, and cellular degeneration from true pathology.</p>
+        </article>
+        <article>
+          <span>03</span>
+          <h3>Choose the right action</h3>
+          <p>Determine when to report, repeat analysis, recollect the specimen, use an alternate anticoagulant, or escalate.</p>
+        </article>
+        <article>
+          <span>04</span>
+          <h3>Correlate CBC and smear</h3>
+          <p>Use analyzer flags, delta checks, and morphology together before releasing unexpected results.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="background" class="page-section" data-section>
+      <div class="section-heading">
+        <p class="eyebrow">Background</p>
+        <h2>Most laboratory errors begin before analysis, but they often reveal themselves on the CBC or smear</h2>
+      </div>
+      <div class="two-column">
+        <div>
+          <p>
+            Approximately 60-70% of laboratory errors occur during the preanalytical phase. For CBCs and peripheral
+            smears, these errors can be especially deceptive because they alter counts, distort cells, and change the
+            apparent distribution of cells across the slide.
+          </p>
+          <p>
+            A resident reviewing a smear should start with specimen fitness: the correct tube, adequate fill, proper
+            mixing, timely smear preparation, appropriate storage, acceptable smear thickness, correct staining, and
+            examination in the zone of morphology.
+          </p>
+        </div>
+        <div class="risk-panel">
+          <h3>Artifacts may mimic:</h3>
+          <ul>
+            <li>Acute leukemia or immature cell proliferation</li>
+            <li>True thrombocytopenia or thrombocytosis</li>
+            <li>Hemolytic anemia or renal-associated echinocytosis</li>
+            <li>False leukocytosis, leukopenia, or abnormal differential</li>
+            <li>Dysplastic leukocytes or toxic change</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="pathway-activity" data-pathway-activity>
+        <div class="activity-heading">
+          <h3>Place the preanalytical and analytical steps in the correct order</h3>
+          <p>Select each tab in sequence, then check your pathway.</p>
+        </div>
+        <div class="pathway-options" aria-label="Scrambled pathway steps">
+          <button type="button" data-step="7">CBC testing</button>
+          <button type="button" data-step="12">Storage</button>
+          <button type="button" data-step="10">Stain incubation</button>
+          <button type="button" data-step="8">Rule or flag detection by the instrument software</button>
+          <button type="button" data-step="1">Patient</button>
+          <button type="button" data-step="3">Select appropriate tube</button>
+          <button type="button" data-step="2">Place order</button>
+          <button type="button" data-step="4">Collect specimen</button>
+          <button type="button" data-step="6">Transport</button>
+          <button type="button" data-step="5">Mixing</button>
+          <button type="button" data-step="9">Reflex to slide maker</button>
+          <button type="button" data-step="11">Interpretation</button>
+        </div>
+        <div class="pathway-answer" aria-label="Selected pathway order"></div>
+        <div class="activity-actions">
+          <button id="check-pathway" class="button primary" type="button">Check Order</button>
+          <button id="reset-pathway" class="button secondary" type="button">Reset Activity</button>
+        </div>
+        <p class="pathway-feedback" aria-live="polite"></p>
+      </div>
+    </section>
+
+    <section id="content" class="page-section" data-section>
+      <div class="section-heading">
+        <p class="eyebrow">Core Educational Content</p>
+        <h2>Preanalytical failure points that change CBCs and smears</h2>
+      </div>
+
+      <div class="topic-tabs" role="tablist" aria-label="Core content topics">
+        <button class="topic-tab active" type="button" role="tab" aria-selected="true" data-topic="tube-panel">Tube and Mixing</button>
+        <button class="topic-tab" type="button" role="tab" aria-selected="false" data-topic="smear-panel">Smear Quality</button>
+        <button class="topic-tab" type="button" role="tab" aria-selected="false" data-topic="artifact-panel">CBC Artifacts</button>
+        <button class="topic-tab" type="button" role="tab" aria-selected="false" data-topic="review-panel">Review Triggers</button>
+      </div>
+
+      <div id="tube-panel" class="topic-panel active" data-topic-panel>
+        <div class="content-grid">
+          <article class="teaching-card">
+            <h3>Correct tube selection</h3>
+            <p>CBC specimens should be collected in lavender-top K2EDTA or K3EDTA tubes to preserve cellular morphology and prevent clotting.</p>
+            <ul>
+              <li><strong>Serum tube:</strong> clot formation, platelet trapping, false thrombocytopenia.</li>
+              <li><strong>Sodium citrate:</strong> dilutional decreases in hemoglobin, hematocrit, platelets, and WBC count unless correction is validated.</li>
+              <li><strong>Heparin:</strong> blue background, poor leukocyte morphology, platelet clumping; rarely acceptable for manual smear review.</li>
+            </ul>
+          </article>
+          <article class="teaching-card">
+            <h3>Underfilled EDTA tube</h3>
+            <p>
+              Modern experimental evidence supports falsely increased MCV and falsely decreased MCHC in severely
+              underfilled spray-dried K2EDTA tubes. In Lippi et al. (2023), 3.0 mL K2EDTA tubes filled to 2.0 mL
+              showed no clinically significant change, while 1.0, 0.5, and 0.2 mL fills produced increased MCV and
+              decreased MCHC. The authors concluded that tubes filled to less than 67% of nominal volume should be
+              rejected because the bias becomes clinically significant.
+            </p>
+            <table class="fill-volume-table">
+              <thead>
+                <tr>
+                  <th>Fill volume</th>
+                  <th>MCV</th>
+                  <th>MCHC</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>2.0 mL (67%)</td>
+                  <td>No clinically significant change</td>
+                  <td>No significant change</td>
+                </tr>
+                <tr>
+                  <td>1.0 mL (33%)</td>
+                  <td>Increased</td>
+                  <td>Decreased</td>
+                </tr>
+                <tr>
+                  <td>0.5 mL (17%)</td>
+                  <td>Increased</td>
+                  <td>Decreased</td>
+                </tr>
+                <tr>
+                  <td>0.2 mL (7%)</td>
+                  <td>Increased</td>
+                  <td>Decreased</td>
+                </tr>
+              </tbody>
+            </table>
+            <p>
+              A 2024 validation study reached a similar conclusion: a 3.0 mL tube containing only 0.5 mL blood showed
+              MCV increased by approximately 2.4%, increased hematocrit, and decreased MCHC compared with a properly
+              filled tube.
+            </p>
+            <ul>
+              <li><strong>Historical teaching:</strong> excess EDTA was classically described as causing RBC water loss, shrinkage, and low MCV.</li>
+              <li><strong>Current hypothesis:</strong> RBCs initially dehydrate in concentrated K2EDTA, then overswell after aspiration into isotonic analyzer diluent.</li>
+              <li><strong>Modern spray-dried K2EDTA pattern:</strong> MCV falsely increased and MCHC falsely decreased.</li>
+              <li><strong>WBCs:</strong> nuclear distortion and cytoplasmic vacuolization.</li>
+              <li><strong>Platelets:</strong> swelling and degeneration.</li>
+            </ul>
+            <p class="callout">As a laboratory director, know the EDTA tube type, additive formulation, analyzer platform, time from collection to analysis, and the laboratory's validated rejection threshold.</p>
+          </article>
+          <article class="teaching-card">
+            <h3>Inadequate mixing and clots</h3>
+            <p>Failure to invert EDTA tubes 8-10 times can create microclots, platelet clumps, uneven cell distribution, and false thrombocytopenia.</p>
+            <p class="callout">If a clot is identified, the CBC should generally not be reported. Recollection is usually required.</p>
+          </article>
+        </div>
+      </div>
+
+      <div id="smear-panel" class="topic-panel" data-topic-panel hidden>
+        <div class="content-grid">
+          <article class="teaching-card">
+            <h3>Delayed smear preparation</h3>
+            <p>Smears are best prepared within 2-3 hours. Delay causes neutrophil vacuoles and nuclear degeneration, lymphocyte degeneration, platelet swelling, and RBC echinocyte formation.</p>
+          </article>
+          <article class="teaching-card">
+            <h3>Storage temperature</h3>
+            <p>Room temperature is ideal for routine smear preparation. Refrigeration can promote platelet clumping, echinocytes, and leukocyte degeneration; excessive heat can cause cell lysis and poor staining.</p>
+          </article>
+          <article class="teaching-card">
+            <h3>Smear geometry</h3>
+            <ul>
+              <li><strong>Short smear:</strong> cells crowded.</li>
+              <li><strong>Long smear:</strong> cells too sparse.</li>
+              <li><strong>Wavy feather edge:</strong> uneven distribution.</li>
+              <li><strong>Holes:</strong> interpretation difficult.</li>
+            </ul>
+          </article>
+          <article class="teaching-card">
+            <h3>Wrong area examined</h3>
+            <p>Differentials performed too close to the feather edge may falsely increase blasts, monocytes, reactive lymphocytes, and platelet clumps. Perform the differential in the zone of morphology.</p>
+          </article>
+        </div>
+      </div>
+
+      <div id="artifact-panel" class="topic-panel" data-topic-panel hidden>
+        <div class="content-grid">
+          <article class="teaching-card">
+            <h3>EDTA-dependent platelet clumping</h3>
+            <p>EDTA exposes cryptic platelet antigens; autoantibodies cause platelet aggregation. The analyzer reports very low platelets, while the smear shows large platelet clumps, often at the feather edge.</p>
+            <p class="callout">Never report a platelet count from a clumped specimen without smear correlation. Repeat in sodium citrate or ACD when appropriate.</p>
+          </article>
+          <article class="teaching-card">
+            <h3>Platelet satellitism</h3>
+            <p>A rare EDTA phenomenon in which platelets adhere around neutrophils, producing false thrombocytopenia. Diagnosis requires smear review.</p>
+          </article>
+          <article class="teaching-card">
+            <h3>Cold agglutinins</h3>
+            <p>Analyzer pattern: increased MCV, decreased RBC count, and increased MCHC, often above 37 g/dL. Smear shows large RBC aggregates. Warm the specimen to 37°C and repeat analysis.</p>
+          </article>
+          <article class="teaching-card">
+            <h3>Lipemia and hemolysis</h3>
+            <p>Lipemia can falsely increase hemoglobin, MCH, and MCHC while the smear is generally normal. In vitro hemolysis usually has little CBC effect but may show ghost cells and debris.</p>
+          </article>
+        </div>
+      </div>
+
+      <div id="review-panel" class="topic-panel" data-topic-panel hidden>
+        <div class="content-grid">
+          <article class="teaching-card">
+            <h3>Analyzer flags requiring smear correlation</h3>
+            <ul>
+              <li>Blast flag or immature granulocyte flag</li>
+              <li>Platelet clump flag or giant platelet flag</li>
+              <li>NRBC flag or atypical lymphocyte flag</li>
+              <li>RBC agglutination flag</li>
+            </ul>
+          </article>
+          <article class="teaching-card">
+            <h3>CBC values that should trigger review</h3>
+            <ul>
+              <li>Platelets &lt;100 or &gt;700 x10^9/L</li>
+              <li>WBC &gt;30 or &lt;3 x10^9/L</li>
+              <li>New anemia or unexpected leukocytosis</li>
+              <li>Analyzer flags, delta check failure, or clinical concern</li>
+            </ul>
+          </article>
+          <article class="teaching-card">
+            <h3>Platelet estimate</h3>
+            <p>Estimate platelets in the zone of morphology, not the feather edge. Average 10 oil immersion fields and multiply by 15,000. Platelet clumps invalidate the estimate.</p>
+          </article>
+        </div>
+      </div>
+
+      <div class="mark-complete">
+        <button id="mark-complete" class="button primary" type="button">Mark Current Section Complete</button>
+      </div>
+    </section>
+
+    <section id="mechanisms" class="page-section" data-section>
+      <div class="section-heading">
+        <p class="eyebrow">Mechanisms</p>
+        <h2>Why these artifacts create convincing but misleading patterns</h2>
+      </div>
+
+      <div class="mechanism-grid">
+        <article class="mechanism-card">
+          <span>EDTA excess</span>
+          <h3>Underfilling changes cell morphology</h3>
+          <p>Severe underfilling of modern spray-dried K2EDTA tubes can falsely increase MCV and decrease MCHC. The likely mechanism is initial RBC dehydration in concentrated EDTA followed by overswelling after transfer into isotonic analyzer diluent.</p>
+        </article>
+        <article class="mechanism-card">
+          <span>EDTA antibodies</span>
+          <h3>Pseudothrombocytopenia</h3>
+          <p>EDTA-dependent antibodies aggregate platelets in vitro. The patient may have adequate circulating platelets, but the analyzer counts clumps poorly.</p>
+        </article>
+        <article class="mechanism-card">
+          <span>RBC agglutination</span>
+          <h3>Cold agglutinins alter indices</h3>
+          <p>Clumped RBCs are counted as fewer, larger particles, producing low RBC count, high MCV, and high MCHC until the sample is warmed and rerun.</p>
+        </article>
+        <article class="mechanism-card">
+          <span>Time and storage</span>
+          <h3>Old cells look abnormal</h3>
+          <p>Delayed smears can show vacuolated neutrophils, nuclear swelling, smudging, platelet swelling, and echinocytes that should not be overcalled as disease.</p>
+        </article>
+        <article class="mechanism-card">
+          <span>Slide physics</span>
+          <h3>Distribution is not random</h3>
+          <p>Large cells and platelet clumps concentrate near the feather edge. A differential from the wrong area can overrepresent abnormal-appearing cells.</p>
+        </article>
+        <article class="mechanism-card">
+          <span>Stain chemistry</span>
+          <h3>pH shifts change color</h3>
+          <p>High pH makes RBCs gray-blue; low pH makes RBCs orange. Understaining appears pale, while overstaining makes the slide excessively blue.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="cases" class="page-section" data-section>
+      <div class="section-heading">
+        <p class="eyebrow">Interactive Clinical Cases</p>
+        <h2>Make the resident-level decision</h2>
+      </div>
+
+      <div class="case-tabs" role="tablist" aria-label="Clinical cases">
+        <button class="case-tab active" type="button" role="tab" aria-selected="true" data-case="case-one">Case 1</button>
+        <button class="case-tab" type="button" role="tab" aria-selected="false" data-case="case-two">Case 2</button>
+        <button class="case-tab" type="button" role="tab" aria-selected="false" data-case="case-three">Case 3</button>
+        <button class="case-tab" type="button" role="tab" aria-selected="false" data-case="case-four">Case 4</button>
+      </div>
+
+      <article id="case-one" class="case-panel active branching-case" data-case-panel data-case-id="case-one">
+        <div class="case-layout">
+          <div>
+            <p class="eyebrow">Platelet emergency or artifact?</p>
+            <h3>Platelets are 24 x10^9/L. The smear shows large platelet clumps at the feather edge.</h3>
+            <img class="case-image" src="assets/Image1_Case6.png" alt="Peripheral smear image for Case 1 showing platelet clumping">
+          </div>
+          <div>
+            <p class="prompt">Best interpretation and next step?</p>
+            <div class="choice-grid">
+              <button type="button" data-quality="poor" data-feedback="This overcalls true thrombocytopenia. A platelet count from a clumped EDTA specimen is unreliable.">Report severe thrombocytopenia and call critical value</button>
+              <button type="button" data-quality="best" data-feedback="Correct. This is EDTA-dependent pseudothrombocytopenia until proven otherwise. Repeat collection in sodium citrate or ACD and correlate the smear.">Suspect EDTA-dependent pseudothrombocytopenia; repeat in citrate</button>
+              <button type="button" data-quality="partial" data-feedback="A repeat smear may help, but the key action is recollection in an alternate anticoagulant because clumping invalidates the platelet count.">Make a second smear from the same tube only</button>
+            </div>
+            <p class="case-feedback" aria-live="polite"></p>
+          </div>
+        </div>
+      </article>
+
+      <article id="case-two" class="case-panel branching-case" data-case-panel data-case-id="case-two" hidden>
+        <div class="case-layout">
+          <div>
+            <p class="eyebrow">Impossible indices</p>
+            <h3>MCV is 126 fL and MCHC is 39.2 g/dL. The smear shows RBC agglutination.</h3>
+            <img class="case-image" src="assets/Image2_Case6.png" alt="Peripheral smear image for Case 2 showing RBC agglutination">
+          </div>
+          <div>
+            <p class="prompt">Best next action?</p>
+            <div class="choice-grid">
+              <button type="button" data-quality="best" data-feedback="Correct. Cold agglutinins can create falsely high MCV and MCHC. Warm to 37°C, rerun, and compare the corrected indices.">Warm the specimen to 37°C and repeat CBC</button>
+              <button type="button" data-quality="poor" data-feedback="Hereditary spherocytosis can increase MCHC, but an MCHC above 37 g/dL with RBC agglutination should first trigger artifact evaluation.">Diagnose hereditary spherocytosis</button>
+              <button type="button" data-quality="partial" data-feedback="A manual smear comment may be useful, but it does not correct the analyzer artifact. Repeat after warming is the key laboratory step.">Release with smear comment only</button>
+            </div>
+            <p class="case-feedback" aria-live="polite"></p>
+          </div>
+        </div>
+      </article>
+
+      <article id="case-three" class="case-panel branching-case" data-case-panel data-case-id="case-three" hidden>
+        <div class="case-layout">
+          <div>
+            <p class="eyebrow">Blast flag</p>
+            <h3>The analyzer flags blasts. The resident sees many large cells, but they are all located at the feather edge.</h3>
+            <img class="case-image" src="assets/Image3_Case6.png" alt="Peripheral smear image for Case 3 showing feather edge findings">
+          </div>
+          <div>
+            <p class="prompt">What should the resident do?</p>
+            <div class="choice-grid">
+              <button type="button" data-quality="poor" data-feedback="Do not call blasts based only on the feather edge. Large cells and artifacts may be overrepresented there.">Report circulating blasts immediately</button>
+              <button type="button" data-quality="best" data-feedback="Correct. Reperform the differential in the zone of morphology and correlate with the analyzer flag before reporting.">Repeat the differential in the zone of morphology</button>
+              <button type="button" data-quality="partial" data-feedback="A pathologist review may be appropriate if concern persists, but the immediate technical correction is to examine the correct smear area.">Send out for flow cytometry before reviewing the proper area</button>
+            </div>
+            <p class="case-feedback" aria-live="polite"></p>
+          </div>
+        </div>
+      </article>
+
+      <article id="case-four" class="case-panel branching-case" data-case-panel data-case-id="case-four" hidden>
+        <div class="case-layout">
+          <div>
+            <p class="eyebrow">RBC artifact?</p>
+            <h3>The laboratory released results on an auto differential as normal. The provider requests the lab to make a manual smear for his review. After review, he requests the tech's opinion. The tech responds that the slide is normal. The provider then asks the pathology resident about concern for missed RBC morphology. He claims there is a significant amount of stomatocytes that would change the differential for patient management. The provider shows you the image from his phone that he captured from his review.</h3>
+            <img class="case-image" src="assets/Image4_Case6.png" alt="Peripheral smear image from provider phone review for Case 4">
+          </div>
+          <div>
+            <p class="prompt">What should the resident do?</p>
+            <div class="choice-grid">
+              <button type="button" data-quality="poor" data-feedback="Do not correct the result from a phone image taken from a nonrepresentative smear area. Review the slide systematically first.">Apologize, and correct the result to reflect identification of stamatocytes</button>
+              <button type="button" data-quality="best" data-feedback="Correct. The zone of morphology showed normal RBC morphology. You noticed that the RBC morphology appears to be stomatocyte-like in the thick/dense region of the smear, you explain this to the provider.">Repeat review of the slide scanning the appropriate zone of morphology</button>
+              <button type="button" data-quality="partial" data-feedback="Additional hematopathology review can be considered if concern persists, but the immediate resident action is to rescan the appropriate zone of morphology.">Send the slide out to hematopathology for their review</button>
+            </div>
+            <p class="case-feedback" aria-live="polite"></p>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <section id="quiz" class="page-section" data-section>
+      <div class="section-heading">
+        <p class="eyebrow">Knowledge Check Quiz</p>
+        <h2>Test the decisions that prevent artifact from becoming a diagnosis</h2>
+      </div>
+
+      <div class="quiz-header">
+        <div class="quiz-score">
+          <span>Quiz Score</span>
+          <strong id="quiz-score">0 / 0</strong>
+        </div>
+        <button id="reset-scores" class="button secondary" type="button">Reset Questions</button>
+      </div>
+
+      <div class="question-stack">
+        <article class="question-block quiz-question" data-question-id="q1" data-points="1">
+          <h3>1. A lavender-top tube contains a visible clot. What is the best reporting decision?</h3>
+          <div class="answer-list">
+            <button type="button" data-correct="false" data-explanation="A clot can trap platelets and WBCs, making the CBC unreliable.">Report all CBC values with a comment</button>
+            <button type="button" data-correct="true" data-explanation="Visible clotting generally invalidates the CBC and requires recollection.">Do not report the CBC; request recollection</button>
+            <button type="button" data-correct="false" data-explanation="A manual platelet estimate is also invalid if the specimen is clotted.">Only report a manual platelet estimate</button>
+          </div>
+          <p class="feedback" aria-live="polite"></p>
+        </article>
+
+        <article class="question-block quiz-question" data-question-id="q2" data-points="1">
+          <h3>2. Which CBC pattern should prompt evaluation for cold agglutinins?</h3>
+          <div class="answer-list">
+            <button type="button" data-correct="true" data-explanation="Cold agglutinins can cause high MCV, low RBC count, and MCHC above the physiologic range.">High MCV, low RBC count, MCHC &gt;37 g/dL</button>
+            <button type="button" data-correct="false" data-explanation="This pattern is not the classic cold agglutinin analyzer artifact.">Low MCV, high RBC count, low MCHC</button>
+            <button type="button" data-correct="false" data-explanation="Lipemia more often affects hemoglobin-derived indices without RBC agglutination.">Normal RBC indices with isolated platelet clumps</button>
+          </div>
+          <p class="feedback" aria-live="polite"></p>
+        </article>
+
+        <article class="question-block quiz-question" data-question-id="q3" data-points="1">
+          <h3>3. Where should a manual differential and platelet estimate be performed?</h3>
+          <div class="answer-list">
+            <button type="button" data-correct="false" data-explanation="The feather edge is useful for checking clumps and large cells, but it is not the correct area for the differential.">Extreme feather edge</button>
+            <button type="button" data-correct="true" data-explanation="The zone of morphology has optimal RBC spacing and more representative leukocyte and platelet assessment.">Zone of morphology</button>
+            <button type="button" data-correct="false" data-explanation="The thick area has overlapping RBCs and poor leukocyte visualization.">Thick body of the smear</button>
+          </div>
+          <p class="feedback" aria-live="polite"></p>
+        </article>
+
+        <article class="question-block quiz-question" data-question-id="q4" data-points="1">
+          <h3>4. High stain pH most characteristically causes which RBC appearance?</h3>
+          <div class="answer-list">
+            <button type="button" data-correct="false" data-explanation="Orange RBCs suggest low pH staining.">Orange RBCs</button>
+            <button type="button" data-correct="true" data-explanation="High pH shifts RBC color toward gray-blue.">Gray-blue RBCs</button>
+            <button type="button" data-correct="false" data-explanation="Ghost cells are more associated with hemolysis than stain pH.">Ghost cells only</button>
+          </div>
+          <p class="feedback" aria-live="polite"></p>
+        </article>
+
+        <article class="question-block quiz-question" data-question-id="q5" data-points="1">
+          <h3>5. Which finding invalidates a manual platelet estimate?</h3>
+          <div class="answer-list">
+            <button type="button" data-correct="true" data-explanation="Platelet clumps make the estimate unreliable because platelets are not evenly distributed.">Platelet clumps on smear</button>
+            <button type="button" data-correct="false" data-explanation="The zone of morphology is the correct area for estimation.">Counting in the zone of morphology</button>
+            <button type="button" data-correct="false" data-explanation="A 10-field average is the expected approach for estimation.">Averaging 10 oil immersion fields</button>
+          </div>
+          <p class="feedback" aria-live="polite"></p>
+        </article>
+
+        <article class="question-block quiz-question" data-question-id="q6" data-points="1">
+          <h3>6. For modern spray-dried K2EDTA tubes, severe underfilling is best associated with which index pattern?</h3>
+          <div class="answer-list">
+            <button type="button" data-correct="true" data-explanation="Current evidence in severe underfilling of spray-dried K2EDTA tubes supports falsely increased MCV and decreased MCHC.">Falsely increased MCV and falsely decreased MCHC</button>
+            <button type="button" data-correct="false" data-explanation="This reflects older teaching, but modern spray-dried K2EDTA evidence supports the opposite index direction in severe underfilling.">Falsely decreased MCV and increased MCHC</button>
+            <button type="button" data-correct="false" data-explanation="Underfilling can bias indices, but it does not produce true thrombocytosis with rouleaux.">True thrombocytosis and rouleaux</button>
+          </div>
+          <p class="feedback" aria-live="polite"></p>
+        </article>
+      </div>
+    </section>
+
+    <section id="summary" class="page-section" data-section>
+      <div class="section-heading">
+        <p class="eyebrow">Summary</p>
+        <h2>A systematic approach protects patients from preanalytical misdiagnosis</h2>
+      </div>
+      <div class="algorithm">
+        <article><span>1</span><p>Unexpected CBC result</p></article>
+        <article><span>2</span><p>Review analyzer flags</p></article>
+        <article><span>3</span><p>Inspect specimen and check for clots</p></article>
+        <article><span>4</span><p>Review smear quality and feather edge</p></article>
+        <article><span>5</span><p>Evaluate the zone of morphology</p></article>
+        <article><span>6</span><p>Correlate morphology with CBC</p></article>
+        <article><span>7</span><p>Report, repeat, recollect, or escalate</p></article>
+      </div>
+      <div class="pearl-grid">
+        <article>Never interpret morphology before assessing smear quality.</article>
+        <article>Platelet clumps are most often found at the feather edge.</article>
+        <article>MCHC &gt;37 g/dL should trigger evaluation for cold agglutinins, lipemia, or analyzer artifact.</article>
+        <article>Old specimens commonly produce echinocytes, leukocyte degeneration, and platelet swelling.</article>
+        <article>The differential belongs in the zone of morphology, not the cobblestone area or extreme feather edge.</article>
+        <article>Unexpected CBC results should be reconciled with the smear before reporting.</article>
+      </div>
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
