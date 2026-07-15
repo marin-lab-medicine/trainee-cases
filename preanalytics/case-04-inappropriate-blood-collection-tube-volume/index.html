@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Case 4: Inappropriate Filling</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+
+  <aside class="sidebar" aria-label="Course navigation">
+    <div class="brand">
+      <p class="eyebrow">Preanalytics Module</p>
+      <h1>Case 4</h1>
+      <p>Inappropriate Filling</p>
+    </div>
+
+    <div class="progress-panel" aria-live="polite">
+      <div>
+        <span>Module Progress</span>
+        <strong id="progress-label">0%</strong>
+      </div>
+      <div class="progress-track" aria-hidden="true">
+        <div id="progress-bar"></div>
+      </div>
+    </div>
+
+    <nav>
+      <a class="nav-link active" href="#home">Home</a>
+      <a class="nav-link" href="#objectives">Learning Objectives</a>
+      <a class="nav-link" href="#background">Background</a>
+      <a class="nav-link" href="#content">Core Content</a>
+      <a class="nav-link" href="#mechanisms">Mechanisms</a>
+      <a class="nav-link" href="#cases">Clinical Cases</a>
+      <a class="nav-link" href="#quiz">Knowledge Check</a>
+      <a class="nav-link" href="#summary">Summary</a>
+    </nav>
+
+    <div class="score-panel" aria-live="polite">
+      <span>Question Score</span>
+      <strong id="total-score">0 / 0</strong>
+    </div>
+  </aside>
+
+  <main>
+    <section id="home" class="page-section hero" data-section>
+      <div class="hero-copy">
+        <p class="eyebrow">Pathology Resident Education</p>
+        <h2>Preanalytical Errors: Inappropriate Tube Filling</h2>
+        <p class="lede">
+          Inappropriate filling is a collection error with potential analytic consequences. A tube may contain the
+          correct patient specimen and the correct additive, yet still produce canceled, limited, or misleading results
+          because the blood-to-additive ratio or specimen volume is wrong.
+        </p>
+        <div class="fact-strip">
+          <strong>Teaching anchor:</strong>
+          <span>For citrate coagulation tubes, fill volume is part of the test system, not just a collection preference.</span>
+        </div>
+        <div class="hero-actions">
+          <a class="button primary" href="#content">Start Module</a>
+          <a class="button secondary" href="#cases">Try Cases</a>
+        </div>
+      </div>
+
+      <div class="fill-visual" aria-label="Illustration of properly and improperly filled blood collection tubes">
+        <article>
+          <div class="tube-display">
+            <span class="cap blue"></span>
+            <span class="tube-body">
+              <span class="fill proper"></span>
+              <span class="fill-line"></span>
+            </span>
+          </div>
+          <h3>Proper fill</h3>
+          <p>Designed blood-to-additive ratio and adequate plasma yield.</p>
+        </article>
+        <article>
+          <div class="tube-display">
+            <span class="cap blue"></span>
+            <span class="tube-body">
+              <span class="fill short"></span>
+              <span class="fill-line"></span>
+            </span>
+          </div>
+          <h3>Underfill</h3>
+          <p>Excess additive relative to blood and lower available specimen volume.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="objectives" class="page-section" data-section>
+      <div class="section-heading">
+        <p class="eyebrow">Learning Objectives</p>
+        <h2>By the end of this module, residents should be able to:</h2>
+      </div>
+      <div class="objective-grid">
+        <article>
+          <span>01</span>
+          <h3>Identify the error</h3>
+          <p>Recognize underfilled, low-volume, and hematocrit-related specimen adequacy problems.</p>
+        </article>
+        <article>
+          <span>02</span>
+          <h3>Explain the mechanism</h3>
+          <p>Describe how additive ratios, especially citrate-to-plasma balance, alter coagulation testing.</p>
+        </article>
+        <article>
+          <span>03</span>
+          <h3>Predict consequences</h3>
+          <p>Anticipate canceled results, falsely prolonged clotting times, and insufficient plasma or serum volume.</p>
+        </article>
+        <article>
+          <span>04</span>
+          <h3>Recommend action</h3>
+          <p>Choose redraw, recollection guidance, citrate adjustment, or limited-test prioritization when appropriate.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="background" class="page-section" data-section>
+      <div class="section-heading">
+        <p class="eyebrow">Background</p>
+        <h2>Preanalytical variables shape the result before analysis begins</h2>
+      </div>
+      <div class="two-column">
+        <div>
+          <p>
+            Laboratory testing can be divided into preanalytical, analytical, and post-analytical phases. The
+            preanalytical phase includes test ordering, patient preparation, specimen collection, labeling, transport,
+            and processing. Many laboratory-related errors arise in this phase, before the analyzer ever receives a
+            specimen.
+          </p>
+          <p>
+            Inappropriate filling belongs in the same family of collection problems as hemolysis, contamination, and
+            labeling errors. Its danger is subtle: the tube may look plausible, but the specimen may no longer meet the
+            assumptions built into the assay.
+          </p>
+        </div>
+        <div class="phase-map" aria-label="Testing phases">
+          <article class="active-phase">
+            <span>01</span>
+            <h3>Preanalytical</h3>
+            <p>Order, prepare, collect, fill, label, transport, process.</p>
+          </article>
+          <article>
+            <span>02</span>
+            <h3>Analytical</h3>
+            <p>Instrument, reagent, method, calibration, quality control.</p>
+          </article>
+          <article>
+            <span>03</span>
+            <h3>Post-analytical</h3>
+            <p>Review, report, communicate, interpret, act.</p>
+          </article>
+        </div>
+      </div>
+
+      <div class="mini-check question-block" data-question-id="background-phase" data-points="1">
+        <h3>Quick Check</h3>
+        <p>An underfilled blue-top tube is rejected before analysis. Which testing phase is most directly implicated?</p>
+        <div class="answer-list">
+          <button type="button" data-correct="true" data-explanation="Fill volume is determined during collection, so this is a preanalytical issue.">Preanalytical</button>
+          <button type="button" data-correct="false" data-explanation="The analyzer may never run the specimen if the tube fails collection acceptability criteria.">Analytical</button>
+          <button type="button" data-correct="false" data-explanation="Post-analytical work begins after valid results are generated and reviewed.">Post-analytical</button>
+        </div>
+        <p class="feedback" aria-live="polite"></p>
+      </div>
+    </section>
+
+    <section id="content" class="page-section" data-section>
+      <div class="section-heading">
+        <p class="eyebrow">Core Educational Content</p>
+        <h2>Tube type, additive, and fill volume are linked</h2>
+      </div>
+      <div class="tube-grid">
+        <article>
+          <div class="tube-mini citrate"></div>
+          <h3>Blue top</h3>
+          <p>Sodium citrate plasma for coagulation testing. The intended blood-to-citrate ratio requires proper fill.</p>
+        </article>
+        <article>
+          <div class="tube-mini serum"></div>
+          <h3>Red or gold top</h3>
+          <p>Serum for drugs, serology, serum protein electrophoresis, and many chemistry tests.</p>
+        </article>
+        <article>
+          <div class="tube-mini heparin"></div>
+          <h3>Green top</h3>
+          <p>Heparinized plasma for chemistry and selected specialized testing.</p>
+        </article>
+        <article>
+          <div class="tube-mini edta"></div>
+          <h3>Purple top</h3>
+          <p>EDTA anticoagulated blood for hematology and selected molecular or immunologic assays.</p>
+        </article>
+      </div>
+
+      <div class="two-column align-start">
+        <div>
+          <h3>Plasma and serum are not interchangeable</h3>
+          <p>
+            Plasma is the liquid component of anticoagulated blood and contains clotting factors. Serum is produced
+            after blood clots and clotting factors are consumed or removed with the clot. Test methods are validated for
+            specific specimen types, so collection tube choice matters.
+          </p>
+        </div>
+        <div class="callout">
+          <h3>Key concept</h3>
+          <p><strong>Plasma = serum + clotting factors.</strong> <strong>Serum = plasma - clotting factors.</strong></p>
+        </div>
+      </div>
+
+      <div class="fill-comparison" aria-label="Comparison of fill problems">
+        <article>
+          <h3>Correct tube, wrong volume</h3>
+          <p>Underfilling can alter the blood to additive ratio and reduce the number of available tests that can be performed.</p>
+        </article>
+        <article>
+          <h3>Correct fill, unusual hematocrit</h3>
+          <p>Very high hematocrit reduces plasma volume, reducing the number of tests that may be performed.</p>
+        </article>
+        <article>
+          <h3>Correct specimen, too little material</h3>
+          <p>Even when chemistry is valid, low plasma or serum yield may limit the number of tests that can be performed.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="mechanisms" class="page-section" data-section>
+      <div class="section-heading">
+        <p class="eyebrow">Mechanisms</p>
+        <h2>Why inappropriate filling changes laboratory interpretation</h2>
+      </div>
+      <div class="mechanism-list">
+        <article>
+          <h3>Excess citrate relative to blood</h3>
+          <p>
+            Sodium citrate anticoagulates by binding calcium. If a citrate tube is underfilled, the fixed citrate volume
+            is too high for the amount of blood collected. During testing, this may leave insufficient free calcium after
+            recalcification and falsely prolong clotting times.
+          </p>
+        </article>
+        <article>
+          <h3>Reduced specimen volume</h3>
+          <p>
+            An underfilled tube yields less plasma or serum after processing. The specimen may support only a limited
+            number of assays, force test prioritization, or require recollection.
+          </p>
+        </article>
+        <article>
+          <h3>Hematocrit-dependent plasma fraction</h3>
+          <p>
+            A properly filled tube can still be problematic when hematocrit is markedly elevated. Less plasma is present
+            for the same citrate volume, so the citrate-to-plasma ratio is effectively increased.
+          </p>
+        </article>
+      </div>
+
+      <div class="experiment-panel">
+        <div>
+          <p class="eyebrow">Source Experiment</p>
+          <h3>Fill level can shift clotting time</h3>
+          <p>
+            In the lecture, the PowerPoint illustrates a properly filled tube with a clotting time of 32 seconds
+            compared with an improperly filled tube with a clotting time of 38 seconds. The teaching point is not the
+            exact number, but the direction of bias: underfilling may prolong coagulation results.
+          </p>
+        </div>
+        <div class="result-cards">
+          <article>
+            <span>Proper fill</span>
+            <strong>32 sec</strong>
+          </article>
+          <article class="warning">
+            <span>Underfilled</span>
+            <strong>38 sec</strong>
+          </article>
+        </div>
+      </div>
+
+      <div class="mini-check question-block" data-question-id="mechanism-citrate" data-points="1">
+        <h3>Quick Check</h3>
+        <p>What is the main coagulation-testing concern in an underfilled sodium citrate tube?</p>
+        <div class="answer-list">
+          <button type="button" data-correct="false" data-explanation="Hemolysis can interfere with testing, but it is not the central mechanism of citrate underfilling.">Mechanical hemolysis from centrifugation</button>
+          <button type="button" data-correct="true" data-explanation="The fixed citrate volume becomes excessive for the blood volume, which can prolong clotting assays.">Excess citrate relative to the collected blood volume</button>
+          <button type="button" data-correct="false" data-explanation="Clot activator carryover is a contamination/order issue, not the mechanism of blue-top underfilling.">Carryover of clot activator from a serum tube</button>
+        </div>
+        <p class="feedback" aria-live="polite"></p>
+      </div>
+    </section>
+
+    <section id="cases" class="page-section" data-section>
+      <div class="section-heading">
+        <p class="eyebrow">Interactive Clinical Cases</p>
+        <h2>Practice deciding what the laboratory should do next</h2>
+      </div>
+
+      <div class="case-tabs" role="tablist" aria-label="Clinical case selection">
+        <button type="button" class="case-tab active" data-case-target="case-one" role="tab" aria-selected="true">Case A</button>
+        <button type="button" class="case-tab" data-case-target="case-two" role="tab" aria-selected="false">Case B</button>
+        <button type="button" class="case-tab" data-case-target="case-three" role="tab" aria-selected="false">Case C</button>
+      </div>
+
+      <article id="case-one" class="clinical-case active" data-case-panel>
+        <div class="case-header">
+          <p class="eyebrow">Case A</p>
+          <h3>Unexpectedly prolonged clotting time</h3>
+        </div>
+        <p>
+          A patient has coagulation studies ordered before an invasive procedure. The blue-top tube arrives visibly
+          below the fill indicator. A prior properly filled teaching specimen produced a clotting time of 32 seconds;
+          the underfilled specimen produces a longer clotting time.
+        </p>
+        <div class="branching-case" data-case-id="case-a">
+          <h4>What should the resident recommend?</h4>
+          <div class="choice-grid">
+            <button type="button" data-quality="best" data-feedback="Best choice. Reject or cancel the affected coagulation test according to policy and request recollection with a properly filled citrate tube. The result may be falsely prolonged because the citrate ratio is wrong.">Request recollection with a properly filled blue-top tube</button>
+            <button type="button" data-quality="partial" data-feedback="Partial. A comment helps communication, but reporting a potentially biased coagulation result can mislead care. The specimen acceptability problem should be resolved first.">Report with a warning comment only</button>
+            <button type="button" data-quality="poor" data-feedback="Not appropriate. Diluting the specimen does not restore the validated blood-to-citrate ratio and creates another preanalytical variable.">Dilute the plasma to compensate</button>
+          </div>
+          <p class="case-feedback" aria-live="polite"></p>
+        </div>
+      </article>
+
+      <article id="case-two" class="clinical-case" data-case-panel hidden>
+        <div class="case-header">
+          <p class="eyebrow">Case B</p>
+          <h3>Limited plasma available for multiple tests</h3>
+        </div>
+        <p>
+          A small-volume specimen yields approximately 0.750 mL of plasma after processing. The ordered panel requires
+          more material than is available. The patient is difficult to draw, and the clinical team asks whether all tests
+          can still be performed.
+        </p>
+        <div class="branching-case" data-case-id="case-b">
+          <h4>What is the safest response?</h4>
+          <div class="choice-grid">
+            <button type="button" data-quality="partial" data-feedback="Partial. Running only what fits may be necessary after prioritization, but the laboratory should communicate specimen limitation and identify whether recollection is required.">Run tests in accession order until plasma is gone</button>
+            <button type="button" data-quality="best" data-feedback="Best choice. Determine assay minimum volumes, prioritize clinically urgent tests with the care team, and request recollection when the remaining orders cannot be supported.">Prioritize tests and communicate the volume limitation</button>
+            <button type="button" data-quality="poor" data-feedback="Not appropriate. Adding fluid changes analyte concentrations and invalidates quantitative results.">Add saline to increase the volume</button>
+          </div>
+          <p class="case-feedback" aria-live="polite"></p>
+        </div>
+      </article>
+
+      <article id="case-three" class="clinical-case" data-case-panel hidden>
+        <div class="case-header">
+          <p class="eyebrow">Case C</p>
+          <h3>Proper fill but elevated hematocrit</h3>
+        </div>
+        <p>
+          A patient with marked erythrocytosis has a blue-top tube filled to the indicated mark. The specimen looks
+          acceptable by fill line, but the hematocrit is above the range where routine citrate volume may be appropriate.
+        </p>
+        <div class="branching-case" data-case-id="case-c">
+          <h4>What issue should be considered?</h4>
+          <div class="choice-grid">
+            <button type="button" data-quality="poor" data-feedback="Not quite. The tube can be filled to the line and still have too little plasma for the fixed citrate volume when hematocrit is very high.">No issue; the tube reached the fill line</button>
+            <button type="button" data-quality="best" data-feedback="Best choice. Very high hematocrit reduces plasma volume, increasing the citrate-to-plasma ratio. Coagulation specimens may need adjusted citrate volume according to laboratory policy.">Citrate adjustment may be required because plasma volume is reduced</button>
+            <button type="button" data-quality="partial" data-feedback="Partial. Additional tubes may be required for volume-limited testing, but the key coagulation concern is the effective citrate-to-plasma ratio.">Collect extra serum tubes only</button>
+          </div>
+          <p class="case-feedback" aria-live="polite"></p>
+        </div>
+      </article>
+    </section>
+
+    <section id="quiz" class="page-section" data-section>
+      <div class="section-heading">
+        <p class="eyebrow">Knowledge Check Quiz</p>
+        <h2>Apply the concepts to specimen acceptability</h2>
+      </div>
+
+      <div class="quiz-panel">
+        <div class="quiz-score">
+          <span>Quiz Score</span>
+          <strong id="quiz-score">0 / 0</strong>
+        </div>
+
+        <div class="question-block quiz-question" data-question-id="quiz-1" data-points="1">
+          <h3>Question 1</h3>
+          <p>Which tube type is most classically sensitive to underfilling because of the required blood-to-additive ratio for coagulation testing?</p>
+          <div class="answer-list">
+            <button type="button" data-correct="true" data-explanation="Blue-top sodium citrate tubes require an appropriate blood-to-citrate ratio for coagulation testing.">Blue-top sodium citrate tube</button>
+            <button type="button" data-correct="false" data-explanation="Serum tubes have different acceptability concerns, but citrate ratio is the classic underfill mechanism.">Red-top serum tube</button>
+            <button type="button" data-correct="false" data-explanation="EDTA tubes have important additive effects, but the canonical coagulation underfill problem is citrate.">Purple-top EDTA tube</button>
+          </div>
+          <p class="feedback" aria-live="polite"></p>
+        </div>
+
+        <div class="question-block quiz-question" data-question-id="quiz-2" data-points="1">
+          <h3>Question 2</h3>
+          <p>An underfilled citrate tube may artifactually produce which pattern?</p>
+          <div class="answer-list">
+            <button type="button" data-correct="false" data-explanation="Underfilled citrate tubes are more likely to prolong clotting assays rather than falsely shorten them.">Falsely shortened clotting time</button>
+            <button type="button" data-correct="true" data-explanation="Excess citrate relative to plasma can bind calcium and prolong coagulation assay clotting times.">Falsely prolonged clotting time</button>
+            <button type="button" data-correct="false" data-explanation="Potassium elevation suggests EDTA contamination or clinical hyperkalemia, not underfilled citrate by itself.">Markedly elevated potassium</button>
+          </div>
+          <p class="feedback" aria-live="polite"></p>
+        </div>
+
+        <div class="question-block quiz-question" data-question-id="quiz-3" data-points="1">
+          <h3>Question 3</h3>
+          <p>A tube is filled correctly, but the patient has a very high hematocrit. Why can coagulation testing still be affected?</p>
+          <div class="answer-list">
+            <button type="button" data-correct="false" data-explanation="High hematocrit usually reduces, rather than increases, the plasma fraction in the tube.">There is too much plasma for the citrate volume</button>
+            <button type="button" data-correct="true" data-explanation="High hematocrit leaves less plasma for the fixed citrate amount, increasing the citrate-to-plasma ratio.">There is less plasma for the fixed citrate volume</button>
+            <button type="button" data-correct="false" data-explanation="Specimen color does not determine coagulation acceptability by itself.">The red cells directly change the tube stopper color</button>
+          </div>
+          <p class="feedback" aria-live="polite"></p>
+        </div>
+
+        <div class="question-block quiz-question" data-question-id="quiz-4" data-points="1">
+          <h3>Question 4</h3>
+          <p>A low-volume specimen can support only part of a requested panel. What should the laboratory do?</p>
+          <div class="answer-list">
+            <button type="button" data-correct="false" data-explanation="Adding fluid changes analyte concentrations and is not an acceptable fix for inadequate volume.">Add diluent and run the full panel</button>
+            <button type="button" data-correct="true" data-explanation="The laboratory should apply minimum-volume requirements, communicate limitations, prioritize when needed, and request recollection for unsupported tests.">Communicate, prioritize, and recollect if needed</button>
+            <button type="button" data-correct="false" data-explanation="Reporting all results without addressing volume limitations risks invalid or incomplete testing.">Report all tests as usual</button>
+          </div>
+          <p class="feedback" aria-live="polite"></p>
+        </div>
+
+        <button class="button secondary" id="reset-scores" type="button">Reset Questions</button>
+      </div>
+    </section>
+
+    <section id="summary" class="page-section" data-section>
+      <div class="section-heading">
+        <p class="eyebrow">Summary</p>
+        <h2>Key takeaways for resident practice</h2>
+      </div>
+      <div class="summary-grid">
+        <article>
+          <h3>Fill volume is analytic context</h3>
+          <p>A specimen is not acceptable simply because the correct tube was used. Fill volume can determine whether the assay assumptions remain valid.</p>
+        </article>
+        <article>
+          <h3>Citrate tubes are high-yield</h3>
+          <p>Underfilled blue-top tubes can produce excess citrate relative to blood and may falsely prolong clotting assays.</p>
+        </article>
+        <article>
+          <h3>Volume limits matter</h3>
+          <p>Low plasma or serum yield can force cancellations, test prioritization, or recollection even when the chemistry of the specimen is otherwise acceptable.</p>
+        </article>
+        <article>
+          <h3>Hematocrit can change the ratio</h3>
+          <p>Markedly elevated hematocrit can create a citrate-to-plasma mismatch despite a tube reaching the fill mark.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
