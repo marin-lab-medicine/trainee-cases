@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Case 5: Lab Mitigation Strategies for Preanalytics</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+
+  <aside class="sidebar" aria-label="Course navigation">
+    <div class="brand">
+      <p class="eyebrow">Preanalytics Module</p>
+      <h1>Case 5</h1>
+      <p>Lab Mitigation Strategies</p>
+    </div>
+
+    <div class="progress-panel" aria-live="polite">
+      <div class="progress-row">
+        <span>Module Progress</span>
+        <strong id="progress-label">0%</strong>
+      </div>
+      <div class="progress-track" aria-hidden="true">
+        <div id="progress-bar"></div>
+      </div>
+    </div>
+
+    <nav>
+      <a class="nav-link active" href="#home">Home</a>
+      <a class="nav-link" href="#objectives">Learning Objectives</a>
+      <a class="nav-link" href="#background">Background</a>
+      <a class="nav-link" href="#content">Core Content</a>
+      <a class="nav-link" href="#mechanisms">Mechanisms</a>
+      <a class="nav-link" href="#cases">Clinical Cases</a>
+      <a class="nav-link" href="#quiz">Knowledge Check</a>
+      <a class="nav-link" href="#summary">Summary</a>
+    </nav>
+
+    <div class="score-panel" aria-live="polite">
+      <span>Question Score</span>
+      <strong id="total-score">0 / 0</strong>
+    </div>
+  </aside>
+
+  <main>
+    <section id="home" class="page-section hero" data-section>
+      <div class="hero-copy">
+        <p class="eyebrow">Pathology Resident Education</p>
+        <h2>Lab Mitigation Strategies for Preanalytical Risk</h2>
+        <p class="lede">
+          Preanalytical errors are often created before the specimen reaches the analyzer, but the laboratory can still
+          detect, contain, document, and prevent many of their effects. This case turns specimen-quality problems into
+          practical resident decisions.
+        </p>
+        <div class="fact-strip">
+          <strong>Teaching anchor:</strong>
+          <span>Analyzer flags, specimen acceptability checks, documentation, and quality audits are patient-safety tools, not clerical extras.</span>
+        </div>
+        <div class="hero-actions">
+          <a class="button primary" href="#content">Start Module</a>
+          <a class="button secondary" href="#cases">Try Cases</a>
+        </div>
+      </div>
+
+      <div class="dashboard-visual" aria-label="Illustration of laboratory mitigation workflow">
+        <div class="instrument-panel">
+          <div class="screen">
+            <div class="screen-header">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <div class="alert-line danger">
+              <strong>H-index</strong>
+              <span>Specimen integrity alert</span>
+            </div>
+            <div class="alert-line warning">
+              <strong>VOL</strong>
+              <span>Insufficient volume flag</span>
+            </div>
+            <div class="alert-line success">
+              <strong>QC</strong>
+              <span>Control acceptable</span>
+            </div>
+          </div>
+          <div class="sample-rack" aria-hidden="true">
+            <span class="tube blue"></span>
+            <span class="tube gold"></span>
+            <span class="tube purple"></span>
+            <span class="tube green"></span>
+          </div>
+        </div>
+        <div class="workflow-strip">
+          <article>
+            <span>1</span>
+            <p>Detect</p>
+          </article>
+          <article>
+            <span>2</span>
+            <p>Verify</p>
+          </article>
+          <article>
+            <span>3</span>
+            <p>Act</p>
+          </article>
+          <article>
+            <span>4</span>
+            <p>Prevent</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="objectives" class="page-section" data-section>
+      <div class="section-heading">
+        <p class="eyebrow">Learning Objectives</p>
+        <h2>By the end of this module, residents should be able to:</h2>
+      </div>
+      <div class="objective-grid">
+        <article>
+          <span>01</span>
+          <h3>Classify vulnerability</h3>
+          <p>Place specimen problems within the preanalytical, analytical, and post-analytical phases of testing.</p>
+        </article>
+        <article>
+          <span>02</span>
+          <h3>Recognize signal patterns</h3>
+          <p>Interpret hemolysis, contamination, fill-volume, labeling, and analyzer alert patterns as quality signals.</p>
+        </article>
+        <article>
+          <span>03</span>
+          <h3>Choose mitigation</h3>
+          <p>Select redraw, recollection, result suppression, comment, delta review, escalation, or audit when appropriate.</p>
+        </article>
+        <article>
+          <span>04</span>
+          <h3>Close the loop</h3>
+          <p>Use documentation and quality review to prevent recurrence rather than only rejecting the current specimen.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="background" class="page-section" data-section>
+      <div class="section-heading">
+        <p class="eyebrow">Background</p>
+        <h2>Mitigation begins by knowing where the failure entered the testing process</h2>
+      </div>
+      <div class="two-column">
+        <div>
+          <p>
+            The laboratory testing as three connected phases: preanalytical, analytical, and
+            post-analytical. Preanalytical work includes order entry, patient preparation, specimen collection, labeling,
+            transport, and processing. Analytical work includes instrument function, reagent integrity, pipetting, assay
+            performance, quality control, and result generation. Post-analytical work includes result review, reporting,
+            documentation, and communication.
+          </p>
+          <p>
+            Residents should avoid treating these phases as silos. A preanalytical error may first appear as an
+            analytical flag, and the safest response often requires post-analytical communication and quality review.
+          </p>
+        </div>
+        <div class="phase-map" aria-label="Testing phases">
+          <article class="active-phase">
+            <span>01</span>
+            <h3>Preanalytical</h3>
+            <p>Ordering, preparation, collection, labeling, transport, processing.</p>
+          </article>
+          <article>
+            <span>02</span>
+            <h3>Analytical</h3>
+            <p>Instrument alarms, reagent checks, pipetting flags, quality control.</p>
+          </article>
+          <article>
+            <span>03</span>
+            <h3>Post-analytical</h3>
+            <p>Review, comments, cancellation, notification, audit, improvement.</p>
+          </article>
+        </div>
+      </div>
+
+      <div class="mini-check question-block" data-question-id="phase-check" data-points="1">
+        <h3>Quick Check</h3>
+        <p>A chemistry analyzer suppresses potassium because the hemolysis index exceeds the laboratory threshold. Which answer best describes the event?</p>
+        <div class="answer-list">
+          <button type="button" data-correct="false" data-explanation="The alarm is generated analytically, but the specimen quality problem usually entered before analysis.">Purely analytical; the collection process is irrelevant</button>
+          <button type="button" data-correct="true" data-explanation="The analyzer detects the problem, but the root cause is commonly preanalytical and requires post-analytical action.">Cross-phase; analytical detection of a likely preanalytical problem</button>
+          <button type="button" data-correct="false" data-explanation="Post-analytical review matters, but the first quality signal here is not a reporting-format problem.">Purely post-analytical; only the report language matters</button>
+        </div>
+        <p class="feedback" aria-live="polite"></p>
+      </div>
+    </section>
+
+    <section id="content" class="page-section" data-section>
+      <div class="section-heading">
+        <p class="eyebrow">Core Educational Content</p>
+        <h2>Laboratory mitigation converts specimen defects into controlled decisions</h2>
+      </div>
+
+      <div class="mitigation-grid">
+        <article>
+          <span class="card-icon">A</span>
+          <h3>Analyzer and instrument safeguards</h3>
+          <p>Real-time alarms may identify reagent depletion, mechanical failure, sample aspiration problems, clot detection, short sample, or results outside reportable limits.</p>
+        </article>
+        <article>
+          <span class="card-icon">B</span>
+          <h3>Specimen-quality alerts</h3>
+          <p>Hemolysis, icterus, lipemia, insufficient sample volume, clot flags, and tube acceptability checks can stop unreliable results before release.</p>
+        </article>
+        <article>
+          <span class="card-icon">C</span>
+          <h3>Human review and intervention</h3>
+          <p>Staff review flags, compare prior results, inspect specimens, call units, request recollection, and document the reason a result is suppressed or qualified.</p>
+        </article>
+        <article>
+          <span class="card-icon">D</span>
+          <h3>Quality audits and root cause analysis</h3>
+          <p>Alarm logs and rejection patterns can reveal recurring collection issues, training gaps, unit-specific problems, or process failures.</p>
+        </article>
+      </div>
+
+      <div class="performance-panel">
+        <div>
+          <p class="eyebrow">New Source Material</p>
+          <h3>Performance monitoring extends mitigation into the analytical phase</h3>
+          <p>
+            The laboratory systems that keep instruments and assays trustworthy:
+            equipment maintenance, calibration, quality control, proficiency testing, standard operating procedures,
+            staff competency, and instrument-to-instrument comparisons.
+          </p>
+        </div>
+        <div class="qc-chart" aria-label="Illustration of quality control shift after new calibrators">
+          <div class="chart-axis y"></div>
+          <div class="chart-axis x"></div>
+          <span class="qc-line qc-old"></span>
+          <span class="qc-line qc-new"></span>
+          <span class="qc-dot qc1">QC1</span>
+          <span class="qc-dot qc2">QC2</span>
+          <p>Calibrator or maintenance changes should be visible in QC review before patient results are affected.</p>
+        </div>
+      </div>
+
+      <div class="monitoring-grid">
+        <article>
+          <h3>Equipment maintenance and calibration</h3>
+          <p>Routine daily maintenance keeps the analyzer ready for use. Major maintenance, often every 6 months or yearly, requires verification before routine release of patient results.</p>
+        </article>
+        <article>
+          <h3>Quality control testing</h3>
+          <p>QC is generally run 2 to 3 times per day for each assay and after defined events such as calibration, reagent changes, troubleshooting, or maintenance.</p>
+        </article>
+        <article>
+          <h3>Proficiency testing</h3>
+          <p>Regulatory or accrediting groups distribute unknown material, commonly three times per year, so laboratories can compare performance with peer laboratories.</p>
+        </article>
+        <article>
+          <h3>SOPs, training, and comparison studies</h3>
+          <p>Standard operating procedures, training, competency assessment, and instrument-to-instrument comparisons convert individual checks into a durable quality system.</p>
+        </article>
+      </div>
+
+      <div class="source-card">
+        <div>
+          <p class="eyebrow">Source Deck Focus</p>
+          <h3>Instrument alarms and flags are part of prevention in real time</h3>
+          <p>
+            The PowerPoint emphasizes alarms, error messages, preanalytical and analytical alerts, prompt staff
+            troubleshooting, documentation, quality audits, regulatory support, and continuous improvement.
+          </p>
+        </div>
+        <img class="content-image" src="assets/images/IMAGE1_Case5.png" alt="Analyzer flags and specimen acceptability dashboard">
+      </div>
+
+      <div class="table-wrap" aria-label="Common preanalytical issues and mitigation strategies">
+        <table>
+          <thead>
+            <tr>
+              <th>Issue</th>
+              <th>Common laboratory signal</th>
+              <th>Immediate mitigation</th>
+              <th>Prevention opportunity</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>In vitro hemolysis</td>
+              <td>Hemolysis index, visual inspection, implausible potassium or LDH pattern</td>
+              <td>Suppress affected analytes, request redraw, add interpretive comment when allowed</td>
+              <td>Review collection technique, transport, needle size, mixing, pneumatic tube handling</td>
+            </tr>
+            <tr>
+              <td>Contamination</td>
+              <td>EDTA pattern, heparin effect, line dilution, unexpected delta mismatch</td>
+              <td>Hold results, investigate collection source, recollect from clean venipuncture</td>
+              <td>Educate on order of draw, discard volumes, and line draw procedures</td>
+            </tr>
+            <tr>
+              <td>Inappropriate filling</td>
+              <td>Short sample, insufficient volume, citrate fill error, clot or aspiration flag</td>
+              <td>Reject or recollect if validated acceptability criteria are not met</td>
+              <td>Monitor rejection rates by location and reinforce tube filling requirements</td>
+            </tr>
+            <tr>
+              <td>Labeling issue</td>
+              <td>Missing identifiers, mismatch, duplicate accession, unlabeled specimen</td>
+              <td>Do not release patient results from uncertain identity specimens</td>
+              <td>Audit ID workflow, bedside labeling, electronic collection, and handoff steps</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="specimen-image-wrap">
+        <img class="wide-content-image" src="assets/images/IMAGE2_Case5.png" alt="Hemolyzed specimen, contamination pattern, underfilled tube, and labeling defect examples">
+      </div>
+    </section>
+
+    <section id="mechanisms" class="page-section" data-section>
+      <div class="section-heading">
+        <p class="eyebrow">Mechanisms</p>
+        <h2>Each alert should trigger a mechanism-based question</h2>
+      </div>
+
+      <div class="mechanism-list">
+        <article>
+          <h3>Hemolysis releases intracellular contents</h3>
+          <p>
+            In vitro hemolysis can increase or interfere with analytes such as potassium, LDH, AST, and some assays
+            affected by spectrophotometric interference. The mitigation question is whether the result is analytically
+            valid for that degree of hemolysis.
+          </p>
+        </article>
+        <article>
+          <h3>Contamination creates patterned abnormalities</h3>
+          <p>
+            EDTA carryover may produce high potassium with low calcium or magnesium. Heparin contamination can affect
+            coagulation testing. IV fluid contamination can dilute multiple analytes in a clinically discordant pattern.
+          </p>
+        </article>
+        <article>
+          <h3>Short volume disrupts assay assumptions</h3>
+          <p>
+            Insufficient volume can cause aspiration errors or inadequate sample-to-additive ratios. Citrated plasma is
+            especially sensitive because anticoagulant ratio is part of coagulation testing validity.
+          </p>
+        </article>
+        <article>
+          <h3>Identity uncertainty invalidates interpretation</h3>
+          <p>
+            Labeling problems are not fixed by an analytically precise result. If patient identity is uncertain, the
+            result cannot safely support patient care.
+          </p>
+        </article>
+      </div>
+
+      <div class="interactive-panel">
+        <div>
+          <p class="eyebrow">Decision Lens</p>
+          <h3>From flag to action</h3>
+          <p>Select a flag to see the resident-level action focus.</p>
+        </div>
+        <div class="flag-buttons" role="tablist" aria-label="Specimen flags">
+          <button type="button" class="flag-button active" data-flag-target="flag-hemolysis" role="tab" aria-selected="true">Hemolysis</button>
+          <button type="button" class="flag-button" data-flag-target="flag-volume" role="tab" aria-selected="false">Volume</button>
+          <button type="button" class="flag-button" data-flag-target="flag-label" role="tab" aria-selected="false">Label</button>
+        </div>
+        <div class="flag-panels">
+          <article id="flag-hemolysis" class="flag-panel active" data-flag-panel>
+            <h4>Ask: which analytes are affected at this hemolysis index?</h4>
+            <p>Apply assay-specific thresholds, suppress affected results when required, and document the specimen condition.</p>
+          </article>
+          <article id="flag-volume" class="flag-panel" data-flag-panel hidden>
+            <h4>Ask: does this sample meet validated minimum volume and additive requirements?</h4>
+            <p>Do not stretch an inadequate specimen into an unreliable result. Prioritize critical testing only under defined policy.</p>
+          </article>
+          <article id="flag-label" class="flag-panel" data-flag-panel hidden>
+            <h4>Ask: can patient identity be established under policy?</h4>
+            <p>Identity defects usually require recollection. Document the event and feed it into safety review.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="cases" class="page-section" data-section>
+      <div class="section-heading">
+        <p class="eyebrow">Interactive Clinical Cases</p>
+        <h2>Practice choosing the safest laboratory response</h2>
+      </div>
+
+      <div class="case-tabs" role="tablist" aria-label="Clinical cases">
+        <button type="button" class="case-tab active" data-case-target="case-one" role="tab" aria-selected="true">Case A</button>
+        <button type="button" class="case-tab" data-case-target="case-two" role="tab" aria-selected="false">Case B</button>
+        <button type="button" class="case-tab" data-case-target="case-three" role="tab" aria-selected="false">Case C</button>
+        <button type="button" class="case-tab" data-case-target="case-four" role="tab" aria-selected="false">Case D</button>
+      </div>
+
+      <article id="case-one" class="clinical-case active" data-case-panel>
+        <div class="case-header">
+          <span>Specimen Integrity</span>
+          <h3>Marked hemolysis on a stat potassium</h3>
+        </div>
+        <p>
+          A stat BMP from the emergency department triggers a high hemolysis index. Potassium is 6.3 mmol/L, but the
+          patient has no ECG changes and a prior potassium one hour earlier was 4.1 mmol/L.
+        </p>
+        <div class="branching-case" data-case-id="hemolysis-case">
+          <p class="prompt">What is the best laboratory mitigation?</p>
+          <div class="choice-grid">
+            <button type="button" data-quality="poor" data-feedback="Unsafe. Releasing a potentially hemolysis-inflated potassium without qualification can drive inappropriate treatment.">Release all results without comment</button>
+            <button type="button" data-quality="best" data-feedback="Best choice. Suppress or qualify affected analytes according to policy, request recollection, and communicate the concern when clinically urgent.">Apply hemolysis policy and request redraw</button>
+            <button type="button" data-quality="partial" data-feedback="Partial. Documentation matters, but documentation alone does not prevent an unreliable result from affecting care.">Document the flag only</button>
+          </div>
+          <p class="case-feedback" aria-live="polite"></p>
+        </div>
+      </article>
+
+      <article id="case-two" class="clinical-case" data-case-panel hidden>
+        <div class="case-header">
+          <span>Contamination Pattern</span>
+          <h3>High potassium with very low calcium</h3>
+        </div>
+        <p>
+          A metabolic panel shows potassium 7.1 mmol/L, calcium 5.8 mg/dL, and magnesium unexpectedly low. The CBC was
+          collected in a purple-top tube immediately before the chemistry tube.
+        </p>
+        <div class="branching-case" data-case-id="contamination-case">
+          <p class="prompt">What is the best next step?</p>
+          <div class="choice-grid">
+            <button type="button" data-quality="best" data-feedback="Best choice. The paired abnormalities suggest EDTA contamination; hold results and recollect before clinical action.">Hold results and request clean recollection</button>
+            <button type="button" data-quality="poor" data-feedback="Unsafe. Treating the potassium before investigating the pattern may expose the patient to unnecessary therapy.">Call it critical and release immediately</button>
+            <button type="button" data-quality="partial" data-feedback="Partial. A comment may be useful, but the safest action is investigation and recollection under policy.">Release with a contamination comment</button>
+          </div>
+          <p class="case-feedback" aria-live="polite"></p>
+        </div>
+      </article>
+
+      <article id="case-three" class="clinical-case" data-case-panel hidden>
+        <div class="case-header">
+          <span>Specimen Identity</span>
+          <h3>Unlabeled coagulation specimen</h3>
+        </div>
+        <p>
+          A blue-top tube arrives from an inpatient unit without two identifiers. The analyzer would have enough volume
+          to perform PT and aPTT, and the care team asks for an exception because the patient is going to the operating room.
+        </p>
+        <div class="branching-case" data-case-id="labeling-case">
+          <p class="prompt">What is the best laboratory response?</p>
+          <div class="choice-grid">
+            <button type="button" data-quality="best" data-feedback="Best choice. Identity uncertainty invalidates the specimen for patient care. Follow policy, request recollection, and document the event.">Reject for identity defect and recollect</button>
+            <button type="button" data-quality="poor" data-feedback="Unsafe. Analytical adequacy does not overcome an uncertain patient identity.">Run because the sample volume is adequate</button>
+            <button type="button" data-quality="partial" data-feedback="Partial. Escalation may be appropriate, but it should support policy-based recollection rather than bypass identity requirements.">Ask the clinician to verbally confirm identity</button>
+          </div>
+          <p class="case-feedback" aria-live="polite"></p>
+        </div>
+      </article>
+
+      <article id="case-four" class="clinical-case" data-case-panel hidden>
+        <div class="case-header">
+          <span>Analytical Quality</span>
+          <h3>QC shift after new calibrators</h3>
+        </div>
+        <p>
+          A chemistry analyzer receives new calibrators after scheduled maintenance. QC1 and QC2 both shift upward but
+          remain barely within acceptable limits. Patient calcium results appear slightly higher than the prior week.
+        </p>
+        <div class="branching-case" data-case-id="qc-shift-case">
+          <p class="prompt">What is the best mitigation?</p>
+          <div class="choice-grid">
+            <button type="button" data-quality="poor" data-feedback="Unsafe. A systematic QC shift after calibration or maintenance needs review before the pattern reaches patient reporting.">Ignore because QC is technically in range</button>
+            <button type="button" data-quality="best" data-feedback="Best choice. Review QC trends, calibration records, maintenance documentation, peer or instrument comparison data, and define corrective action before routine release.">Investigate the shift and verify performance</button>
+            <button type="button" data-quality="partial" data-feedback="Partial. Repeating QC may help, but repeat testing alone does not explain a systematic shift or close the corrective-action loop.">Repeat QC once and proceed if it passes</button>
+          </div>
+          <p class="case-feedback" aria-live="polite"></p>
+        </div>
+      </article>
+    </section>
+
+    <section id="quiz" class="page-section" data-section>
+      <div class="section-heading quiz-heading">
+        <div>
+          <p class="eyebrow">Knowledge Check Quiz</p>
+          <h2>Test your mitigation strategy</h2>
+        </div>
+        <div class="quiz-score">
+          <span>Quiz Score</span>
+          <strong id="quiz-score">0 / 0</strong>
+        </div>
+      </div>
+
+      <div class="quiz-grid">
+        <article class="quiz-panel question-block quiz-question" data-question-id="quiz-1" data-points="1">
+          <h3>Question 1</h3>
+          <p>Which activity is most clearly preanalytical?</p>
+          <div class="answer-list">
+            <button type="button" data-correct="true" data-explanation="Patient preparation and collection occur before analysis and can determine specimen validity.">Patient preparation before phlebotomy</button>
+            <button type="button" data-correct="false" data-explanation="Quality control is analytical monitoring of assay performance.">Daily analyzer quality control</button>
+            <button type="button" data-correct="false" data-explanation="Result release is post-analytical.">Final report verification</button>
+          </div>
+          <p class="feedback" aria-live="polite"></p>
+        </article>
+
+        <article class="quiz-panel question-block quiz-question" data-question-id="quiz-2" data-points="1">
+          <h3>Question 2</h3>
+          <p>What is the primary purpose of analyzer alarms and flags in this context?</p>
+          <div class="answer-list">
+            <button type="button" data-correct="false" data-explanation="Flags are not decorative; they require defined review and action.">To decorate the result screen</button>
+            <button type="button" data-correct="true" data-explanation="Flags signal technical or specimen-quality conditions that may make results unreliable or require intervention.">To identify conditions that may compromise result reliability</button>
+            <button type="button" data-correct="false" data-explanation="Many flags occur before release and are intended to prevent inappropriate reporting.">To replace all human review after results are released</button>
+          </div>
+          <p class="feedback" aria-live="polite"></p>
+        </article>
+
+        <article class="quiz-panel question-block quiz-question" data-question-id="quiz-3" data-points="1">
+          <h3>Question 3</h3>
+          <p>A unit has repeated hemolyzed specimens after transport through the pneumatic tube. What is the best quality response?</p>
+          <div class="answer-list">
+            <button type="button" data-correct="false" data-explanation="Rejecting individual specimens does not address a recurring process failure.">Reject each specimen but take no further action</button>
+            <button type="button" data-correct="true" data-explanation="Trend review connects the recurring alert to root cause analysis and prevention.">Trend the events, investigate transport conditions, and feed back to the unit</button>
+            <button type="button" data-correct="false" data-explanation="Repeated recollection alone may delay care without correcting the process.">Ask for recollection every time without audit</button>
+          </div>
+          <p class="feedback" aria-live="polite"></p>
+        </article>
+
+        <article class="quiz-panel question-block quiz-question" data-question-id="quiz-4" data-points="1">
+          <h3>Question 4</h3>
+          <p>Which result pattern most strongly suggests EDTA contamination?</p>
+          <div class="answer-list">
+            <button type="button" data-correct="true" data-explanation="EDTA contains potassium and chelates divalent cations, so high potassium with low calcium is a classic signal.">High potassium with unexpectedly low calcium</button>
+            <button type="button" data-correct="false" data-explanation="This pattern is nonspecific and not the classic EDTA carryover signature.">Low sodium with high chloride</button>
+            <button type="button" data-correct="false" data-explanation="Mild isolated glucose elevation is not a typical EDTA contamination clue.">Mildly high glucose only</button>
+          </div>
+          <p class="feedback" aria-live="polite"></p>
+        </article>
+
+        <article class="quiz-panel question-block quiz-question" data-question-id="quiz-5" data-points="1">
+          <h3>Question 5</h3>
+          <p>What is the main educational value of proficiency testing?</p>
+          <div class="answer-list">
+            <button type="button" data-correct="false" data-explanation="Proficiency testing does not replace daily internal quality control. It evaluates external performance comparison.">It replaces routine daily QC</button>
+            <button type="button" data-correct="true" data-explanation="Unknown samples allow the laboratory to compare performance with peers and trigger investigation and corrective action when performance fails.">It compares laboratory performance against peer laboratories using unknown material</button>
+            <button type="button" data-correct="false" data-explanation="Proficiency testing is a quality assessment process, not a patient identifier process.">It confirms patient identity before release</button>
+          </div>
+          <p class="feedback" aria-live="polite"></p>
+        </article>
+      </div>
+
+      <button id="reset-scores" class="button secondary" type="button">Reset Questions</button>
+    </section>
+
+    <section id="summary" class="page-section" data-section>
+      <div class="section-heading">
+        <p class="eyebrow">Summary</p>
+        <h2>A practical resident framework</h2>
+      </div>
+      <div class="summary-flow" aria-label="Summary framework">
+        <article>
+          <span>Detect</span>
+          <p>Use analyzer alarms, specimen indices, volume checks, label checks, and delta review as early warning systems.</p>
+        </article>
+        <article>
+          <span>Interpret</span>
+          <p>Connect the signal to a mechanism: hemolysis, contamination, short draw, clot, instrument failure, or identity defect.</p>
+        </article>
+        <article>
+          <span>Act</span>
+          <p>Suppress, qualify, recollect, escalate, or release based on validated policy and clinical urgency.</p>
+        </article>
+        <article>
+          <span>Improve</span>
+          <p>Document, audit, trend, educate, and update workflows so the same defect is less likely to recur.</p>
+        </article>
+      </div>
+
+      <div class="completion-panel">
+        <div>
+          <h3>Complete the module</h3>
+          <p>Use this when you have reviewed the sections and cases. Your progress is saved in this browser.</p>
+        </div>
+        <button id="mark-complete" class="button primary" type="button">Mark Complete</button>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
