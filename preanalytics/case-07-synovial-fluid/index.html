@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Case 7: Synovial Fluid Preanalytics</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+
+  <aside class="sidebar" aria-label="Course navigation">
+    <div class="brand">
+      <p class="eyebrow">Preanalytics Module</p>
+      <h1>Case 7</h1>
+      <p>Synovial Fluid</p>
+    </div>
+
+    <div class="progress-panel" aria-live="polite">
+      <div class="progress-row">
+        <span>Module Progress</span>
+        <strong id="progress-label">0%</strong>
+      </div>
+      <div class="progress-track" aria-hidden="true">
+        <div id="progress-bar"></div>
+      </div>
+    </div>
+
+    <nav>
+      <a class="nav-link active" href="#home">Home</a>
+      <a class="nav-link" href="#objectives">Learning Objectives</a>
+      <a class="nav-link" href="#background">Background</a>
+      <a class="nav-link" href="#content">Core Content</a>
+      <a class="nav-link" href="#mechanisms">Mechanisms</a>
+      <a class="nav-link" href="#cases">Clinical Cases</a>
+      <a class="nav-link" href="#quiz">Knowledge Check</a>
+      <a class="nav-link" href="#summary">Summary</a>
+    </nav>
+
+    <div class="score-panel" aria-live="polite">
+      <span>Question Score</span>
+      <strong id="total-score">0 / 0</strong>
+    </div>
+  </aside>
+
+  <main>
+    <section id="home" class="page-section hero" data-section>
+      <div class="hero-copy">
+        <p class="eyebrow">Practical Laboratory Medicine for Pathology Residents</p>
+        <h2>Synovial Fluid Preanalytics and Crystal Interpretation</h2>
+        <p class="lede">
+          Synovial fluid microscopy can confirm crystal-associated arthropathy, but only when collection, specimen
+          quality, wet preparation, and polarized-light interpretation are handled deliberately. This module trains
+          residents to recognize artifacts before they become diagnoses.
+        </p>
+        <div class="fact-strip">
+          <strong>Teaching anchor:</strong>
+          <span>Assess specimen quality and morphology first; use birefringence as confirmatory evidence, not the starting point.</span>
+        </div>
+        <div class="hero-actions">
+          <a class="button primary" href="#content">Start Module</a>
+          <a class="button secondary" href="#cases">Try Cases</a>
+        </div>
+      </div>
+
+      <div class="synovial-visual" aria-label="Illustration of synovial fluid workflow">
+        <div class="tube-rack-card">
+          <div class="tube-row">
+            <article><span class="tube purple"></span><strong>EDTA</strong><em>Cell count, differential, viscosity</em></article>
+            <article><span class="tube green"></span><strong>Sodium heparin</strong><em>Fresh wet prep crystal exam</em></article>
+            <article><span class="tube clear"></span><strong>Sterile container</strong><em>Gram stain, culture, chemistry</em></article>
+          </div>
+        </div>
+        <div class="microscope-card">
+          <div class="lens"></div>
+          <div class="slide-stage">
+            <span class="crystal needle"></span>
+            <span class="crystal rhomboid"></span>
+            <span class="crystal artifact"></span>
+          </div>
+          <p>20x screen before high-power confirmation</p>
+        </div>
+        <div class="workflow-strip">
+          <article><span>1</span><p>Collect</p></article>
+          <article><span>2</span><p>Allocate</p></article>
+          <article><span>3</span><p>Inspect</p></article>
+          <article><span>4</span><p>Screen</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="objectives" class="page-section" data-section>
+      <div class="section-heading">
+        <p class="eyebrow">Learning Objectives</p>
+        <h2>By the end of this module, residents should be able to:</h2>
+      </div>
+      <div class="objective-grid">
+        <article>
+          <span>01</span>
+          <h3>Select and triage specimens</h3>
+          <p>Match synovial fluid studies to EDTA, sodium heparin, and sterile containers while preserving sample quality.</p>
+        </article>
+        <article>
+          <span>02</span>
+          <h3>Recognize preanalytical pitfalls</h3>
+          <p>Explain how clotting, blood contamination, poor wet mounts, and coverslip-edge artifacts can distort interpretation.</p>
+        </article>
+        <article>
+          <span>03</span>
+          <h3>Separate crystals from mimics</h3>
+          <p>Use morphology, location, clinical context, and birefringence to distinguish MSU and CPPD from artifacts.</p>
+        </article>
+        <article>
+          <span>04</span>
+          <h3>Apply a systematic screen</h3>
+          <p>Use a resident-level low-power screening approach before moving to high-power crystal confirmation.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="background" class="page-section" data-section>
+      <div class="section-heading">
+        <p class="eyebrow">Background</p>
+        <h2>Synovial fluid analysis is a specimen-quality exercise before it is a microscopy exercise</h2>
+      </div>
+      <div class="two-column">
+        <div>
+          <p>
+            Synovial fluid is commonly evaluated for inflammation, infection, hemorrhage, and crystal-associated
+            arthropathy. Because joint fluid is often low volume and clinically urgent, preanalytical decisions can
+            strongly affect downstream interpretation.
+          </p>
+          <p>
+            The resident should first ask whether the specimen is suitable: Was it collected aseptically? Was it divided
+            into appropriate containers? Was crystal analysis performed on a fresh wet preparation? Are color, viscosity,
+            clotting, and blood contamination documented before microscopy?
+          </p>
+        </div>
+        <div class="risk-panel">
+          <h3>Common diagnostic traps</h3>
+          <ul>
+            <li>Recent intra-articular steroid injection producing birefringent therapeutic crystals</li>
+            <li>Powder, dust, lint, scratches, or sealant mistaken for pathologic crystals</li>
+            <li>Clots trapping WBCs and crystals, causing misleading cell counts and focal hot spots</li>
+            <li>Blood contamination inflating cell counts without true synovial inflammation</li>
+            <li>Overreliance on polarized-light color without morphology and clinical correlation</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="pathway" aria-label="Synovial fluid workflow">
+        <article><span>Aspiration</span></article>
+        <article><span>Tube selection</span></article>
+        <article><span>Gross inspection</span></article>
+        <article><span>20x screen</span></article>
+        <article><span>Morphology</span></article>
+        <article><span>Polarization</span></article>
+        <article><span>Correlation</span></article>
+      </div>
+    </section>
+
+    <section id="content" class="page-section" data-section>
+      <div class="section-heading">
+        <p class="eyebrow">Core Educational Content</p>
+        <h2>How to handle synovial fluid before interpreting crystals</h2>
+      </div>
+
+      <div class="topic-tabs" role="tablist" aria-label="Core content topics">
+        <button class="topic-tab active" type="button" role="tab" aria-selected="true" data-topic="collection-panel">Collection</button>
+        <button class="topic-tab" type="button" role="tab" aria-selected="false" data-topic="screening-panel">20x Screening</button>
+        <button class="topic-tab" type="button" role="tab" aria-selected="false" data-topic="mimics-panel">Crystal Mimics</button>
+        <button class="topic-tab" type="button" role="tab" aria-selected="false" data-topic="pitfalls-panel">Microscopy Pitfalls</button>
+      </div>
+
+      <div id="collection-panel" class="topic-panel active" data-topic-panel>
+        <div class="content-grid">
+          <article class="teaching-card">
+            <h3>Collect by aseptic joint aspiration</h3>
+            <p>Arthrocentesis should use appropriate aseptic technique. The preanalytical phase begins at the bedside, before the specimen reaches the laboratory.</p>
+            <p class="callout">Document color, viscosity, clotting, and blood contamination before microscopy.</p>
+          </article>
+          <article class="teaching-card">
+            <h3>Distribute by intended testing</h3>
+            <ul>
+              <li><strong>EDTA:</strong> cell count, differential, gross appearance, and viscosity.</li>
+              <li><strong>Sodium heparin:</strong> crystal examination on fresh wet preparation.</li>
+              <li><strong>Sterile container:</strong> Gram stain, bacterial culture, and chemistry if requested.</li>
+            </ul>
+          </article>
+          <article class="teaching-card">
+            <h3>Prioritize crystal freshness</h3>
+            <p>Crystal analysis is best performed on a fresh wet mount. Delay, drying, thick preparations, or material at the coverslip edge can all create interpretive uncertainty.</p>
+          </article>
+          <article class="teaching-card">
+            <h3>Avoid problem anticoagulants</h3>
+            <p>Use sodium heparin or a laboratory-approved anticoagulant for crystal analysis. Lithium heparin and oxalate may introduce crystal-like artifacts.</p>
+          </article>
+        </div>
+      </div>
+
+      <div id="screening-panel" class="topic-panel" data-topic-panel hidden>
+        <div class="content-grid">
+          <article class="teaching-card">
+            <h3>Start low power</h3>
+            <p>Use a systematic 20x screen to assess specimen distribution, locate potential crystals, and identify clots or artifact-rich regions before high-power confirmation.</p>
+          </article>
+          <article class="teaching-card">
+            <h3>Sequence the interpretation</h3>
+            <ul>
+              <li>Assess specimen quality.</li>
+              <li>Confirm true crystal morphology such as needles or rhomboids.</li>
+              <li>Determine intracellular versus extracellular location.</li>
+              <li>Then interpret birefringence under polarized light.</li>
+            </ul>
+          </article>
+          <article class="teaching-card">
+            <h3>Use morphology before color</h3>
+            <p>Residents often fixate on polarization color. A safer approach is to decide whether the object is a true crystal before assigning diagnostic significance to birefringence.</p>
+          </article>
+        </div>
+      </div>
+
+      <div id="mimics-panel" class="topic-panel" data-topic-panel hidden>
+        <div class="content-grid">
+          <article class="teaching-card">
+            <h3>Corticosteroid crystals</h3>
+            <p>Recent intra-articular steroid injection can leave highly birefringent therapeutic crystals. They may persist for days to weeks and can mimic MSU or CPPD.</p>
+            <p class="callout">Always ask about recent injection before diagnosing rare or unexpected crystals.</p>
+          </article>
+          <article class="teaching-card">
+            <h3>Glove powder, dust, and lint</h3>
+            <p>Powdered gloves and environmental debris can create bright birefringent particles. They are often extracellular, randomly distributed, and lack classic needle or rhomboid morphology.</p>
+          </article>
+          <article class="teaching-card">
+            <h3>Glass and coverslip artifacts</h3>
+            <p>Slide scratches and coverslip scratches may appear as linear bright structures. They remain fixed in the glass plane rather than moving like material in the specimen.</p>
+          </article>
+          <article class="teaching-card">
+            <h3>Other mimics</h3>
+            <p>Cartilage fragments, collagen fibers, cholesterol plates, calcium oxalate, iodine deposits, and metallic debris may enter the differential depending on history and morphology.</p>
+          </article>
+        </div>
+      </div>
+
+      <div id="pitfalls-panel" class="topic-panel" data-topic-panel hidden>
+        <div class="content-grid">
+          <article class="teaching-card">
+            <h3>Find the correct focal plane</h3>
+            <p>Artifacts from a different plane can mimic birefringent material. Refocus deliberately to confirm that the object lies within the specimen.</p>
+          </article>
+          <article class="teaching-card">
+            <h3>Inspect clotted areas</h3>
+            <p>WBCs and crystals may become trapped in clots. Clots can explain falsely low WBC counts and may also create crystal-rich hot spots.</p>
+          </article>
+          <article class="teaching-card">
+            <h3>Assess RBC:WBC relationship</h3>
+            <p>With normal peripheral counts, roughly subtract 1 WBC for every 700 RBCs to estimate inflammation-related WBCs in a bloody specimen.</p>
+          </article>
+          <article class="teaching-card">
+            <h3>Avoid coverslip-edge diagnosis</h3>
+            <p>Do not diagnose crystals solely from material at the coverslip margin, where sealant, drying artifact, and debris commonly accumulate.</p>
+          </article>
+        </div>
+      </div>
+
+      <div class="mark-complete">
+        <button id="mark-complete" class="button primary" type="button">Mark Current Section Complete</button>
+      </div>
+    </section>
+
+    <section id="mechanisms" class="page-section" data-section>
+      <div class="section-heading">
+        <p class="eyebrow">Mechanisms</p>
+        <h2>Why synovial fluid artifacts can look diagnostically convincing</h2>
+      </div>
+
+      <div class="mechanism-grid">
+        <article class="mechanism-card">
+          <span>Steroid injection</span>
+          <h3>Therapeutic crystals persist</h3>
+          <p>Depot corticosteroids can remain in joint fluid after injection and may be strongly birefringent. Clinical history is the decisive safeguard.</p>
+        </article>
+        <article class="mechanism-card">
+          <span>Contamination</span>
+          <h3>Foreign particles polarize</h3>
+          <p>Glove powder, dust, lint, iodine deposits, and metallic particles can reflect or polarize light without representing MSU or CPPD.</p>
+        </article>
+        <article class="mechanism-card">
+          <span>Glass plane</span>
+          <h3>Scratches mimic needles</h3>
+          <p>Linear scratches can resemble crystals, but they remain fixed when the slide is moved or refocused because they are not in the fluid layer.</p>
+        </article>
+        <article class="mechanism-card">
+          <span>Clotting</span>
+          <h3>Cells and crystals are trapped</h3>
+          <p>Clotted synovial fluid can produce falsely low cell counts while concentrating crystals in selected areas, undermining representativeness.</p>
+        </article>
+        <article class="mechanism-card">
+          <span>Blood contamination</span>
+          <h3>Cell counts need context</h3>
+          <p>Peripheral blood entering the specimen contributes RBCs and WBCs. The RBC:WBC relationship helps judge how much cellularity is inflammatory.</p>
+        </article>
+        <article class="mechanism-card">
+          <span>Wet prep geometry</span>
+          <h3>Edges collect debris</h3>
+          <p>Coverslip margins concentrate drying artifact, sealant, and debris. Diagnostic crystals should be supported away from edge-only material.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="cases" class="page-section" data-section>
+      <div class="section-heading">
+        <p class="eyebrow">Interactive Clinical Cases</p>
+        <h2>Make the resident-level decision</h2>
+      </div>
+
+      <div class="case-tabs" role="tablist" aria-label="Clinical cases">
+        <button class="case-tab active" type="button" role="tab" aria-selected="true" data-case="case-one">Case 1</button>
+        <button class="case-tab" type="button" role="tab" aria-selected="false" data-case="case-two">Case 2</button>
+        <button class="case-tab" type="button" role="tab" aria-selected="false" data-case="case-three">Case 3</button>
+        <button class="case-tab" type="button" role="tab" aria-selected="false" data-case="case-four">Case 4</button>
+      </div>
+
+      <article id="case-one" class="case-panel active branching-case" data-case-panel data-case-id="case-one">
+        <div class="case-layout">
+          <div>
+            <p class="eyebrow">Birefringent particles after injection</p>
+            <h3>A knee aspirate contains bright birefringent particles. The patient had an intra-articular steroid injection 9 days ago.</h3>
+          </div>
+          <div>
+            <p class="prompt">Best interpretation strategy?</p>
+            <div class="choice-grid">
+              <button type="button" data-quality="poor" data-feedback="This overcalls gout based on birefringence alone. Recent steroid injection is a major mimic.">Report monosodium urate crystals immediately</button>
+              <button type="button" data-quality="best" data-feedback="Correct. Recent steroid injection should trigger caution; correlate morphology, intracellular location, and classic MSU/CPPD features before reporting.">Treat as a possible steroid crystal mimic and correlate carefully</button>
+              <button type="button" data-quality="partial" data-feedback="Repeating the wet prep may help, but the central issue is clinical context and morphology before birefringence.">Repeat the wet mount but ignore the injection history</button>
+            </div>
+            <p class="case-feedback" aria-live="polite"></p>
+          </div>
+        </div>
+      </article>
+
+      <article id="case-two" class="case-panel branching-case" data-case-panel data-case-id="case-two" hidden>
+        <div class="case-layout">
+          <div>
+            <p class="eyebrow">Edge-only crystals</p>
+            <h3>Bright linear material is seen only at the coverslip margin. Central fields show no reproducible needle or rhomboid morphology.</h3>
+          </div>
+          <div>
+            <p class="prompt">Most appropriate action?</p>
+            <div class="choice-grid">
+              <button type="button" data-quality="best" data-feedback="Correct. Coverslip margins commonly contain debris, drying artifact, and sealant. Do not diagnose crystals solely from edge material.">Avoid diagnosis from edge-only material; examine representative central fields</button>
+              <button type="button" data-quality="poor" data-feedback="This is a classic false-positive trap. Edge-only material is insufficient for crystal identification.">Report CPPD crystals based on the bright lines</button>
+              <button type="button" data-quality="partial" data-feedback="High power can help confirm morphology, but it cannot rescue a diagnosis based only on margin artifact.">Move directly to high power at the margin</button>
+            </div>
+            <p class="case-feedback" aria-live="polite"></p>
+          </div>
+        </div>
+      </article>
+
+      <article id="case-three" class="case-panel branching-case" data-case-panel data-case-id="case-three" hidden>
+        <div class="case-layout">
+          <div>
+            <p class="eyebrow">Bloody aspirate</p>
+            <h3>A bloody synovial fluid specimen has 70,000 RBC/uL and 1,100 WBC/uL. Peripheral counts are normal.</h3>
+          </div>
+          <div>
+            <p class="prompt">How should the cellularity be interpreted?</p>
+            <div class="choice-grid">
+              <button type="button" data-quality="best" data-feedback="Correct. Roughly 100 WBC/uL may be attributable to blood contamination using the 1:700 estimate, so interpret inflammation in context.">Use the RBC:WBC relationship to estimate the blood contribution</button>
+              <button type="button" data-quality="poor" data-feedback="Blood contamination can inflate WBCs and must be considered before interpreting inflammation.">Ignore RBCs and interpret the WBC count directly</button>
+              <button type="button" data-quality="partial" data-feedback="Recollection may be needed for poor-quality specimens, but first recognize how blood contamination affects the apparent WBC count.">Automatically reject every bloody aspirate</button>
+            </div>
+            <p class="case-feedback" aria-live="polite"></p>
+          </div>
+        </div>
+      </article>
+
+      <article id="case-four" class="case-panel branching-case" data-case-panel data-case-id="case-four" hidden>
+        <div class="case-layout">
+          <div>
+            <p class="eyebrow">Clotted specimen</p>
+            <h3>The synovial fluid is partially clotted. Rare rhomboid-like crystals are seen only within clotted areas.</h3>
+          </div>
+          <div>
+            <p class="prompt">Best resident-level response?</p>
+            <div class="choice-grid">
+              <button type="button" data-quality="poor" data-feedback="A clotted specimen is not representative. Cell counts and focal crystal detection both require caution.">Report the count and crystals without qualification</button>
+              <button type="button" data-quality="best" data-feedback="Correct. Clots can trap WBCs and crystals, creating falsely low counts and focal hot spots. Communicate specimen limitations and correlate carefully.">Recognize clot-related limitation and qualify interpretation</button>
+              <button type="button" data-quality="partial" data-feedback="A repeat aspirate may be considered, but the immediate educational point is that clots change representativeness.">Only search the clot because crystals are easier to find there</button>
+            </div>
+            <p class="case-feedback" aria-live="polite"></p>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <section id="quiz" class="page-section" data-section>
+      <div class="section-heading">
+        <p class="eyebrow">Knowledge Check Quiz</p>
+        <h2>Test the decisions that prevent artifact from becoming a diagnosis</h2>
+      </div>
+
+      <div class="quiz-header">
+        <div class="quiz-score">
+          <span>Quiz Score</span>
+          <strong id="quiz-score">0 / 0</strong>
+        </div>
+        <button id="reset-scores" class="button secondary" type="button">Reset Questions</button>
+      </div>
+
+      <div class="question-stack">
+        <article class="question-block quiz-question" data-question-id="q1" data-points="1">
+          <h3>1. Which container is most appropriate for routine synovial fluid crystal examination on a wet preparation?</h3>
+          <div class="answer-list">
+            <button type="button" data-correct="false" data-explanation="EDTA is useful for cell count, differential, gross appearance, and viscosity, but the source material assigns crystal examination to sodium heparin.">EDTA tube</button>
+            <button type="button" data-correct="true" data-explanation="Sodium heparin is the preferred tube in this module for fresh wet-prep crystal examination.">Sodium heparin tube</button>
+            <button type="button" data-correct="false" data-explanation="A sterile container is used for Gram stain, culture, and chemistry when requested.">Sterile container only</button>
+          </div>
+          <p class="feedback" aria-live="polite"></p>
+        </article>
+
+        <article class="question-block quiz-question" data-question-id="q2" data-points="1">
+          <h3>2. Which sequence best reduces false-positive crystal identification?</h3>
+          <div class="answer-list">
+            <button type="button" data-correct="false" data-explanation="Starting with birefringence encourages overcalling artifacts.">Interpret birefringence first, then check morphology later</button>
+            <button type="button" data-correct="true" data-explanation="Assess quality, morphology, and intracellular/extracellular location before assigning significance to birefringence.">Assess quality, morphology, location, then birefringence</button>
+            <button type="button" data-correct="false" data-explanation="Clinical history is essential, especially for steroid crystal mimics.">Ignore clinical history if the object is bright under polarized light</button>
+          </div>
+          <p class="feedback" aria-live="polite"></p>
+        </article>
+
+        <article class="question-block quiz-question" data-question-id="q3" data-points="1">
+          <h3>3. A resident sees bright material only at the coverslip edge. What is the safest conclusion?</h3>
+          <div class="answer-list">
+            <button type="button" data-correct="true" data-explanation="Coverslip edges are artifact-rich. Do not diagnose crystals solely from margin material.">Do not diagnose crystals from edge-only material</button>
+            <button type="button" data-correct="false" data-explanation="Edge-only birefringence is a classic artifact pattern.">Report crystals if the material is birefringent</button>
+            <button type="button" data-correct="false" data-explanation="The edge does not become reliable just because it is easier to scan.">Limit the exam to the coverslip margin</button>
+          </div>
+          <p class="feedback" aria-live="polite"></p>
+        </article>
+
+        <article class="question-block quiz-question" data-question-id="q4" data-points="1">
+          <h3>4. With normal peripheral counts, what rough correction is used to estimate inflammation-related WBCs in a bloody synovial fluid specimen?</h3>
+          <div class="answer-list">
+            <button type="button" data-correct="false" data-explanation="This is too small a correction factor for the heuristic in the source material.">Subtract 1 WBC for every 70 RBCs</button>
+            <button type="button" data-correct="true" data-explanation="The module uses the approximate relationship of 1 WBC per 700 RBCs.">Subtract 1 WBC for every 700 RBCs</button>
+            <button type="button" data-correct="false" data-explanation="The source material gives a practical estimate rather than ignoring WBCs entirely.">Subtract all WBCs if any RBCs are present</button>
+          </div>
+          <p class="feedback" aria-live="polite"></p>
+        </article>
+
+        <article class="question-block quiz-question" data-question-id="q5" data-points="1">
+          <h3>5. Which history most strongly raises concern for a therapeutic crystal mimic?</h3>
+          <div class="answer-list">
+            <button type="button" data-correct="false" data-explanation="Prosthetic joint history may suggest metallic debris, not the major therapeutic crystal mimic highlighted here.">Remote prosthetic joint replacement</button>
+            <button type="button" data-correct="true" data-explanation="Recent intra-articular corticosteroid injection can leave birefringent steroid crystals in synovial fluid.">Recent intra-articular corticosteroid injection</button>
+            <button type="button" data-correct="false" data-explanation="Dietary purine intake does not create birefringent therapeutic crystals in the specimen.">High-purine meal before aspiration</button>
+          </div>
+          <p class="feedback" aria-live="polite"></p>
+        </article>
+
+        <article class="question-block quiz-question" data-question-id="q6" data-points="1">
+          <h3>6. Why should clotted areas be inspected but interpreted cautiously?</h3>
+          <div class="answer-list">
+            <button type="button" data-correct="true" data-explanation="Clots can trap WBCs and crystals, producing falsely low counts and nonrepresentative crystal hot spots.">They may trap WBCs and crystals, creating nonrepresentative hot spots</button>
+            <button type="button" data-correct="false" data-explanation="Clotted material is not automatically the most representative portion of the specimen.">They are always the best area for crystal diagnosis</button>
+            <button type="button" data-correct="false" data-explanation="Clots can affect both counts and crystal distribution.">They affect only viscosity and never microscopy</button>
+          </div>
+          <p class="feedback" aria-live="polite"></p>
+        </article>
+      </div>
+    </section>
+
+    <section id="summary" class="page-section" data-section>
+      <div class="section-heading">
+        <p class="eyebrow">Summary</p>
+        <h2>A systematic synovial fluid workflow protects against false crystal calls</h2>
+      </div>
+      <div class="algorithm">
+        <article><span>1</span><p>Confirm specimen source and collection quality</p></article>
+        <article><span>2</span><p>Document color, viscosity, clotting, and blood</p></article>
+        <article><span>3</span><p>Use the correct container for requested testing</p></article>
+        <article><span>4</span><p>Prepare a fresh wet mount when possible</p></article>
+        <article><span>5</span><p>Screen systematically at 20x</p></article>
+        <article><span>6</span><p>Confirm morphology and intracellular location</p></article>
+        <article><span>7</span><p>Interpret birefringence in clinical context</p></article>
+      </div>
+
+      <div class="pearl-grid">
+        <article>
+          <h3>High-yield resident pearl</h3>
+          <p>Do not let polarized-light brightness substitute for crystal identification. Morphology and context come first.</p>
+        </article>
+        <article>
+          <h3>When in doubt</h3>
+          <p>Re-examine representative fields, ask about steroid injection, avoid edge-only material, and communicate specimen limitations.</p>
+        </article>
+      </div>
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
