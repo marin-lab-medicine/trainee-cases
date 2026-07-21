@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Interactive resident education on postanalytical laboratory medicine and patient safety.">
+  <title>Case 9 | The Postanalytical Phase</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <button class="menu-toggle" type="button" aria-label="Open module navigation" aria-expanded="false"><span></span><span></span><span></span></button>
+
+  <aside class="sidebar" aria-label="Module navigation">
+    <div class="brand">
+      <p class="kicker">Laboratory Medicine</p>
+      <h1>Case 9</h1>
+      <p>Postanalytical Phase</p>
+    </div>
+    <div class="progress-card" aria-live="polite">
+      <div><span>Module progress</span><strong id="progress-label">0%</strong></div>
+      <div class="progress-track"><span id="progress-bar"></span></div>
+      <small id="progress-detail">0 of 9 sections visited</small>
+    </div>
+    <nav>
+      <a class="nav-link active" href="#home"><span>01</span> Home</a>
+      <a class="nav-link" href="#objectives"><span>02</span> Objectives</a>
+      <a class="nav-link" href="#background"><span>03</span> Background</a>
+      <a class="nav-link" href="#core"><span>04</span> Core Content</a>
+      <a class="nav-link" href="#mechanisms"><span>05</span> Mechanisms</a>
+      <a class="nav-link" href="#cases"><span>06</span> Clinical Cases</a>
+      <a class="nav-link" href="#quiz"><span>07</span> Quiz</a>
+      <a class="nav-link" href="#summary"><span>08</span> Summary</a>
+    </nav>
+    <button id="reset-progress" class="text-button" type="button">Reset module progress</button>
+  </aside>
+
+  <main id="main-content">
+    <section id="home" class="page-section hero" data-section>
+      <div class="hero-copy">
+        <p class="eyebrow">Case 9 · Resident learning module</p>
+        <h2>The result is finished.<br><em>Is it ready?</em></h2>
+        <p class="lede">Think like a laboratory director: decide whether a result is appropriate for clinical use, communicate it to the right person, and document the safety process.</p>
+        <div class="hero-actions"><a class="button primary" href="#objectives">Begin module</a><a class="button ghost" href="#cases">Enter a case</a></div>
+        <div class="module-meta"><span>⏱ 30–40 minutes</span><span>5 clinical scenarios</span><span>8-question quiz</span></div>
+      </div>
+      <div class="release-console" aria-label="Stylized laboratory result release checkpoint">
+        <div class="console-top"><span>RESULT RELEASE GATE</span><span class="live-dot">SAFETY ACTIVE</span></div>
+        <div class="result-row"><div><small>Potassium</small><strong>7.4</strong><span>mmol/L</span></div><b>HELD</b></div>
+        <div class="checkpoint-list"><p class="pass">✓ Quality control acceptable</p><p class="pass">✓ Analyzer status reviewed</p><p class="alert">! Delta check exceeded</p><p>○ Clinical plausibility pending</p></div>
+        <div class="console-footer"><span>Previous result</span><strong>4.2 mmol/L</strong></div>
+      </div>
+    </section>
+
+    <section id="objectives" class="page-section" data-section>
+      <header class="section-header"><p class="eyebrow">Learning objectives</p><h2>Move from reporting numbers to protecting patients.</h2><p>After completing this module, you should be able to:</p></header>
+      <div class="objective-grid">
+        <article><span>01</span><h3>Verify</h3><p>Assess whether a result is technically valid, physiologically plausible, and suitable for release.</p></article>
+        <article><span>02</span><h3>Investigate</h3><p>Use delta checks, specimen integrity, analyzer flags, prior results, and clinical context appropriately.</p></article>
+        <article><span>03</span><h3>Differentiate</h3><p>Explain autoverification, manual verification, and the role of professional judgment in each.</p></article>
+        <article><span>04</span><h3>Communicate</h3><p>Apply critical-result notification, read-back, escalation, and documentation workflows.</p></article>
+        <article><span>05</span><h3>Interpret</h3><p>Draft concise, evidence-based comments that clarify limitations without directing therapy.</p></article>
+        <article><span>06</span><h3>Lead</h3><p>Recognize system failures and approach unexpected results from a laboratory director’s perspective.</p></article>
+      </div>
+      <div class="section-nav"><a href="#home">← Previous</a><a href="#background">Next: Background →</a></div>
+    </section>
+
+    <section id="background" class="page-section tint" data-section>
+      <header class="section-header"><p class="eyebrow">Background</p><h2>The postanalytical phase is a patient-safety process.</h2></header>
+      <div class="two-column">
+        <div>
+          <p class="lead">It begins when the laboratory decides whether a completed test result is appropriate for clinical use—not merely when the analyzer stops.</p>
+          <p>Every result reaching the electronic medical record has passed through checkpoints involving technical performance, specimen quality, plausibility, communication, and documentation. A numerically accurate measurement can still harm a patient if it is assigned to the wrong patient, reported with incorrect units, released without necessary context, or never communicated to the responsible clinician.</p>
+          <div class="quote-card"><p>“The right result must reach the right clinician at the right time with the appropriate interpretation.”</p></div>
+        </div>
+        <div class="phase-map" aria-label="Total testing process">
+          <article><span>01</span><div><h3>Preanalytical</h3><p>Patient test order, specimen collection, and transport</p></div></article>
+          <article><span>02</span><div><h3>Analytical</h3><p>Method, calibration, quality control, measurement</p></div></article>
+          <article class="active"><span>03</span><div><h3>Postanalytical</h3><p>Verify, release, communicate, interpret, document</p></div></article>
+        </div>
+      </div>
+      <div class="resident-call"><strong>You may be called when…</strong><div><span>the result conflicts with the clinical picture</span><span>a provider questions an unexpected value</span><span>a delta check prevents release</span><span>a critical value needs consultation</span><span>specimen integrity remains concerning</span></div></div>
+      <div class="section-nav"><a href="#objectives">← Previous</a><a href="#core">Next: Core Content →</a></div>
+    </section>
+
+    <section id="core" class="page-section" data-section>
+      <header class="section-header"><p class="eyebrow">Core educational content</p><h2>Eight decisions behind a safe result.</h2><p>Select a topic to explore the laboratory director’s reasoning.</p></header>
+      <div class="topic-layout">
+        <div class="topic-tabs" role="tablist" aria-label="Core topics">
+          <button class="topic-tab active" role="tab" aria-selected="true" data-panel="verify-panel">Result verification</button>
+          <button class="topic-tab" role="tab" aria-selected="false" data-panel="delta-panel">Delta checks</button>
+          <button class="topic-tab" role="tab" aria-selected="false" data-panel="auto-panel">Autoverification</button>
+          <button class="topic-tab" role="tab" aria-selected="false" data-panel="manual-panel">Manual review</button>
+          <button class="topic-tab" role="tab" aria-selected="false" data-panel="flags-panel">Instrument flags</button>
+          <button class="topic-tab" role="tab" aria-selected="false" data-panel="comments-panel">Interpretive comments</button>
+          <button class="topic-tab" role="tab" aria-selected="false" data-panel="critical-panel">Critical results</button>
+          <button class="topic-tab" role="tab" aria-selected="false" data-panel="errors-panel">Systems errors</button>
+        </div>
+        <div class="topic-stage">
+          <article id="verify-panel" class="topic-panel active" data-topic-panel><p class="panel-number">01 / 08</p><h3>Result verification</h3><p class="lead">Verification asks whether a result is technically and clinically believable before it is released.</p><div class="question-grid"><span>Was quality control acceptable?</span><span>Did the analyzer perform correctly?</span><span>Were instrument flags generated?</span><span>Does it fit the patient’s history?</span><span>Could specimen quality explain it?</span><span>Is more testing needed before release?</span></div><div class="director-note"><strong>Director’s question</strong><p>Does this result make physiologic sense?</p></div></article>
+          <article id="delta-panel" class="topic-panel" data-topic-panel hidden><p class="panel-number">02 / 08</p><h3>Delta checks</h3><p>A delta check compares a current value with a previous result from the same patient. Large changes can reflect true deterioration—or wrong patient/specimen, contamination, dilution, interference, or analytical error.</p><div class="mini-comparison"><div><small>Hemoglobin</small><b>12.8 → 6.1</b></div><div><small>Potassium</small><b>4.2 → 7.4</b></div><div><small>Creatinine</small><b>0.8 → 4.3</b></div></div><div class="director-note"><strong>Key distinction</strong><p>A failed delta check does not mean “wrong.” It means “investigate before release.”</p></div></article>
+          <article id="auto-panel" class="topic-panel" data-topic-panel hidden><p class="panel-number">03 / 08</p><h3>Autoverification</h3><p>Autoverification releases results automatically only after predefined safety rules are satisfied. It can shorten turnaround time, standardize reporting, reduce transcription error, and preserve staff attention for exceptions.</p><ul class="check-list"><li>QC acceptable</li><li>No disqualifying analyzer flags</li><li>Within analytical measurement range</li><li>Delta-check criteria satisfied</li><li>Acceptable hemolysis, icterus, and lipemia indices</li><li>No critical-result rule requiring manual action</li></ul><div class="director-note"><strong>Leadership role</strong><p>Algorithms require validation, monitoring, and revision. Automation operationalizes judgment; it does not replace oversight.</p></div></article>
+          <article id="manual-panel" class="topic-panel" data-topic-panel hidden><p class="panel-number">04 / 08</p><h3>Manual verification</h3><p>Human review integrates laboratory data with the clinical record when rules cannot safely resolve an exception.</p><div class="question-grid"><span>Review prior results</span><span>Inspect specimen and HIL indices</span><span>Review collection history</span><span>Assess analyzer flags</span><span>Confirm repeat testing</span><span>Seek relevant clinical context</span></div><div class="director-note"><strong>Resident pearl</strong><p>Do not reflexively order a repeat. First ask what the technologist has already done and what additional information a repeat would provide.</p></div></article>
+          <article id="flags-panel" class="topic-panel" data-topic-panel hidden><p class="panel-number">05 / 08</p><h3>Instrument flags</h3><p class="lead">A flag is not a diagnosis. It is an alert requiring evaluation.</p><div class="tag-cloud"><span>Platelet clumps</span><span>Blast flag</span><span>Cold agglutinins</span><span>Aspiration error</span><span>Carryover</span></div><ol><li>Determine why the flag occurred.</li><li>Decide whether additional testing is needed.</li><li>Determine whether manual review is indicated.</li></ol><div class="director-note warning"><strong>Never ignore an instrument flag.</strong><p>Resolve or appropriately qualify it before release.</p></div></article>
+          <article id="comments-panel" class="topic-panel" data-topic-panel hidden><p class="panel-number">06 / 08</p><h3>Interpretive comments</h3><p>Useful comments explain limitations, known interferences, and specimen quality; they remain evidence-based and avoid directing medical management.</p><blockquote>“The specimen demonstrated significant hemolysis. Internal validation supports reporting of this analyte; however, interpretation should consider potential interference. Repeat collection may be considered if the result is inconsistent with the clinical presentation.”</blockquote><div class="director-note"><strong>Quality test</strong><p>Does the comment reduce ambiguity without overreaching?</p></div></article>
+          <article id="critical-panel" class="topic-panel" data-topic-panel hidden><p class="panel-number">07 / 08</p><h3>Critical results</h3><p>A critical result is associated with immediate patient risk and requires prompt communication under the laboratory’s approved policy. Examples may include critical potassium, glucose, calcium, platelet count, INR, or a positive blood culture; thresholds and workflows are institution-specific.</p><div class="director-note"><strong>Closed-loop requirement</strong><p>Verification, recipient identification, read-back, documentation, and escalation are parts of one process.</p></div></article>
+          <article id="errors-panel" class="topic-panel" data-topic-panel hidden><p class="panel-number">08 / 08</p><h3>Common systems errors</h3><p>Many postanalytical errors occur after an analyzer has produced an accurate result.</p><div class="error-list"><span>Incorrect patient report</span><span>Wrong reference interval or units</span><span>Failure to notify</span><span>Delayed reporting</span><span>Misleading comment</span><span>Wrong recipient</span><span>Failure to correct a report</span></div><div class="director-note warning"><strong>Systems view</strong><p>Ask which safeguard failed—and how the process can be redesigned to prevent recurrence.</p></div></article>
+        </div>
+      </div>
+      <div class="section-nav"><a href="#background">← Previous</a><a href="#mechanisms">Next: Mechanisms →</a></div>
+    </section>
+
+    <section id="mechanisms" class="page-section dark-section" data-section>
+      <header class="section-header"><p class="eyebrow">Mechanisms</p><h2>Trace a result through the release gate.</h2><p>Choose a result profile, then follow the resulting pathway.</p></header>
+      <div class="mechanism-switcher" role="group" aria-label="Choose result profile"><button class="active" data-profile="routine">Routine result</button><button data-profile="delta">Delta failure</button><button data-profile="critical">Critical result</button></div>
+      <div class="workflow" id="workflow" aria-live="polite"></div>
+      <div class="mechanism-explain" id="mechanism-explain"></div>
+      <div class="section-nav"><a href="#core">← Previous</a><a href="#cases">Next: Clinical Cases →</a></div>
+    </section>
+
+    <section id="cases" class="page-section" data-section>
+      <header class="section-header"><p class="eyebrow">Interactive clinical cases</p><h2>What would you do next?</h2><p>Work through each scenario. Feedback changes with your decision; you can reconsider at any time.</p></header>
+      <div class="case-picker" role="tablist" aria-label="Clinical cases"><button class="active" data-case-target="case-hgb">1 · Hemoglobin</button><button data-case-target="case-k">2 · Potassium</button><button data-case-target="case-cr">3 · Creatinine</button><button data-case-target="case-call">4 · Escalation</button><button data-case-target="case-comment">5 · Comment</button></div>
+      <div class="case-deck">
+        <article id="case-hgb" class="clinical-case active" data-case-panel data-case-id="hgb"><div class="case-label">Case 1 · Delta check</div><h3>Hemoglobin: 12.8 yesterday → 6.1 g/dL today</h3><p>A non-ICU patient has no immediately visible operative note. The analyzer has no flags and QC is acceptable.</p><fieldset><legend>Best initial approach?</legend><button data-quality="poor" data-feedback="A large change may be real, but immediate release without investigation bypasses a safety checkpoint.">Release because QC passed</button><button data-quality="best" data-feedback="Best response. Review clinical events and collection history, inspect specimen quality, verify identity, and confirm whether repeat analysis has already been performed.">Investigate history, specimen, identity, and repeat status</button><button data-quality="partial" data-feedback="Recollection may ultimately be necessary, but first determine whether bleeding, surgery, dilution, or an identification concern explains the delta.">Cancel and recollect immediately</button></fieldset><div class="case-feedback" aria-live="polite">Choose a response to see the reasoning.</div></article>
+        <article id="case-k" class="clinical-case" data-case-panel data-case-id="potassium" hidden><div class="case-label">Case 2 · Plausibility</div><h3>Potassium: 4.2 yesterday → 7.4 mmol/L today</h3><p>The hemolysis index is markedly elevated. The patient’s renal function was previously normal.</p><fieldset><legend>What is the most defensible action?</legend><button data-quality="best" data-feedback="Best response. Evaluate the hemolysis-related limitation under local policy and method validation, correlate clinically, and request recollection when the result cannot be safely interpreted.">Assess interference and pursue a nonhemolyzed recollection</button><button data-quality="poor" data-feedback="Suppressing a result without documentation or follow-up can create a new postanalytical failure.">Delete the result without comment</button><button data-quality="partial" data-feedback="Renal failure is one possibility, but the specimen evidence must be addressed before assuming true hyperkalemia.">Call it acute renal failure</button></fieldset><div class="case-feedback" aria-live="polite">Choose a response to see the reasoning.</div></article>
+        <article id="case-cr" class="clinical-case" data-case-panel data-case-id="creatinine" hidden><div class="case-label">Case 3 · True change or error?</div><h3>Creatinine: 0.8 → 4.3 mg/dL</h3><p>The result fails the laboratory’s delta rule. The emergency department note documents hypotension and recent contrast exposure.</p><fieldset><legend>How should the failed delta check be interpreted?</legend><button data-quality="poor" data-feedback="A delta failure does not automatically invalidate a result.">The result must be wrong</button><button data-quality="best" data-feedback="Correct. The clinical context supports possible acute kidney injury, but technical and specimen checks remain appropriate before release.">It may be true acute change; complete verification</button><button data-quality="partial" data-feedback="Patient identification is worth checking, but it is only one hypothesis and does not fit the available context as well as acute injury.">Assume wrong-patient specimen</button></fieldset><div class="case-feedback" aria-live="polite">Choose a response to see the reasoning.</div></article>
+        <article id="case-call" class="clinical-case" data-case-panel data-case-id="escalation" hidden><div class="case-label">Case 4 · Closed-loop communication</div><h3>The technologist cannot reach the primary provider.</h3><p>A verified critical result remains unacknowledged after attempts through the routine call tree. You are the resident on call.</p><fieldset><legend>What completes your role?</legend><button data-quality="partial" data-feedback="Finding a recipient is essential, but the loop is incomplete without read-back and documentation.">Find any clinician and end the call</button><button data-quality="best" data-feedback="Best response. Follow the approved escalation path, identify an appropriate responsible clinician, communicate the value, obtain read-back, and return recipient details for documentation.">Escalate, communicate, read back, and document</button><button data-quality="poor" data-feedback="An EMR result alone does not satisfy a critical-result communication workflow.">Wait for the EMR alert to be noticed</button></fieldset><div class="case-feedback" aria-live="polite">Choose a response to see the reasoning.</div></article>
+        <article id="case-comment" class="clinical-case" data-case-panel data-case-id="comment" hidden><div class="case-label">Case 5 · Interpretive comment</div><h3>A reportable analyte may be affected by hemolysis.</h3><p>Local validation supports reporting, but the degree and direction of interference may matter clinically.</p><fieldset><legend>Which comment is strongest?</legend><button data-quality="poor" data-feedback="This directs therapy and exceeds an interpretive laboratory comment’s appropriate scope.">“Treat immediately and repeat tomorrow.”</button><button data-quality="partial" data-feedback="This is too vague to help the clinician understand the limitation.">“Interpret with caution.”</button><button data-quality="best" data-feedback="Best response. It identifies the specimen issue, ties reporting to validation, explains the limitation, and recommends correlation without directing treatment.">“Significant hemolysis is present. Internal validation supports reporting; interpret in light of potential interference and consider recollection if clinically discordant.”</button></fieldset><div class="case-feedback" aria-live="polite">Choose a response to see the reasoning.</div></article>
+      </div>
+      <div class="case-progress"><span id="case-progress-text">0 of 5 cases attempted</span><div><i id="case-progress-bar"></i></div></div>
+      <div class="section-nav"><a href="#mechanisms">← Previous</a><a href="#quiz">Next: Quiz →</a></div>
+    </section>
+
+    <section id="quiz" class="page-section quiz-section" data-section>
+      <header class="section-header"><p class="eyebrow">Knowledge check quiz</p><h2>Test your release judgment.</h2><p>Choose one answer per question. You will receive an immediate explanation.</p></header>
+      <div class="quiz-toolbar"><div><small>Score</small><strong id="quiz-score">0 / 8</strong></div><div><small>Answered</small><strong id="quiz-answered">0 / 8</strong></div><button id="retry-quiz" type="button">Retry quiz</button></div>
+      <div id="quiz-list"></div>
+      <div id="quiz-result" class="quiz-result" hidden aria-live="polite"></div>
+      <div class="section-nav"><a href="#cases">← Previous</a><a href="#summary">Next: Summary →</a></div>
+    </section>
+
+    <section id="summary" class="page-section tint" data-section>
+      <header class="section-header"><p class="eyebrow">Summary</p><h2>Think like a laboratory director.</h2></header>
+      <div class="summary-layout">
+        <div class="director-checklist"><h3>Before release, ask:</h3><label><input type="checkbox"> Is the specimen acceptable?</label><label><input type="checkbox"> Does the result fit prior results and physiology?</label><label><input type="checkbox"> Could identification or preanalytical factors explain it?</label><label><input type="checkbox"> Are analyzer flags and interference resolved?</label><label><input type="checkbox"> Is additional interpretation needed?</label><label><input type="checkbox"> Has the appropriate clinician been notified?</label><label><input type="checkbox"> Is the communication documented?</label></div>
+        <div class="takeaways"><article><b>01</b><p>Verification is a clinical decision supported by laboratory data.</p></article><article><b>02</b><p>Delta checks are patient-safety prompts, not proof of error.</p></article><article><b>03</b><p>Autoverification improves efficiency but requires professional oversight.</p></article><article><b>04</b><p>Manual review integrates technical findings, specimen quality, and context.</p></article><article><b>05</b><p>Critical communication is incomplete until acknowledged and documented.</p></article><article><b>06</b><p>Many postanalytical errors are communication and systems failures.</p></article></div>
+      </div>
+      <div class="completion-card"><div><p class="eyebrow">Your progress</p><h3 id="completion-title">Continue the module</h3><p id="completion-copy">Visit each section, attempt all cases, and finish the quiz.</p></div><button id="mark-summary" class="button primary" type="button">Mark summary reviewed</button></div>
+      <div class="scope-note"><strong>Educational-use notice</strong><p>Critical limits, repeat-testing practices, interference thresholds, escalation paths, and reporting rules vary by method and institution. Apply the current policies and validated procedures of your laboratory.</p></div>
+      <div class="section-nav"><a href="#quiz">← Previous</a><a href="#home">Return home ↑</a></div>
+    </section>
+  </main>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <script src="script.js"></script>
+</body>
+</html>
