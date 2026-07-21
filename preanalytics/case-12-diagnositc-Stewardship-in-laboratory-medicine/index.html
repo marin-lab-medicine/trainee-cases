@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Interactive pathology resident module on diagnostic stewardship in laboratory medicine.">
+  <title>Case 12 | Diagnostic Stewardship</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <button class="menu-toggle" type="button" aria-label="Open module navigation" aria-expanded="false"><span></span><span></span><span></span></button>
+
+  <aside class="sidebar" aria-label="Module navigation">
+    <div class="brand"><p>Laboratory medicine</p><h1>Case 12</h1><span>Diagnostic Stewardship</span></div>
+    <div class="progress-card" aria-live="polite">
+      <div><span>Module progress</span><strong id="progress-label">0%</strong></div>
+      <div class="progress-track"><span id="progress-bar"></span></div>
+      <small id="progress-detail">0 of 8 sections visited</small>
+    </div>
+    <nav>
+      <a class="nav-link active" href="#home"><span>01</span>Home</a>
+      <a class="nav-link" href="#objectives"><span>02</span>Objectives</a>
+      <a class="nav-link" href="#background"><span>03</span>Background</a>
+      <a class="nav-link" href="#core"><span>04</span>Core Content</a>
+      <a class="nav-link" href="#mechanisms"><span>05</span>Mechanisms</a>
+      <a class="nav-link" href="#cases"><span>06</span>Clinical Cases</a>
+      <a class="nav-link" href="#quiz"><span>07</span>Knowledge Check</a>
+      <a class="nav-link" href="#summary"><span>08</span>Summary</a>
+    </nav>
+    <button id="reset-progress" class="reset-button" type="button">Reset module progress</button>
+  </aside>
+
+  <main id="main-content">
+    <section id="home" class="page-section hero" data-section>
+      <div class="hero-overlay"></div>
+      <div class="hero-copy">
+        <p class="eyebrow">Pathology resident capstone · Case 12</p>
+        <h2>Diagnostic<br>Stewardship</h2>
+        <p class="lede">Turn laboratory data into better decisions: the right test, for the right patient, at the right time, through the right pathway.</p>
+        <div class="hero-actions"><a class="button primary" href="#objectives">Begin module</a><a class="button ghost" href="#cases">Enter a clinical case</a></div>
+        <div class="module-meta"><span>35–45 minutes</span><span>5 clinical cases</span><span>10-question quiz</span></div>
+      </div>
+      <div class="hero-status"><span>Capstone framework</span><b>Question → test → decision → outcome</b></div>
+    </section>
+
+    <section id="objectives" class="page-section" data-section>
+      <header class="section-header"><p class="eyebrow">Learning objectives</p><h2>From test requester to diagnostic consultant.</h2><p>After completing this module, you should be able to:</p></header>
+      <div class="objective-grid">
+        <article><b>01</b><h3>Define</h3><p>Distinguish diagnostic stewardship from cost containment and simple test restriction.</p></article>
+        <article><b>02</b><h3>Calibrate</h3><p>Apply pretest probability when deciding whether and how to test.</p></article>
+        <article><b>03</b><h3>Select</h3><p>Choose between in-house and specialized testing based on clinical need.</p></article>
+        <article><b>04</b><h3>Evaluate</h3><p>Assess analytical validity, clinical validity, clinical utility, and operational feasibility.</p></article>
+        <article><b>05</b><h3>Recognize</h3><p>Identify utilization errors and predict their downstream consequences.</p></article>
+        <article><b>06</b><h3>Consult</h3><p>Guide clinicians through test selection, interpretation, and follow-up.</p></article>
+      </div>
+      <div class="section-nav"><a href="#home">Previous</a><a href="#background">Next: Background</a></div>
+    </section>
+
+    <section id="background" class="page-section band" data-section>
+      <header class="section-header"><p class="eyebrow">Background</p><h2>More testing is not the same as better diagnosis.</h2><p>Stewardship protects accuracy, timeliness, and patient outcomes across the entire testing process.</p></header>
+      <div class="definition-layout">
+        <div class="definition-lead"><span>Working definition</span><blockquote>Diagnostic stewardship is the coordinated use of testing to ensure that the right test is performed for the right patient at the right time, using the right specimen, and produces information that meaningfully changes care.</blockquote></div>
+        <div class="not-cost"><h3>Not merely cost containment</h3><p>Cost may improve when low-value testing falls, but it is not the primary endpoint. A stewardship decision may support an expensive or specialized assay when its result is sufficiently reliable, timely, and actionable.</p><p class="signal"><strong>Resident question:</strong> What decision will change because of this result?</p></div>
+      </div>
+      <div class="harm-chain" aria-label="Potential cascade from unnecessary testing">
+        <div><span>01</span><b>Unfocused order</b><small>No defined clinical question</small></div><i>→</i><div><span>02</span><b>Incidental result</b><small>False positive or uncertain finding</small></div><i>→</i><div><span>03</span><b>Diagnostic cascade</b><small>Repeat tests, imaging, procedures</small></div><i>→</i><div><span>04</span><b>Patient harm</b><small>Delay, anxiety, complications</small></div>
+      </div>
+      <div class="compare-grid">
+        <article><span class="tag teal">High-value testing</span><ul><li>Begins with a specific question</li><li>Uses probability to choose a test</li><li>Anticipates how results will be acted on</li><li>Closes the communication loop</li></ul></article>
+        <article><span class="tag coral">Utilization error</span><ul><li>Broad panels without a focused differential</li><li>Premature advanced testing</li><li>Unnecessary repetition or duplication</li><li>Results ordered without follow-up ownership</li></ul></article>
+      </div>
+      <div class="section-nav"><a href="#objectives">Previous</a><a href="#core">Next: Core Content</a></div>
+    </section>
+
+    <section id="core" class="page-section" data-section>
+      <header class="section-header"><p class="eyebrow">Core educational content</p><h2>Interrogate the test before it interrogates the patient.</h2><p>Select a stewardship lens to review the decision a laboratory consultant should clarify.</p></header>
+      <div class="lens-layout">
+        <div class="lens-tabs" role="tablist" aria-label="Stewardship lenses">
+          <button class="active" role="tab" aria-selected="true" data-lens="question">Clinical question</button>
+          <button role="tab" aria-selected="false" data-lens="probability">Probability</button>
+          <button role="tab" aria-selected="false" data-lens="setting">Testing pathway</button>
+          <button role="tab" aria-selected="false" data-lens="evidence">Evidence</button>
+          <button role="tab" aria-selected="false" data-lens="consequence">Consequences</button>
+        </div>
+        <div class="lens-stage">
+          <article class="lens-panel active" id="lens-question" data-lens-panel><span>01 / 05</span><h3>What exactly are we trying to decide?</h3><p>Translate “rule out everything” into a discriminating question. Define the phenotype, competing diagnoses, intended use, timing, and management options before selecting an assay.</p><dl><div><dt>Ask</dt><dd>Which result would change treatment, monitoring, disposition, or counseling?</dd></div><div><dt>Warning sign</dt><dd>No one can state what a positive, negative, or indeterminate result would change.</dd></div></dl></article>
+          <article class="lens-panel" id="lens-probability" data-lens-panel hidden><span>02 / 05</span><h3>Probability determines what a result can mean.</h3><p>Pretest probability integrates disease prevalence with patient-specific evidence. When probability is very low, even a sensitive test may generate more false-positive than true-positive results.</p><div class="mini-rule"><b>Bayesian update</b><p>Pretest odds × likelihood ratio = post-test odds. A test modifies probability; it does not replace clinical reasoning.</p></div></article>
+          <article class="lens-panel" id="lens-setting" data-lens-panel hidden><span>03 / 05</span><h3>Use the simplest pathway that answers the question.</h3><div class="path-grid"><div><b>In-house</b><p>Prefer when a validated local assay provides the required performance and actionable turnaround. Use reflex rules and minimum repeat intervals where appropriate.</p></div><div><b>Specialized / send-out</b><p>Use for focused needs that require rare methods or expertise. Confirm first-line workup, specimen stability, transport, turnaround, interpretation, and result ownership.</p></div></div></article>
+          <article class="lens-panel" id="lens-evidence" data-lens-panel hidden><span>04 / 05</span><h3>Separate four questions that are often blurred together.</h3><div class="evidence-grid"><div><b>Analytical validity</b><p>Does the assay measure the target accurately and reproducibly?</p></div><div><b>Clinical validity</b><p>How strongly does the result associate with the condition or outcome?</p></div><div><b>Clinical utility</b><p>Does using the result improve a meaningful care decision or outcome?</p></div><div><b>Operational feasibility</b><p>Can the service deliver it safely, reliably, and sustainably?</p></div></div></article>
+          <article class="lens-panel" id="lens-consequence" data-lens-panel hidden><span>05 / 05</span><h3>Plan for every plausible result.</h3><p>Consider false positives, false negatives, indeterminate findings, incidental findings, discordance, turnaround time, and who will communicate and act. A result without ownership is an unfinished test.</p><div class="mini-rule"><b>Consultant stance</b><p>Recommend, explain, document, and create a closed loop. Stewardship is an active clinical service, not an automated denial.</p></div></article>
+        </div>
+      </div>
+      <div class="quick-sort">
+        <div><p class="eyebrow">Quick sort</p><h3 id="sort-title">“The ANA is negative. Should I order the entire autoimmune panel?”</h3><p id="sort-context">Choose the strongest first response.</p></div>
+        <div class="sort-options"><button data-sort="approve">Approve</button><button data-sort="clarify">Clarify</button><button data-sort="deny">Deny</button></div>
+        <div id="sort-feedback" class="sort-feedback" aria-live="polite">Select a response to reveal the stewardship rationale.</div>
+        <button id="next-sort" class="text-button" type="button">Next prompt</button>
+      </div>
+      <div class="section-nav"><a href="#background">Previous</a><a href="#mechanisms">Next: Mechanisms</a></div>
+    </section>
+
+    <section id="mechanisms" class="page-section dark" data-section>
+      <header class="section-header"><p class="eyebrow">Mechanisms</p><h2>Follow the decision, not just the specimen.</h2><p>Select each stage to see its control point, failure mode, and resident contribution.</p></header>
+      <div class="pathway" role="tablist" aria-label="Diagnostic stewardship pathway">
+        <button class="active" data-stage="0"><span>01</span><b>Question</b></button><button data-stage="1"><span>02</span><b>Probability</b></button><button data-stage="2"><span>03</span><b>Test</b></button><button data-stage="3"><span>04</span><b>Specimen</b></button><button data-stage="4"><span>05</span><b>Analysis</b></button><button data-stage="5"><span>06</span><b>Report</b></button><button data-stage="6"><span>07</span><b>Interpret</b></button><button data-stage="7"><span>08</span><b>Outcome</b></button>
+      </div>
+      <div class="stage-display" aria-live="polite">
+        <div><span id="stage-kicker">Stage 01 · Clinical question</span><h3 id="stage-title">Name the decision before selecting the assay.</h3><p id="stage-copy">Define the phenotype, differential diagnosis, urgency, and action threshold.</p></div>
+        <dl><div><dt>Control point</dt><dd id="stage-control">A specific, answerable question</dd></div><div><dt>Failure mode</dt><dd id="stage-failure">Shotgun panels and defensive ordering</dd></div><div><dt>Resident contribution</dt><dd id="stage-role">Translate the request into an intended use</dd></div></dl>
+      </div>
+      <div class="implementation">
+        <div><p class="eyebrow">New test implementation</p><h3>Evidence alone does not make a service.</h3><p>A new assay must survive every implementation gate.</p></div>
+        <ol><li><button data-gate="0">Evidence review</button></li><li><button data-gate="1">Utilization criteria</button></li><li><button data-gate="2">Validation</button></li><li><button data-gate="3">Workflow + IT</button></li><li><button data-gate="4">Provider education</button></li><li><button data-gate="5">Ongoing monitoring</button></li></ol>
+        <div id="gate-detail" class="gate-detail">Select an implementation gate.</div>
+      </div>
+      <div class="section-nav"><a href="#core">Previous</a><a href="#cases">Next: Clinical Cases</a></div>
+    </section>
+
+    <section id="cases" class="page-section" data-section>
+      <header class="section-header"><p class="eyebrow">Interactive clinical cases</p><h2>Make the call before seeing the consequence.</h2><p>Each scenario targets a different failure point. Choices and progress are saved in this browser.</p></header>
+      <div class="case-tabs" role="tablist" aria-label="Clinical case selector"><button class="active" data-case-target="autoimmune">1 · Autoimmune</button><button data-case-target="ttp">2 · TTP</button><button data-case-target="ctdna">3 · ctDNA</button><button data-case-target="exome">4 · Exome</button><button data-case-target="assay">5 · New assay</button></div>
+      <div class="case-deck">
+        <article class="clinical-case active" id="case-autoimmune" data-case-panel data-case-id="autoimmune"><div class="case-label">Case 1 · Pretest probability</div><h3>A broad autoimmune panel in a low-risk patient</h3><p>A 29-year-old has fatigue, diffuse pain, a normal examination, normal CBC and urinalysis, and no inflammatory features. A broad autoimmune panel is requested “to be thorough.”</p><fieldset><legend>What is the strongest stewardship response?</legend><button data-quality="poor" data-feedback="Broad testing in a low-probability setting increases incidental and false-positive findings without a defined decision target.">Approve the panel because autoimmune disease can be subtle</button><button data-quality="best" data-feedback="Correct. Clarify the suspected phenotype and decision. Recommend targeted testing only when the history, examination, and first-line evaluation support a defined autoimmune question.">Clarify the phenotype and use a targeted, stepwise workup</button><button data-quality="partial" data-feedback="Repeating one screening assay still lacks value when no coherent clinical question has been identified.">Repeat ANA now and order the panel only if it changes</button></fieldset><div class="case-feedback" aria-live="polite">Choose a response to reveal the diagnostic reasoning.</div><button class="reveal-button">Reveal the redesigned workup</button><div class="reveal-panel" hidden><b>Resident consult</b><p>Identify organ-specific features, medication exposures, family history, and the working differential. Recommend focused first-line testing linked to the phenotype; explain that low pretest probability lowers positive predictive value.</p></div></article>
+        <article class="clinical-case" id="case-ttp" data-case-panel data-case-id="ttp" hidden><div class="case-label">Case 2 · Urgent specialized testing</div><h3>Suspected TTP with a high PLASMIC score</h3><p>A patient has thrombocytopenia, microangiopathic hemolytic anemia, neurologic symptoms, and a high PLASMIC score. ADAMTS13 activity is available only as a send-out test.</p><fieldset><legend>Which plan best integrates testing with care?</legend><button data-quality="poor" data-feedback="Suspected immune TTP is time-critical. Waiting for a send-out result before treatment can cause preventable organ injury.">Wait for ADAMTS13 before initiating therapy</button><button data-quality="best" data-feedback="Correct. Collect pretreatment plasma when feasible, send ADAMTS13 urgently, and do not delay appropriate empiric management when clinical suspicion is high. Interpret the result with timing and treatment context.">Collect before plasma therapy if feasible, send urgently, and treat based on high clinical suspicion</button><button data-quality="partial" data-feedback="The score estimates pretest probability but does not replace confirmatory ADAMTS13 activity or expert interpretation.">Use the PLASMIC score as the definitive diagnosis</button></fieldset><div class="case-feedback" aria-live="polite">Choose a response to reveal the diagnostic reasoning.</div><button class="reveal-button">Reveal the specimen checkpoint</button><div class="reveal-panel" hidden><b>Preanalytic checkpoint</b><p>Whenever possible, obtain the ADAMTS13 specimen before plasma exchange or plasma infusion, which can affect measured activity. Document timing, treatment, transport, and the expected turnaround.</p></div></article>
+        <article class="clinical-case" id="case-ctdna" data-case-panel data-case-id="ctdna" hidden><div class="case-label">Case 3 · Emerging clinical utility</div><h3>PET-positive lymphoma after therapy</h3><p>A patient with treated diffuse large B-cell lymphoma has residual PET avidity. The team asks whether a commercial ctDNA MRD assay should determine salvage therapy.</p><fieldset><legend>What is the best consultation?</legend><button data-quality="poor" data-feedback="Prognostic association does not automatically establish that an assay should replace tissue diagnosis or direct therapy in every clinical context.">Order ctDNA and treat solely from the result</button><button data-quality="best" data-feedback="Correct. Define the intended use, assay evidence, false-negative risks, tissue requirements, and whether the result is validated to change management. Use multidisciplinary and protocol-based guidance.">Assess intended use and evidence, then integrate with imaging, pathology, and current protocols</button><button data-quality="partial" data-feedback="Emerging tests should not be dismissed categorically. The relevant question is whether this assay has demonstrated validity and utility for this precise use.">Reject ctDNA because all emerging assays are experimental</button></fieldset><div class="case-feedback" aria-live="polite">Choose a response to reveal the diagnostic reasoning.</div><button class="reveal-button">Reveal the four-domain review</button><div class="reveal-panel" hidden><b>Evaluation frame</b><p>Analytical: detection limit and tracking strategy. Clinical validity: association with relapse. Utility: evidence that acting on the result improves care. Operational: tissue access, turnaround, longitudinal sampling, reimbursement, and interpretation.</p></div></article>
+        <article class="clinical-case" id="case-exome" data-case-panel data-case-id="exome" hidden><div class="case-label">Case 4 · Premature advanced testing</div><h3>Whole-exome sequencing before a basic hematologic evaluation</h3><p>A patient with chronic anemia is referred for whole-exome sequencing. No smear review, reticulocyte count, iron studies, hemolysis evaluation, or family history is documented.</p><fieldset><legend>What should happen next?</legend><button data-quality="best" data-feedback="Correct. Phenotyping and first-line evaluation sharpen the differential, improve variant interpretation, and may answer the question faster with fewer uncertain findings.">Complete phenotyping and a stepwise hematologic workup before selecting genomic testing</button><button data-quality="poor" data-feedback="Broad sequencing without adequate phenotype increases uncertain and incidental findings and can obscure a simpler diagnosis.">Proceed because exome sequencing includes most relevant genes</button><button data-quality="partial" data-feedback="Cost alone is not the central issue. The test may later be appropriate, but first define the phenotype, inheritance pattern, and intended use.">Decline only because sequencing is expensive</button></fieldset><div class="case-feedback" aria-live="polite">Choose a response to reveal the diagnostic reasoning.</div><button class="reveal-button">Reveal the diagnostic ladder</button><div class="reveal-panel" hidden><b>Stepwise strategy</b><p>Confirm the CBC pattern and chronicity; review smear and reticulocytes; evaluate nutritional, hemolytic, renal, inflammatory, and acquired causes; build a pedigree; then select targeted or broader genetic testing with consent and a results plan.</p></div></article>
+        <article class="clinical-case" id="case-assay" data-case-panel data-case-id="assay" hidden><div class="case-label">Case 5 · Test implementation</div><h3>A proposed assay with impressive precision</h3><p>A vendor presents a precise assay with strong analytical validation. Clinicians are enthusiastic, but no study shows that the reported result changes management or outcomes in the intended population.</p><fieldset><legend>What is the most defensible recommendation?</legend><button data-quality="poor" data-feedback="Analytical sophistication is necessary but insufficient. Precision alone does not establish clinical validity or utility.">Implement because analytical performance is excellent</button><button data-quality="best" data-feedback="Correct. Define the evidence gap and intended use, identify an appropriate evaluation or restricted pathway, and establish decision, workflow, and monitoring criteria before implementation.">Defer routine implementation and build a structured evidence and implementation review</button><button data-quality="partial" data-feedback="Volume matters operationally but does not resolve whether the assay provides clinically meaningful information.">Implement only if projected order volume is high</button></fieldset><div class="case-feedback" aria-live="polite">Choose a response to reveal the diagnostic reasoning.</div><button class="reveal-button">Reveal the go-live scorecard</button><div class="reveal-panel" hidden><b>Go-live scorecard</b><p>Intended use, comparator, population, performance, decision threshold, interpretive support, specimen and workflow, IT build, staffing, cost, education, approval criteria, utilization metrics, and review date.</p></div></article>
+      </div>
+      <div class="case-completion"><span id="case-progress-text">0 of 5 cases attempted</span><div class="progress-track"><span id="case-progress-bar"></span></div></div>
+      <div class="section-nav"><a href="#mechanisms">Previous</a><a href="#quiz">Next: Knowledge Check</a></div>
+    </section>
+
+    <section id="quiz" class="page-section band" data-section>
+      <header class="section-header"><p class="eyebrow">Knowledge check</p><h2>Test the reasoning, not the recall.</h2><p>Select one answer per question. Feedback appears immediately and your result is saved locally.</p></header>
+      <div class="quiz-toolbar"><div><span>Score</span><strong id="quiz-score">0 / 10</strong></div><div><span>Answered</span><strong id="quiz-answered">0 / 10</strong></div><button id="retry-quiz" type="button">Retry quiz</button></div>
+      <div id="quiz-list" class="quiz-list"></div>
+      <div id="quiz-result" class="quiz-result" hidden></div>
+      <div class="section-nav"><a href="#cases">Previous</a><a href="#summary">Next: Summary</a></div>
+    </section>
+
+    <section id="summary" class="page-section" data-section>
+      <header class="section-header"><p class="eyebrow">Summary</p><h2>A reusable consultation rhythm.</h2><p>Before approving, rejecting, or interpreting a test, work through these four moves.</p></header>
+      <div class="summary-grid"><article><span>01</span><h3>Frame</h3><p>Name the clinical question, probability, urgency, and decision threshold.</p></article><article><span>02</span><h3>Fit</h3><p>Match test, method, specimen, pathway, and turnaround to the intended use.</p></article><article><span>03</span><h3>Forecast</h3><p>Anticipate every result category, downstream action, and possible harm.</p></article><article><span>04</span><h3>Follow through</h3><p>Communicate, document, monitor utilization, and close the result loop.</p></article></div>
+      <div class="takeaways"><h3>Key take-home messages</h3><ul><li>Stewardship begins before the specimen is collected.</li><li>Pretest probability, analytical excellence, and thoughtful interpretation are inseparable.</li><li>Send-out testing is one component of diagnostic stewardship, not the goal itself.</li><li>Clinical utility matters more than analytical sophistication alone.</li><li>High-value laboratory medicine improves outcomes while reducing unnecessary testing and downstream harm.</li></ul></div>
+      <button id="mark-summary" class="button primary" type="button">Mark summary reviewed</button>
+      <div class="completion-panel"><span>Your module status</span><h3 id="completion-title">0% complete</h3><p id="completion-copy">Visit each section, attempt every case, and complete the quiz.</p></div>
+      <div class="section-nav"><a href="#quiz">Previous</a><a href="#home">Return home</a></div>
+    </section>
+  </main>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <script src="script.js"></script>
+</body>
+</html>
