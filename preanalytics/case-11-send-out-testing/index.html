@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Interactive pathology resident education on send-out testing, stewardship, specimen logistics, and result follow-up.">
+  <title>Case 11 | Send-out Testing</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <button class="menu-toggle" type="button" aria-label="Open module navigation" aria-expanded="false"><span></span><span></span><span></span></button>
+
+  <aside class="sidebar" aria-label="Module navigation">
+    <div class="brand"><p>Laboratory stewardship</p><h1>Case 11</h1><span>Send-out Testing</span></div>
+    <div class="progress-card" aria-live="polite">
+      <div><span>Module progress</span><strong id="progress-label">0%</strong></div>
+      <div class="progress-track"><span id="progress-bar"></span></div>
+      <small id="progress-detail">0 of 8 sections visited</small>
+    </div>
+    <nav>
+      <a class="nav-link active" href="#home"><span>01</span>Home</a>
+      <a class="nav-link" href="#objectives"><span>02</span>Objectives</a>
+      <a class="nav-link" href="#background"><span>03</span>Background</a>
+      <a class="nav-link" href="#core"><span>04</span>Core Content</a>
+      <a class="nav-link" href="#mechanisms"><span>05</span>Workflow</a>
+      <a class="nav-link" href="#cases"><span>06</span>Clinical Cases</a>
+      <a class="nav-link" href="#quiz"><span>07</span>Knowledge Check</a>
+      <a class="nav-link" href="#summary"><span>08</span>Summary</a>
+    </nav>
+    <button id="reset-progress" class="reset-button" type="button">Reset module progress</button>
+  </aside>
+
+  <main id="main-content">
+    <section id="home" class="page-section hero" data-section>
+      <div class="hero-shade"></div>
+      <div class="hero-copy">
+        <p class="eyebrow">Pathology resident module · Case 11</p>
+        <h2>Right test.<br>Right pathway.</h2>
+        <p class="lede">Send-out testing connects clinical judgment to a complex chain of specimen, method, transport, and communication decisions.</p>
+        <div class="hero-actions"><a class="button primary" id="begin-module" href="#objectives">Begin module</a><a class="button ghost" href="#cases">Enter a clinical case</a></div>
+        <div class="module-meta"><span>30–40 minutes</span><span>4 clinical cases</span><span>10-question quiz</span></div>
+      </div>
+      <div class="hero-status"><span>Diagnostic stewardship</span><b>Before collection → after result</b></div>
+    </section>
+
+    <section id="objectives" class="page-section" data-section>
+      <header class="section-header"><p class="eyebrow">Learning objectives</p><h2>Think beyond the courier box.</h2><p>After completing this module, you should be able to:</p></header>
+      <div class="objective-grid">
+        <article><b>01</b><h3>Justify</h3><p>Explain why send-out testing exists and when external performance is appropriate.</p></article>
+        <article><b>02</b><h3>Trace</h3><p>Describe the complete workflow from test request through final result integration.</p></article>
+        <article><b>03</b><h3>Steward</h3><p>Evaluate clinical value, test equivalence, method differences, turnaround time, and cost.</p></article>
+        <article><b>04</b><h3>Triage</h3><p>Separate medical and scientific consultation from operational questions for laboratory staff.</p></article>
+        <article><b>05</b><h3>Prevent</h3><p>Recognize ordering, preanalytic, operational, analytic, and postanalytic failure points.</p></article>
+        <article><b>06</b><h3>Escalate</h3><p>Support unusual requests and critical-result follow-up within local policy and role boundaries.</p></article>
+      </div>
+      <div class="section-nav"><a href="#home">← Previous</a><a href="#background">Next: Background →</a></div>
+    </section>
+
+    <section id="background" class="page-section pale" data-section>
+      <header class="section-header"><p class="eyebrow">Background</p><h2>Every test is built here or purchased elsewhere.</h2><p>The decision is clinical and operational, not a preference for a particular vendor.</p></header>
+      <div class="decision-layout">
+        <div class="decision-copy">
+          <p class="lead">A send-out test provides access to expertise or capacity that the health-system laboratory does not maintain internally.</p>
+          <p>External testing is often appropriate for low-volume, technically specialized, proprietary, rare-disease, or resource-constrained assays. The tradeoff is less direct control and a longer chain of custody.</p>
+          <blockquote><strong>Core teaching concept</strong>The best test is the one that provides sufficient clinical value, analytical performance, and actionable turnaround time through a feasible pathway.</blockquote>
+        </div>
+        <div class="path-comparison">
+          <article><span class="path-tag local">In-house</span><h3>Build internally</h3><ul><li>CBC, CMP, troponin, PT/INR</li><li>Rapid turnaround</li><li>Direct analytical oversight</li><li>Requires validation, staff, space, and sustainable volume</li></ul></article>
+          <article><span class="path-tag external">Send-out</span><h3>Purchase externally</h3><ul><li>Rare genetics and specialized autoimmune testing</li><li>Access to focused expertise</li><li>Longer turnaround and transport dependencies</li><li>Requires utilization and vendor oversight</li></ul></article>
+        </div>
+      </div>
+      <div class="decision-strip" aria-label="Factors in the build or purchase decision"><span>Clinical value</span><span>Analytical performance</span><span>Turnaround time</span><span>Feasibility</span><span>Total cost</span></div>
+      <div class="section-nav"><a href="#objectives">← Previous</a><a href="#core">Next: Core Content →</a></div>
+    </section>
+
+    <section id="core" class="page-section" data-section>
+      <header class="section-header"><p class="eyebrow">Core educational content</p><h2>Consultation starts by classifying the question.</h2><p>Select each lens to see what the resident should clarify and where the request belongs.</p></header>
+      <div class="lens-layout">
+        <div class="lens-tabs" role="tablist" aria-label="Send-out consultation lenses">
+          <button class="active" role="tab" aria-selected="true" data-lens="clinical">Clinical fit</button>
+          <button role="tab" aria-selected="false" data-lens="method">Method fit</button>
+          <button role="tab" aria-selected="false" data-lens="specimen">Specimen fit</button>
+          <button role="tab" aria-selected="false" data-lens="operational">Operational fit</button>
+          <button role="tab" aria-selected="false" data-lens="governance">Governance</button>
+        </div>
+        <div class="lens-stage">
+          <article class="lens-panel active" data-lens-panel="clinical"><span>01 / 05</span><h3>Will the result answer the clinical question?</h3><p>Define the phenotype, differential diagnosis, intended use, and decision the result will change. Look for an equivalent approved test before seeking a new vendor.</p><dl><div><dt>Resident contribution</dt><dd>Test selection, clinical context, interpretive limitations</dd></div><div><dt>Escalation trigger</dt><dd>Discordant indication, duplication, or uncertain clinical utility</dd></div></dl></article>
+          <article class="lens-panel" data-lens-panel="method" hidden><span>02 / 05</span><h3>Equivalent names do not guarantee equivalent evidence.</h3><p>Compare analyte, methodology, specimen type, reportable range, reference interval, decision thresholds, interfering substances, and intended-use population.</p><div class="method-example"><b>Example</b><p>An immunoassay and a mass spectrometry assay may target the same analyte but differ in cross-reactivity, sensitivity, specificity, and result comparability.</p></div></article>
+          <article class="lens-panel" data-lens-panel="specimen" hidden><span>03 / 05</span><h3>Feasibility must be settled before collection.</h3><p>Confirm source, container, minimum and preferred volume, processing, stability, temperature, timing, and shipping-day restrictions in the current performing-laboratory catalog.</p><div class="warning-note"><b>Do not improvise.</b><p>Requirements can change. Confirm the active test directory and consult send-out staff before an unusual or irreplaceable specimen is collected.</p></div></article>
+          <article class="lens-panel" data-lens-panel="operational" hidden><span>04 / 05</span><h3>Route the question to the team that owns the work.</h3><div class="route-grid"><div><b>Send-out staff / customer service</b><p>How to order, requisition status, kit delivery, pickup, vendor website, accession, and routine transport.</p></div><div><b>Resident / laboratory physician</b><p>Right test for this patient, method differences, test limitations, unusual interpretation, or a staff-referred scientific question.</p></div></div></article>
+          <article class="lens-panel" data-lens-panel="governance" hidden><span>05 / 05</span><h3>New pathways need deliberate review.</h3><p>A request for a new test or reference laboratory should follow the institution's intake and approval process. Review clinical need, alternatives, performance, logistics, interface, billing, volume, and result ownership before go-live.</p><div class="local-policy"><b>Local policy note</b><p>The source document directs new requests to the Laboratory Advancement and Best Practice Committee and Dr. Jenkins. Confirm the current committee name, intake form, and contact locally.</p></div></article>
+        </div>
+      </div>
+      <div class="role-check">
+        <div><p class="eyebrow">Quick sort</p><h3>Who should own the first response?</h3><p id="sort-prompt">“Can you send me the vendor kit?”</p></div>
+        <div class="sort-controls"><button data-route="staff">Send-out staff</button><button data-route="resident">Resident</button></div>
+        <div id="sort-feedback" class="sort-feedback" aria-live="polite">Choose the most appropriate first contact.</div>
+        <button id="next-sort" class="text-button" type="button">Try another prompt →</button>
+      </div>
+      <div class="section-nav"><a href="#background">← Previous</a><a href="#mechanisms">Next: Workflow →</a></div>
+    </section>
+
+    <section id="mechanisms" class="page-section dark-section" data-section>
+      <header class="section-header"><p class="eyebrow">Mechanisms and workflow</p><h2>A test result is only as strong as its full pathway.</h2><p>Select a stage to trace ownership, verification, and common failure points.</p></header>
+      <div class="workflow" role="tablist" aria-label="Send-out workflow stages">
+        <button class="active" data-stage="order"><span>01</span><b>Order</b><small>EHR + forms</small></button>
+        <button data-stage="collect"><span>02</span><b>Collect</b><small>Right specimen</small></button>
+        <button data-stage="receive"><span>03</span><b>Receive</b><small>Accession + inspect</small></button>
+        <button data-stage="prepare"><span>04</span><b>Prepare</b><small>Process + package</small></button>
+        <button data-stage="transport"><span>05</span><b>Transport</b><small>Temperature + cutoff</small></button>
+        <button data-stage="result"><span>06</span><b>Result</b><small>Verify + communicate</small></button>
+      </div>
+      <div class="stage-display" aria-live="polite">
+        <div><span id="stage-phase">Stage 01 · Ordering</span><h3 id="stage-title">Convert intent into a complete, traceable request.</h3><p id="stage-copy">The clinical team places the correct EHR order and completes required vendor requisitions with sufficient clinical information.</p></div>
+        <dl><div><dt>Verify</dt><dd id="stage-verify">Patient, test, performing laboratory, indication, authorization, and required forms</dd></div><div><dt>Failure signal</dt><dd id="stage-failure">Duplicate or low-value testing, ambiguous miscellaneous order, missing requisition</dd></div><div><dt>Resident lens</dt><dd id="stage-resident">Clarify medical necessity or test choice; do not routinely complete the clinical team's requisition</dd></div></dl>
+      </div>
+      <div class="cold-chain">
+        <div><p class="eyebrow">Specimen condition</p><h3>Temperature is a test requirement, not a shipping preference.</h3></div>
+        <div class="temperature-options"><button data-temp="ambient">Ambient</button><button data-temp="refrigerated">Refrigerated</button><button data-temp="frozen">Frozen</button></div>
+        <p id="temperature-copy">Select a condition to review the control point.</p>
+      </div>
+      <p class="safety-note"><b>Safety boundary:</b> Packaging and shipping must be performed by appropriately trained personnel under current institutional, DOT, carrier, and IATA requirements. This module does not certify a learner to ship regulated materials.</p>
+      <div class="section-nav"><a href="#core">← Previous</a><a href="#cases">Next: Clinical Cases →</a></div>
+    </section>
+
+    <section id="cases" class="page-section" data-section>
+      <header class="section-header"><p class="eyebrow">Interactive clinical cases</p><h2>Make the decision before revealing the consequence.</h2><p>Complete all four scenarios. Your choices are saved in this browser.</p></header>
+      <div class="case-tabs" role="tablist" aria-label="Clinical case selector"><button class="active" data-case-target="autoimmune">1 · New vendor</button><button data-case-target="panel">2 · Duplicate panel</button><button data-case-target="volume">3 · Low volume</button><button data-case-target="critical">4 · Critical result</button></div>
+      <div class="case-deck">
+        <article class="clinical-case active" id="case-autoimmune" data-case-panel data-case-id="autoimmune">
+          <div class="case-label">Case 1 · Stewardship and governance</div><h3>A rare autoimmune test from a new vendor</h3><p>Rheumatology asks you to approve a test from a laboratory not in the current system. An ARUP assay appears to address the same clinical question, but the provider says the requested vendor is “more advanced.”</p>
+          <fieldset><legend>What is the best first response?</legend><button data-quality="poor" data-feedback="Vendor novelty is not sufficient justification. The analytical and clinical differences must be established, and a new pathway requires institutional review.">Approve it because the specialist requested it</button><button data-quality="best" data-feedback="Correct. First define the clinical question and compare the approved assay with the requested assay. If a material gap remains, use the formal new-test and new-laboratory review pathway.">Compare intended use and methods, then use governance if a meaningful gap remains</button><button data-quality="partial" data-feedback="An approved assay may be preferable, but a simple denial misses the opportunity to understand whether a clinically meaningful difference exists.">Decline and require the approved ARUP assay without discussion</button></fieldset>
+          <div class="case-feedback" aria-live="polite">Choose a response to see the stewardship reasoning.</div><button class="reveal-button" type="button">Reveal resident action list</button><div class="reveal-panel" hidden><b>Resident action list</b><p>Clarify phenotype and intended use; compare analyte, method, specimen, performance, turnaround, and interpretive output; involve send-out staff; document the rationale; escalate through the current committee pathway if needed.</p></div>
+        </article>
+        <article class="clinical-case" id="case-panel" data-case-panel data-case-id="panel" hidden>
+          <div class="case-label">Case 2 · Existing capability</div><h3>A proprietary molecular panel is already available</h3><p>Infectious diseases requests a branded panel. An approved laboratory already performs a panel with matching targets and a validated electronic result interface.</p>
+          <fieldset><legend>What is the best next step?</legend><button data-quality="best" data-feedback="Correct. Use the established pathway when it answers the same question. Listen for a specific unmet need rather than assuming brand preference reflects a method difference.">Recommend the approved option and ask whether a specific gap concerns the team</button><button data-quality="poor" data-feedback="Sending both adds cost, consumes specimen, and may create discordant results without a defined clinical benefit.">Send both panels to maximize information</button><button data-quality="partial" data-feedback="Cost matters, but stewardship also requires assessment of clinical equivalence, performance, turnaround time, and result integration.">Choose whichever assay is less expensive</button></fieldset>
+          <div class="case-feedback" aria-live="polite">Choose a response to see the stewardship reasoning.</div><button class="reveal-button" type="button">Reveal equivalence checklist</button><div class="reveal-panel" hidden><b>Equivalence checklist</b><p>Intended use, target list, method, performance claims, specimen types, detection thresholds, turnaround time, reporting format, and clinical interpretation.</p></div>
+        </article>
+        <article class="clinical-case" id="case-volume" data-case-panel data-case-id="volume" hidden>
+          <div class="case-label">Case 3 · Irreplaceable specimen</div><h3>Friday evening, insufficient volume</h3><p>A limited CSF specimen arrives after the routine courier cutoff with orders for three send-out tests. The available volume cannot satisfy all minimum requirements.</p>
+          <fieldset><legend>Who should determine the testing priority?</legend><button data-quality="poor" data-feedback="The send-out bench can identify feasibility, stability, and deadlines, but should not independently decide which clinical question takes priority.">The send-out technologist, based only on volume</button><button data-quality="best" data-feedback="Correct. The clinical team owns clinical prioritization, supported by laboratory information on volume, stability, alternatives, and handling. Escalate urgently and document the decision.">The clinical team, after urgent consultation with the laboratory</button><button data-quality="partial" data-feedback="Waiting may cause avoidable specimen degradation or missed shipping windows. Prioritization should occur while the specimen remains viable.">Hold everything until Monday morning</button></fieldset>
+          <div class="case-feedback" aria-live="polite">Choose a response to see the stewardship reasoning.</div><button class="reveal-button" type="button">Reveal call structure</button><div class="reveal-panel" hidden><b>Closed-loop call</b><p>State available volume and stability deadline; identify minimum volumes and possible aliquots; ask which clinical question has priority; read back the agreed plan; record contacts, time, and disposition.</p></div>
+        </article>
+        <article class="clinical-case" id="case-critical" data-case-panel data-case-id="critical" hidden>
+          <div class="case-label">Case 4 · Postanalytic ownership</div><h3>A critical result returns after discharge</h3><p>A reference laboratory reports a critical result through its portal for a patient discharged yesterday. The interface has not posted the result to the EHR.</p>
+          <fieldset><legend>What is the safest response?</legend><button data-quality="poor" data-feedback="A portal result does not close the loop. Critical results require timely communication and documentation under the laboratory's current policy.">Wait for the interface to post the result</button><button data-quality="best" data-feedback="Correct. Use the established critical-result and interface-downtime pathway. Confirm recipient and read-back where required, document actions, and support escalation if laboratory staff involve you.">Activate the laboratory's critical-result pathway and document closed-loop communication</button><button data-quality="partial" data-feedback="The patient may need urgent action, but direct resident outreach should follow local policy and the designated clinical communication chain rather than bypassing it reflexively.">Call the patient directly without involving the care team</button></fieldset>
+          <div class="case-feedback" aria-live="polite">Choose a response to see the stewardship reasoning.</div><button class="reveal-button" type="button">Reveal reliability lens</button><div class="reveal-panel" hidden><b>Reliability lens</b><p>Verify patient and result; identify why the interface failed; follow critical-value policy; reach an authorized responsible clinician; document recipient, read-back, time, and escalation; submit the interface issue for follow-up.</p></div>
+        </article>
+      </div>
+      <div class="case-completion"><span id="case-count">0 / 4 cases completed</span><div><i id="case-progress"></i></div></div>
+      <div class="section-nav"><a href="#mechanisms">← Previous</a><a href="#quiz">Next: Knowledge Check →</a></div>
+    </section>
+
+    <section id="quiz" class="page-section pale" data-section>
+      <header class="section-header"><p class="eyebrow">Knowledge check</p><h2>Test the whole pathway.</h2><p>Select one answer for each question. Feedback appears immediately; a score of 80% demonstrates completion.</p></header>
+      <div id="quiz-list" class="quiz-list"></div>
+      <div id="quiz-result" class="quiz-result" hidden></div>
+      <button id="retry-quiz" class="button secondary" type="button">Retry knowledge check</button>
+      <div class="section-nav"><a href="#cases">← Previous</a><a href="#summary">Next: Summary →</a></div>
+    </section>
+
+    <section id="summary" class="page-section" data-section>
+      <header class="section-header"><p class="eyebrow">Summary</p><h2>Diagnostic excellence includes operational excellence.</h2></header>
+      <div class="summary-grid">
+        <article><span>Before collection</span><h3>Choose and prepare</h3><ul><li>Define the clinical question</li><li>Check approved equivalents</li><li>Compare methods when relevant</li><li>Confirm current specimen requirements</li></ul></article>
+        <article><span>During processing</span><h3>Protect and communicate</h3><ul><li>Verify patient, order, and integrity</li><li>Preserve stability and temperature</li><li>Meet packaging and cutoff requirements</li><li>Escalate constraints before viability is lost</li></ul></article>
+        <article><span>After testing</span><h3>Interpret and close the loop</h3><ul><li>Recognize method-dependent results</li><li>Verify interface and report routing</li><li>Communicate critical findings</li><li>Document exceptions and improve the process</li></ul></article>
+      </div>
+      <div class="takeaways"><h3>Five messages to carry forward</h3><ol><li>Send-out testing is a diagnostic resource, not merely a transaction.</li><li>The newest or most expensive test is not automatically the best test.</li><li>Stewardship begins before the specimen is collected.</li><li>Every handoff can preserve or erode diagnostic value.</li><li>Residents add value through clinical reasoning, method knowledge, and thoughtful escalation.</li></ol></div>
+      <button id="mark-summary" class="button primary" type="button">Mark summary reviewed</button>
+      <div class="section-nav"><a href="#quiz">← Previous</a><a href="#home">Back to Home ↑</a></div>
+    </section>
+  </main>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <script src="script.js"></script>
+</body>
+</html>

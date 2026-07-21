@@ -1,0 +1,23 @@
+PRIMARY SOURCE
+Case 11 EduMaterial.docx, supplied by the user on 2026-07-20.
+
+The source provides the learning objectives, build-versus-purchase concept, six-stage send-out workflow, resident responsibilities, common failure points, four case ideas, and key teaching messages.
+
+INSTITUTION-SPECIFIC CONTENT
+The source names ARUP, Mayo Clinic Laboratories, University of Cincinnati Children's Hospital Laboratory, the Laboratory Advancement and Best Practice Committee (LAB-C), and Dr. Jenkins. The website retains these teaching points but explicitly directs learners to confirm the current local committee name, intake process, approval threshold, contacts, and communication policy.
+
+SUPPLEMENTAL AUTHORITATIVE RESOURCES
+ARUP Laboratories, Specimen Information:
+https://www.aruplab.com/testing/resources/specimen
+
+CDC, Submit and Ship Specimens:
+https://www.cdc.gov/infectious-diseases-labs/php/cstor-web-portal/submit-ship-specimens.html
+
+CDC, Specimen Storage and Shipping Guidance:
+https://www.cdc.gov/infectious-diseases-labs/specimen-submission/pdf/Specimen-Packing-and-Shipping-Guidance-Infectious-Diseases-Laboratories.pdf
+
+Mayo Clinic Laboratories, Test Catalog example (IDENT):
+https://www.mayocliniclabs.com/test-catalog/overview/9221
+
+EDUCATIONAL BOUNDARY
+This module does not replace the active performing-laboratory test directory, institutional policy, laboratory director oversight, dangerous-goods training, or patient-specific clinical judgment.
