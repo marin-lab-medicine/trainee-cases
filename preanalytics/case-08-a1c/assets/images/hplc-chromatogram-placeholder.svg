@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 360" role="img" aria-labelledby="title desc">
+  <title id="title">HbA1c HPLC chromatogram placeholder</title>
+  <desc id="desc">Stylized chromatogram with HbA1c peak and abnormal variant window peak.</desc>
+  <rect width="720" height="360" fill="#ffffff"/>
+  <rect x="34" y="30" width="652" height="296" rx="16" fill="#f6f8f7" stroke="#d9e3e1" stroke-width="3"/>
+  <text x="64" y="72" font-family="Arial, Helvetica, sans-serif" font-size="23" font-weight="700" fill="#1e2a32">HPLC chromatogram review</text>
+  <text x="64" y="98" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#60717a">Image placeholder for method-specific teaching and variant window flags.</text>
+  <line x1="78" y1="276" x2="642" y2="276" stroke="#60717a" stroke-width="2"/>
+  <line x1="78" y1="122" x2="78" y2="276" stroke="#60717a" stroke-width="2"/>
+  <path d="M80 276 C115 276 123 268 135 276 C158 276 160 255 172 226 C184 198 197 276 228 276 C276 276 278 272 303 276 C340 276 351 224 368 166 C386 104 399 276 440 276 C488 276 497 271 518 276 C555 276 560 238 574 204 C591 162 603 276 642 276" fill="none" stroke="#315f8c" stroke-width="5" stroke-linecap="round"/>
+  <rect x="504" y="112" width="144" height="58" rx="8" fill="#fff6e8" stroke="#a76c1f" stroke-width="2"/>
+  <text x="576" y="137" font-family="Arial, Helvetica, sans-serif" text-anchor="middle" font-size="15" font-weight="700" fill="#6e4713">Variant window</text>
+  <text x="576" y="157" font-family="Arial, Helvetica, sans-serif" text-anchor="middle" font-size="13" fill="#6e4713">abnormal peak</text>
+  <path d="M576 172 C576 184 576 193 576 204" fill="none" stroke="#a76c1f" stroke-width="3" stroke-dasharray="5 5"/>
+  <g font-family="Arial, Helvetica, sans-serif" font-size="13" fill="#1e2a32">
+    <text x="152" y="304">A1a/A1b</text>
+    <text x="347" y="304">HbA1c</text>
+    <text x="546" y="304">Flagged peak</text>
+  </g>
+</svg>

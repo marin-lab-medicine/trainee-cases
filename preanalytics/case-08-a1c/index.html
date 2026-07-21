@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Case 8: HbA1c Interpretation</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+
+  <aside class="sidebar" aria-label="Course navigation">
+    <div class="brand">
+      <p class="eyebrow">Preanalytics Module</p>
+      <h1>Case 8</h1>
+      <p>HbA1c Interpretation</p>
+    </div>
+
+    <div class="progress-panel" aria-live="polite">
+      <div class="progress-row">
+        <span>Module Progress</span>
+        <strong id="progress-label">0%</strong>
+      </div>
+      <div class="progress-track" aria-hidden="true">
+        <div id="progress-bar"></div>
+      </div>
+    </div>
+
+    <nav>
+      <a class="nav-link active" href="#home">Home</a>
+      <a class="nav-link" href="#objectives">Learning Objectives</a>
+      <a class="nav-link" href="#background">Background</a>
+      <a class="nav-link" href="#content">Core Content</a>
+      <a class="nav-link" href="#mechanisms">Mechanisms</a>
+      <a class="nav-link" href="#cases">Clinical Cases</a>
+      <a class="nav-link" href="#quiz">Knowledge Check</a>
+      <a class="nav-link" href="#summary">Summary</a>
+    </nav>
+
+    <div class="score-panel" aria-live="polite">
+      <span>Question Score</span>
+      <strong id="total-score">0 / 0</strong>
+    </div>
+  </aside>
+
+  <main>
+    <section id="home" class="page-section hero" data-section>
+      <div class="hero-copy">
+        <p class="eyebrow">Clinical Chemistry and Laboratory Medicine for Pathology Residents</p>
+        <h2>Case 8: HbA1c Is Weighted, Not Simple</h2>
+        <p class="lede">
+          HbA1c is often taught as a 3-month marker of glycemia. In practice, the result is a weighted signal shaped by
+          recent glucose exposure, erythrocyte turnover, hemoglobin variants, and method-specific analytic limitations.
+        </p>
+        <div class="fact-strip">
+          <strong>Board pearl:</strong>
+          <span>The preceding month contributes disproportionately to the measured HbA1c (often estimated at ~50%), but older erythrocytes generally contain more HbA1c per cell because glycation accumulates throughout the erythrocyte lifespan.</span>
+        </div>
+        <div class="hero-actions">
+          <a class="button primary" href="#content">Start Module</a>
+          <a class="button secondary" href="#cases">Try Cases</a>
+        </div>
+      </div>
+
+      <div class="a1c-visual" aria-label="Illustration of weighted HbA1c contribution">
+        <div class="visual-card contribution-card">
+          <img src="assets/images/Image2_case8.png" alt="Approximate contribution to measured HbA1c bar graph">
+        </div>
+        <div class="visual-card rbc-field">
+          <img src="assets/images/a1c-rbc-lifespan.svg" alt="Stylized erythrocytes of different ages exposed to glucose">
+        </div>
+      </div>
+    </section>
+
+    <section id="objectives" class="page-section" data-section>
+      <div class="section-heading">
+        <p class="eyebrow">Learning Objectives</p>
+        <h2>After completing this module, residents should be able to:</h2>
+      </div>
+      <div class="objective-grid">
+        <article>
+          <span>01</span>
+          <h3>Explain HbA1c weighting</h3>
+          <p>Describe why HbA1c reflects approximately 120 days of glycemia but is not a simple arithmetic average.</p>
+        </article>
+        <article>
+          <span>02</span>
+          <h3>Separate erythrocyte age from glucose timing</h3>
+          <p>Distinguish between the accumulation of HbA1c within individual erythrocytes as they age and the disproportionate influence of recent glycemia on the overall measured HbA1c.</p>
+        </article>
+        <article>
+          <span>03</span>
+          <h3>Recognize biologic interference</h3>
+          <p>Predict falsely low or falsely high HbA1c results caused by altered erythrocyte survival or erythropoiesis.</p>
+        </article>
+        <article>
+          <span>04</span>
+          <h3>Respond to analytic flags</h3>
+          <p>Choose appropriate laboratory follow-up when an HbA1c result conflicts with glucose data or an HPLC chromatogram is abnormal.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="background" class="page-section" data-section>
+      <div class="section-heading">
+        <p class="eyebrow">Background</p>
+        <h2>HbA1c is a population-level readout of hemoglobin glycation</h2>
+      </div>
+      <div class="two-column">
+        <div>
+          <p>
+            HbA1c forms when glucose nonenzymatically glycates hemoglobin A. Because circulating erythrocytes survive
+            for roughly 120 days, HbA1c is commonly used as an integrated marker of recent glycemia.
+          </p>
+          <p>
+            The clinically important nuance is that the measurement is weighted toward recent glucose exposure. A useful
+            teaching model assigns about half of the final HbA1c to the preceding month, with progressively smaller
+            contributions from earlier months.
+          </p>
+          <p>
+            This is why HbA1c can begin to fall within several weeks after improved glycemic control and why recent
+            deterioration may affect the result before a full erythrocyte lifespan has elapsed.
+          </p>
+        </div>
+        <div class="table-card">
+          <h3>Classic Teaching Approximation</h3>
+          <table>
+            <thead>
+              <tr>
+                <th>Time before measurement</th>
+                <th>Approximate contribution</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>0-30 days</td><td>~50%</td></tr>
+              <tr><td>31-60 days</td><td>~25%</td></tr>
+              <tr><td>61-90 days</td><td>~15%</td></tr>
+              <tr><td>91-120 days</td><td>~10%</td></tr>
+            </tbody>
+          </table>
+          <p class="caption">The exact weighting varies among individuals and should be treated as an approximation, not a biologic law.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="content" class="page-section" data-section>
+      <div class="section-heading">
+        <p class="eyebrow">Core Educational Content</p>
+        <h2>The key interpretive distinction residents must master</h2>
+      </div>
+
+      <div class="topic-tabs" role="tablist" aria-label="Core educational topics">
+        <button class="topic-tab active" type="button" role="tab" aria-selected="true" data-topic="weighted-panel">Weighted Average</button>
+        <button class="topic-tab" type="button" role="tab" aria-selected="false" data-topic="rbc-age-panel">RBC Age</button>
+        <button class="topic-tab" type="button" role="tab" aria-selected="false" data-topic="treatment-panel">Treatment Response</button>
+        <button class="topic-tab" type="button" role="tab" aria-selected="false" data-topic="limits-panel">Interpretive Limits</button>
+      </div>
+
+      <div id="weighted-panel" class="topic-panel active" data-topic-panel>
+        <div class="content-grid">
+          <article class="teaching-card">
+            <h3>HbA1c is a 3-month test, but not a 3-month average</h3>
+            <p>
+              Erythrocytes are continuously entering and leaving circulation. At any moment, the sample contains
+              reticulocytes, young erythrocytes, middle-aged erythrocytes, and older erythrocytes. The HbA1c result is
+              a composite of glycation across this entire mixed-age population.
+            </p>
+          </article>
+          <article class="pearl-card">
+            <h3>In short</h3>
+            <p>
+              HbA1c reflects glycemia over approximately 120 days, but the most recent month contributes roughly half
+              of the final result.
+            </p>
+          </article>
+        </div>
+      </div>
+
+      <div id="rbc-age-panel" class="topic-panel" data-topic-panel hidden>
+        <div class="split-visual">
+          <div>
+            <h3>Older erythrocytes generally contain more HbA1c per cell</h3>
+            <p>
+              A 10-day-old erythrocyte has had relatively little exposure to circulating glucose and therefore contains
+              relatively little HbA1c. A 60-day-old erythrocyte has had more cumulative glucose exposure and generally
+              contains more HbA1c. A 110-day-old erythrocyte has usually accumulated the greatest amount of HbA1c
+              because glycation continues throughout the erythrocyte lifespan.
+            </p>
+            <p>
+              However, this does not mean that glucose from the earliest months dominates the reported HbA1c. The
+              measured HbA1c reflects the entire circulating erythrocyte population, which is continuously renewed.
+              Recent glucose influences the reported HbA1c because all surviving erythrocytes continue to acquire
+              glycation while older erythrocytes are progressively removed from circulation and replaced by newly
+              produced cells.
+            </p>
+          </div>
+          <img src="assets/images/a1c-rbc-age-gradient.svg" alt="Erythrocyte age gradient showing increasing per-cell HbA1c accumulation">
+        </div>
+      </div>
+
+      <div id="treatment-panel" class="topic-panel" data-topic-panel hidden>
+        <div class="content-grid">
+          <article class="teaching-card">
+            <h3>Why HbA1c can fall before 120 days</h3>
+            <p>
+              When intensive insulin therapy lowers blood glucose, the rate of new hemoglobin glycation decreases
+              immediately in all surviving circulating erythrocytes. Simultaneously, older erythrocytes containing
+              higher amounts of HbA1c are continuously removed from circulation and replaced by newly produced
+              erythrocytes with lower HbA1c. Together, these processes allow the measured HbA1c to begin declining
+              within 2–4 weeks, with substantial reductions often observed by 6–8 weeks.
+            </p>
+          </article>
+          <article class="callout warning">
+            <h3>Clinical implication</h3>
+            <p>
+              Guidelines often reassess HbA1c about 3 months after therapy changes to capture the full effect, but
+              meaningful movement may be measurable much earlier.
+            </p>
+          </article>
+        </div>
+      </div>
+
+      <div id="limits-panel" class="topic-panel" data-topic-panel hidden>
+        <div class="factor-list">
+          <article>
+            <h3>Shortened RBC survival</h3>
+            <p>Hemolysis, acute blood loss, transfusion, or high erythropoietic turnover may falsely decrease HbA1c.</p>
+          </article>
+          <article>
+            <h3>Altered erythropoiesis and erythrocyte kinetics</h3>
+            <p>Iron deficiency, B12 deficiency, and asplenia may falsely increase HbA1c in some clinical settings. The underlying mechanisms remain incompletely understood.</p>
+          </article>
+          <article>
+            <h3>Hemoglobin variants</h3>
+            <p>Variants can cause analytic interference, altered RBC survival, absent HbA, or abnormal chromatographic peaks.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="mechanisms" class="page-section" data-section>
+      <div class="section-heading">
+        <p class="eyebrow">Mechanisms</p>
+        <h2>Why recent glucose leaves such a large footprint</h2>
+      </div>
+      <div class="mechanism-layout">
+        <div class="timeline-panel">
+          <div class="timeline-step">
+            <span>1</span>
+            <div>
+              <h3>Mixed erythrocyte ages circulate together</h3>
+              <p>About 1% of erythrocytes are removed and replaced daily, so most cells present today were also present last week.</p>
+            </div>
+          </div>
+          <div class="timeline-step">
+            <span>2</span>
+            <div>
+              <h3>Glucose exposure is simultaneous</h3>
+              <p>A sudden glucose change exposes 5-day, 50-day, and 110-day cells at the same time.</p>
+            </div>
+          </div>
+          <div class="timeline-step">
+            <span>3</span>
+            <div>
+              <h3>Glycation continues across the population</h3>
+              <p>Older cells have more accumulated HbA1c, but all cells continue acquiring glycation while circulating.</p>
+            </div>
+          </div>
+          <div class="timeline-step">
+            <span>4</span>
+            <div>
+              <h3>Erythrocyte turnover shapes the measured HbA1c</h3>
+              <p>The reported HbA1c reflects the balance between ongoing glycation and the continuous removal and replacement of erythrocytes. Conditions that shorten erythrocyte survival generally lower HbA1c, while disorders that alter erythrocyte production or population dynamics may change HbA1c independently of glycemia.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="interactive-model">
+          <h3>Mechanism Explorer</h3>
+          <p>Select a biologic state to see the expected HbA1c bias.</p>
+          <div class="state-buttons" role="group" aria-label="RBC survival state">
+            <button type="button" data-state="normal" class="active">Normal turnover</button>
+            <button type="button" data-state="short">Shortened survival</button>
+            <button type="button" data-state="long">Altered dynamics</button>
+            <button type="button" data-state="variant">Hemoglobin variant</button>
+          </div>
+          <div class="model-output" id="mechanism-output" aria-live="polite">
+            <strong>Normal turnover</strong>
+            <p>HbA1c can be interpreted as a weighted glycemic marker when the assay is appropriate and RBC lifespan is typical.</p>
+          </div>
+          <img src="assets/images/Image1_case8.png" alt="HbA1c chromatogram image showing the A1c peak region">
+        </div>
+      </div>
+    </section>
+
+    <section id="cases" class="page-section" data-section>
+      <div class="section-heading">
+        <p class="eyebrow">Interactive Clinical Cases</p>
+        <h2>Practice laboratory reasoning step by step</h2>
+      </div>
+
+      <div class="case-tabs" role="tablist" aria-label="Clinical case selector">
+        <button class="case-tab active" type="button" role="tab" aria-selected="true" data-case-tab="case-1">Impossible HbA1c</button>
+        <button class="case-tab" type="button" role="tab" aria-selected="false" data-case-tab="case-2">Improving Diabetic</button>
+        <button class="case-tab" type="button" role="tab" aria-selected="false" data-case-tab="case-3">Unexpected Chromatogram</button>
+        <button class="case-tab" type="button" role="tab" aria-selected="false" data-case-tab="case-4">Iron Deficiency</button>
+        <button class="case-tab" type="button" role="tab" aria-selected="false" data-case-tab="case-5">Sickle Cell Surprise</button>
+      </div>
+
+      <article id="case-1" class="case-panel active branching-case" data-case-panel data-case-id="case-1">
+        <div class="case-header">
+          <h3>The Impossible HbA1c</h3>
+          <p>A 39-year-old man has random glucose 284 mg/dL and HbA1c 5.0%.</p>
+        </div>
+        <div class="reveal-stack">
+          <button class="reveal-button" type="button">Reveal CBC</button>
+          <div class="reveal-content" hidden>
+            <p><strong>Hemoglobin:</strong> 8.9 g/dL</p>
+            <p><strong>Reticulocytes:</strong> 11%</p>
+          </div>
+          <button class="reveal-button" type="button">Reveal hemolysis studies</button>
+          <div class="reveal-content" hidden>
+            <p><strong>LDH:</strong> Elevated</p>
+            <p><strong>Haptoglobin:</strong> Undetectable</p>
+          </div>
+        </div>
+        <div class="decision-block">
+          <h4>How should the resident interpret the HbA1c?</h4>
+          <div class="choice-grid">
+            <button type="button" data-quality="poor" data-feedback="This ignores the severe glucose-HbA1c discordance and hemolysis evidence. The numeric result may be analytically produced but clinically misleading.">Report as reliable glycemic control</button>
+            <button type="button" data-quality="best" data-feedback="Best choice. Shortened RBC lifespan reduces time available for glycation, so HbA1c can be falsely low despite severe hyperglycemia.">Recognize falsely low HbA1c from shortened RBC survival</button>
+            <button type="button" data-quality="partial" data-feedback="A repeat may be useful only if an analytic problem is suspected. The key abnormality here is biologic: accelerated RBC turnover.">Repeat HbA1c only</button>
+          </div>
+          <p class="case-feedback" aria-live="polite"></p>
+        </div>
+      </article>
+
+      <article id="case-2" class="case-panel branching-case" data-case-panel data-case-id="case-2" hidden>
+        <div class="case-header">
+          <h3>The Improving Diabetic</h3>
+          <p>Baseline HbA1c is 11.2%. Four weeks after intensive insulin therapy, HbA1c is 9.5%.</p>
+        </div>
+        <div class="decision-block">
+          <h4>A resident says: "That cannot happen because erythrocytes live 120 days." What is the best teaching response?</h4>
+          <div class="choice-grid">
+            <button type="button" data-quality="best" data-feedback="Correct. Improved glucose immediately reduces new glycation in the entire circulating RBC population, so HbA1c can decrease before 120 days.">Recent glycemia affects all circulating erythrocytes</button>
+            <button type="button" data-quality="poor" data-feedback="Glycation is essentially irreversible during the RBC lifespan, so reversal is not the explanation.">Glycation rapidly reverses after insulin</button>
+            <button type="button" data-quality="partial" data-feedback="RBC replacement contributes over time, but four weeks is too short for complete replacement. The stronger explanation is reduced glycation across existing cells.">All erythrocytes have been replaced</button>
+          </div>
+          <p class="case-feedback" aria-live="polite"></p>
+        </div>
+      </article>
+
+      <article id="case-3" class="case-panel branching-case" data-case-panel data-case-id="case-3" hidden>
+        <div class="case-header">
+          <h3>The Unexpected Chromatogram</h3>
+          <p>HbA1c is 6.4%, but the HPLC instrument generates a variant window flag with an abnormal peak.</p>
+        </div>
+        <img class="case-image" src="assets/images/hplc-chromatogram-placeholder.svg" alt="Placeholder HPLC chromatogram with variant window flag">
+        <div class="decision-block">
+          <h4>What is the most appropriate next laboratory action?</h4>
+          <div class="choice-grid">
+            <button type="button" data-quality="poor" data-feedback="Reporting without comment risks clinical misinterpretation when a variant peak is present.">Release without comment</button>
+            <button type="button" data-quality="partial" data-feedback="Repeating by the same method may reproduce the flag but does not characterize the variant.">Repeat the same HbA1c assay</button>
+            <button type="button" data-quality="best" data-feedback="Best choice. An abnormal chromatographic peak should prompt hemoglobin variant evaluation, such as electrophoresis or capillary electrophoresis.">Initiate hemoglobin variant evaluation</button>
+          </div>
+          <p class="case-feedback" aria-live="polite"></p>
+        </div>
+      </article>
+
+      <article id="case-4" class="case-panel branching-case" data-case-panel data-case-id="case-4" hidden>
+        <div class="case-header">
+          <h3>Iron Deficiency Confusion</h3>
+          <p>Hemoglobin 8.5 g/dL, ferritin 4 ng/mL, HbA1c 7.3%, and home glucose readings 90-130 mg/dL.</p>
+        </div>
+        <div class="decision-block">
+          <h4>Does HbA1c likely overestimate or underestimate glycemia?</h4>
+          <div class="choice-grid">
+            <button type="button" data-quality="best" data-feedback="Best choice. Iron deficiency can prolong erythrocyte survival and increase glycation time, causing HbA1c to overestimate glycemia.">Overestimate glycemia</button>
+            <button type="button" data-quality="poor" data-feedback="Underestimation is more typical of shortened RBC survival, as in hemolysis or acute blood loss.">Underestimate glycemia</button>
+            <button type="button" data-quality="partial" data-feedback="Analytic interference is possible in many contexts, but the provided pattern strongly supports biologic overestimation from iron deficiency.">No interpretive bias is expected</button>
+          </div>
+          <p class="case-feedback" aria-live="polite"></p>
+        </div>
+      </article>
+
+      <article id="case-5" class="case-panel branching-case" data-case-panel data-case-id="case-5" hidden>
+        <div class="case-header">
+          <h3>The Sickle Cell Surprise</h3>
+          <p>A patient with known HbSS disease has an HbA1c ordered during routine diabetes follow-up. HPLC reports no measurable HbA fraction.</p>
+        </div>
+        <div class="decision-block">
+          <h4>What should the laboratory recommend?</h4>
+          <div class="choice-grid">
+            <button type="button" data-quality="poor" data-feedback="HbA1c cannot be accurately reported when HbA is absent. Reporting a number would imply validity that is not present.">Report HbA1c as usual</button>
+            <button type="button" data-quality="best" data-feedback="Best choice. In HbSS, HbA is absent and RBC survival is abnormal. Recommend alternative markers such as fructosamine, glycated albumin, or glucose monitoring.">Do not report HbA1c; recommend alternative markers</button>
+            <button type="button" data-quality="partial" data-feedback="Fasting glucose may help clinically, but the report should explicitly explain why HbA1c is not valid and recommend appropriate alternatives.">Recommend fasting glucose only</button>
+          </div>
+          <p class="case-feedback" aria-live="polite"></p>
+        </div>
+      </article>
+    </section>
+
+    <section id="quiz" class="page-section" data-section>
+      <div class="section-heading row-heading">
+        <div>
+          <p class="eyebrow">Knowledge Check Quiz</p>
+          <h2>Board-style questions with immediate feedback</h2>
+        </div>
+        <div class="quiz-score" aria-live="polite">
+          <span>Quiz Score</span>
+          <strong id="quiz-score">0 / 0</strong>
+        </div>
+      </div>
+
+      <div class="quiz-list">
+        <article class="question-block quiz-question" data-question-id="q1" data-points="1">
+          <h3>Question 1</h3>
+          <p>A resident states that because about 50% of HbA1c reflects the preceding month, the youngest erythrocytes contribute most to the measured HbA1c. Which response is best?</p>
+          <div class="answer-list">
+            <button type="button" data-correct="false" data-explanation="Reticulocytes have minimal glucose exposure and contain little glycated hemoglobin.">Correct, because reticulocytes contain the highest concentration of glycated hemoglobin.</button>
+            <button type="button" data-correct="false" data-explanation="HbA1c is measured from all circulating erythrocytes, not only cells produced in the last month.">Correct, because only erythrocytes produced during the last month are measured.</button>
+            <button type="button" data-correct="true" data-explanation="Older erythrocytes contribute more HbA1c per cell, but recent glucose affects every circulating erythrocyte.">Incorrect. Older erythrocytes contribute more HbA1c per cell, but recent glucose affects every circulating erythrocyte.</button>
+            <button type="button" data-correct="false" data-explanation="There is no 60-day cutoff; every circulating erythrocyte contributes to the measurement.">Incorrect. HbA1c reflects only erythrocytes older than 60 days.</button>
+          </div>
+          <p class="feedback" aria-live="polite"></p>
+        </article>
+
+        <article class="question-block quiz-question" data-question-id="q2" data-points="1">
+          <h3>Question 2</h3>
+          <p>Why can HbA1c begin to decrease within several weeks after successful insulin therapy rather than requiring 120 days?</p>
+          <div class="answer-list">
+            <button type="button" data-correct="false" data-explanation="Insulin therapy does not selectively remove older erythrocytes.">Older erythrocytes are selectively removed after insulin therapy.</button>
+            <button type="button" data-correct="false" data-explanation="HbA1c formation is essentially irreversible during the erythrocyte lifespan.">Glycation is reversible.</button>
+            <button type="button" data-correct="true" data-explanation="Lower glucose immediately reduces new glycation occurring in all circulating erythrocytes.">Lower glucose immediately reduces new glycation occurring in all circulating erythrocytes.</button>
+            <button type="button" data-correct="false" data-explanation="Only about 1% of erythrocytes are replaced daily.">Reticulocytes rapidly replace all circulating erythrocytes.</button>
+          </div>
+          <p class="feedback" aria-live="polite"></p>
+        </article>
+
+        <article class="question-block quiz-question" data-question-id="q4" data-points="1">
+          <h3>Question 3</h3>
+          <p>A patient's HbA1c is unexpectedly low compared with continuous glucose monitoring. HPLC shows an abnormal peak within a variant window. What is the most appropriate next laboratory action?</p>
+          <div class="answer-list">
+            <button type="button" data-correct="false" data-explanation="Repeating the same method will not resolve the underlying variant concern.">Repeat HbA1c using the same method.</button>
+            <button type="button" data-correct="false" data-explanation="Reporting without investigation risks clinical misinterpretation.">Report the HbA1c without comment.</button>
+            <button type="button" data-correct="true" data-explanation="Unexpected chromatographic peaks should prompt hemoglobin variant evaluation, such as electrophoresis or capillary electrophoresis.">Initiate hemoglobin variant evaluation.</button>
+            <button type="button" data-correct="false" data-explanation="Glucose testing may be useful, but the laboratory should first investigate the abnormal chromatogram.">Recommend fasting glucose instead of HbA1c.</button>
+          </div>
+          <p class="feedback" aria-live="polite"></p>
+        </article>
+
+        <article class="question-block quiz-question" data-question-id="q5" data-points="1">
+          <h3>Question 4</h3>
+          <p>Which statement best explains why recent glycemia contributes approximately half of the measured HbA1c?</p>
+          <div class="answer-list">
+            <button type="button" data-correct="false" data-explanation="Older erythrocytes have accumulated substantially more HbA1c per cell.">Young erythrocytes contain the highest HbA1c concentration.</button>
+            <button type="button" data-correct="false" data-explanation="Glycation occurs continuously throughout erythrocyte life.">Glycation occurs only during the first month of erythrocyte life.</button>
+            <button type="button" data-correct="true" data-explanation="Recent glucose affects the glycation of all circulating erythrocytes simultaneously.">Recent glucose affects the glycation of all circulating erythrocytes simultaneously.</button>
+            <button type="button" data-correct="false" data-explanation="Older erythrocytes continue accumulating glycated hemoglobin until removed from circulation.">Older erythrocytes stop accumulating glycated hemoglobin after 90 days.</button>
+          </div>
+          <p class="feedback" aria-live="polite"></p>
+        </article>
+      </div>
+
+      <button id="reset-scores" class="button secondary" type="button">Reset Questions</button>
+    </section>
+
+    <section id="summary" class="page-section" data-section>
+      <div class="section-heading">
+        <p class="eyebrow">Summary</p>
+        <h2>Resident-ready interpretation framework</h2>
+      </div>
+      <div class="summary-grid">
+        <article>
+          <h3>1. Start with the clinical question</h3>
+          <p>Does the HbA1c match glucose measurements, CGM data, symptoms, and treatment timeline?</p>
+        </article>
+        <article>
+          <h3>2. Ask about RBC survival</h3>
+          <p>Short survival falsely lowers HbA1c; prolonged survival can falsely raise it.</p>
+        </article>
+        <article>
+          <h3>3. Review the method</h3>
+          <p>HPLC flags and abnormal peaks require laboratory follow-up before confident clinical interpretation.</p>
+        </article>
+        <article>
+          <h3>4. Communicate the limitation</h3>
+          <p>When HbA1c is unreliable, recommend clinically appropriate alternatives such as fructosamine, glycated albumin, glucose testing, or CGM.</p>
+        </article>
+      </div>
+      <div class="final-pearl">
+        <h3>Laboratory Director Pearl</h3>
+        <p>
+          Older erythrocytes generally contain the highest HbA1c per cell because they have been exposed to glucose for
+          a longer period and glycation accumulates throughout the erythrocyte lifespan. However, the measured HbA1c is
+          weighted toward recent glycemia because all surviving erythrocytes continue to acquire glycation while the
+          erythrocyte population is continuously renewed through the removal of older cells and the production of younger
+          cells.
+        </p>
+        <button id="mark-complete" class="button primary" type="button">Mark Module Complete</button>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
