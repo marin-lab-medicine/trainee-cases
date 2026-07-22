@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Interactive resident education on postanalytics, diagnostic test performance, and Bayesian interpretation.">
+  <title>Case 10 | Postanalytics and Test Interpretation</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <button class="menu-toggle" type="button" aria-label="Open module navigation" aria-expanded="false"><span></span><span></span><span></span></button>
+
+  <aside class="sidebar" aria-label="Module navigation">
+    <div class="brand"><p>Clinical diagnostics</p><h1>Case 10</h1><span>Postanalytics &amp;<br>Test Interpretation</span></div>
+    <div class="progress-card" aria-live="polite">
+      <div><span>Module progress</span><strong id="progress-label">0%</strong></div>
+      <div class="progress-track"><span id="progress-bar"></span></div>
+      <small id="progress-detail">0 of 8 sections visited</small>
+    </div>
+    <nav>
+      <a class="nav-link active" href="#home"><span>01</span>Home</a>
+      <a class="nav-link" href="#objectives"><span>02</span>Objectives</a>
+      <a class="nav-link" href="#background"><span>03</span>Background</a>
+      <a class="nav-link" href="#core"><span>04</span>Core Content</a>
+      <a class="nav-link" href="#mechanisms"><span>05</span>Mechanisms</a>
+      <a class="nav-link" href="#cases"><span>06</span>Clinical Cases</a>
+      <a class="nav-link" href="#quiz"><span>07</span>Knowledge Check</a>
+      <a class="nav-link" href="#summary"><span>08</span>Summary</a>
+    </nav>
+    <button id="reset-progress" class="reset-button" type="button">Reset module progress</button>
+  </aside>
+
+  <main id="main-content">
+    <section id="home" class="page-section hero" data-section>
+      <div class="hero-copy">
+        <p class="eyebrow">Resident learning module · Case 10</p>
+        <h2>A result is not a diagnosis.</h2>
+        <p class="lede">Laboratory tests shift probability. Learn to connect assay performance, pretest probability, and the patient in front of you.</p>
+        <div class="hero-actions"><a class="button primary" href="#objectives">Begin module</a><a class="button secondary" href="#cases">Enter a clinical case</a></div>
+        <div class="module-meta"><span>35–45 minutes</span><span>4 clinical cases</span><span>10-question quiz</span></div>
+      </div>
+      <div class="probability-display" aria-label="Illustration of a laboratory result changing disease probability">
+        <div class="display-header"><span>Diagnostic update</span><b>RESULT: POSITIVE</b></div>
+        <div class="probability-row"><div><small>Pretest</small><strong>10%</strong></div><span aria-hidden="true">→</span><div><small>Post-test</small><strong>52.6%</strong></div></div>
+        <div class="display-scale"><i></i></div>
+        <dl><div><dt>Test sensitivity</dt><dd>90%</dd></div><div><dt>Test specificity</dt><dd>90%</dd></div><div><dt>LR+</dt><dd>9.0</dd></div></dl>
+        <p>Same test. Different starting probability. Different meaning.</p>
+      </div>
+    </section>
+
+    <section id="objectives" class="page-section" data-section>
+      <header class="section-header"><p class="eyebrow">Learning objectives</p><h2>Interpret the test and the testing context.</h2><p>After completing this module, you should be able to:</p></header>
+      <div class="objective-grid">
+        <article><b>01</b><h3>Distinguish</h3><p>Differentiate analytical sensitivity and specificity from clinical sensitivity and specificity.</p></article>
+        <article><b>02</b><h3>Calculate</h3><p>Build a 2 × 2 table and calculate sensitivity, specificity, PPV, NPV, and likelihood ratios.</p></article>
+        <article><b>03</b><h3>Estimate</h3><p>Define pretest probability and identify the clinical information that shapes it.</p></article>
+        <article><b>04</b><h3>Update</h3><p>Apply Bayesian reasoning to move from pretest to post-test probability.</p></article>
+        <article><b>05</b><h3>Recognize</h3><p>Explain why excellent assay performance can still yield a misleading clinical conclusion.</p></article>
+        <article><b>06</b><h3>Steward</h3><p>Select the right test for the right patient and seek consultation when findings are discordant.</p></article>
+      </div>
+      <div class="section-nav"><a href="#home">← Previous</a><a href="#background">Next: Background →</a></div>
+    </section>
+
+    <section id="background" class="page-section tint" data-section>
+      <header class="section-header"><p class="eyebrow">Background</p><h2>Interpretation begins before the specimen is collected.</h2></header>
+      <div class="background-grid">
+        <div>
+          <p class="lead">A laboratory result is evidence. Its diagnostic meaning depends on what was plausible before the test was ordered.</p>
+          <p>History, examination, risk factors, disease prevalence, prior results, and clinical judgment establish a pretest probability. The test then modifies that probability. This is why the same numerical result can mean something very different in two patients.</p>
+          <blockquote><strong>Central principle</strong>A laboratory test does not diagnose disease. It changes the probability that disease is present.</blockquote>
+        </div>
+        <div class="diagnostic-path" aria-label="Clinical diagnostic process">
+          <div><span>01</span><p><b>Clinical presentation</b>History, examination, risk factors, prevalence</p></div>
+          <div><span>02</span><p><b>Estimate pretest probability</b>Low, intermediate, or high</p></div>
+          <div><span>03</span><p><b>Select and perform the test</b>Appropriate specimen, assay, QC, verification</p></div>
+          <div><span>04</span><p><b>Interpret the result</b>Update to post-test probability</p></div>
+          <div><span>05</span><p><b>Make a clinical decision</b>Act, investigate, monitor, or stop</p></div>
+        </div>
+      </div>
+      <div class="biomarker-strip"><strong>Biomarkers are not diseases</strong><div><span><b>Troponin</b> myocardial injury</span><span><b>D-dimer</b> fibrin degradation</span><span><b>HbA1c</b> glycated hemoglobin</span><span><b>PSA</b> prostate antigen</span><span><b>CRP</b> inflammation</span></div></div>
+      <div class="section-nav"><a href="#objectives">← Previous</a><a href="#core">Next: Core Content →</a></div>
+    </section>
+
+    <section id="core" class="page-section" data-section>
+      <header class="section-header"><p class="eyebrow">Core educational content</p><h2>Know what each performance measure actually answers.</h2><p>Select a concept to examine its denominator, formula, and clinical use.</p></header>
+      <div class="core-layout">
+        <div class="concept-tabs" role="tablist" aria-label="Core interpretation concepts">
+          <button class="active" role="tab" aria-selected="true" data-concept="analytical">Analytical vs clinical</button>
+          <button role="tab" aria-selected="false" data-concept="matrix">The 2 × 2 table</button>
+          <button role="tab" aria-selected="false" data-concept="predictive">Predictive values</button>
+          <button role="tab" aria-selected="false" data-concept="likelihood">Likelihood ratios</button>
+          <button role="tab" aria-selected="false" data-concept="errors">Interpretive errors</button>
+        </div>
+        <div class="concept-stage">
+          <article id="concept-analytical" class="concept-panel active" data-concept-panel>
+            <p class="panel-count">01 / 05</p><h3>Analytical performance is not diagnostic performance</h3>
+            <div class="comparison-grid"><div><h4>Analytical sensitivity</h4><p>The smallest amount of analyte an assay can reliably detect. It asks: <b>Can the assay detect the analyte?</b></p></div><div><h4>Analytical specificity</h4><p>The ability to measure the intended analyte while minimizing interference or cross-reactivity.</p></div><div><h4>Clinical sensitivity</h4><p>The proportion of patients with disease who test positive.</p><code>TP ÷ (TP + FN)</code></div><div><h4>Clinical specificity</h4><p>The proportion of patients without disease who test negative.</p><code>TN ÷ (TN + FP)</code></div></div>
+          </article>
+          <article id="concept-matrix" class="concept-panel" data-concept-panel hidden>
+            <p class="panel-count">02 / 05</p><h3>The diagnostic 2 × 2 table</h3>
+            <div class="matrix-wrap"><table><caption>Test result compared with reference diagnosis</caption><thead><tr><th></th><th>Disease present</th><th>Disease absent</th></tr></thead><tbody><tr><th>Test positive</th><td class="tp">True positive<br><b>TP</b></td><td class="fp">False positive<br><b>FP</b></td></tr><tr><th>Test negative</th><td class="fn">False negative<br><b>FN</b></td><td class="tn">True negative<br><b>TN</b></td></tr></tbody></table></div>
+            <p class="teaching-note"><b>Read by disease status</b> for sensitivity and specificity. <b>Read by test result</b> for predictive values.</p>
+          </article>
+          <article id="concept-predictive" class="concept-panel" data-concept-panel hidden>
+            <p class="panel-count">03 / 05</p><h3>Predictive values describe this tested population</h3>
+            <div class="formula-pair"><div><b>Positive predictive value</b><code>PPV = TP ÷ (TP + FP)</code><p>Given a positive result, what is the probability disease is present?</p></div><div><b>Negative predictive value</b><code>NPV = TN ÷ (TN + FN)</code><p>Given a negative result, what is the probability disease is absent?</p></div></div>
+            <div class="teaching-note"><b>Prevalence matters.</b> As disease becomes rarer, false positives can outnumber true positives and PPV falls. NPV generally rises.</div>
+          </article>
+          <article id="concept-likelihood" class="concept-panel" data-concept-panel hidden>
+            <p class="panel-count">04 / 05</p><h3>Likelihood ratios connect the test to Bayesian updating</h3>
+            <div class="formula-pair"><div><b>Positive likelihood ratio</b><code>LR+ = sensitivity ÷ (1 − specificity)</code><p>How much more likely is a positive result in disease than without disease?</p></div><div><b>Negative likelihood ratio</b><code>LR− = (1 − sensitivity) ÷ specificity</code><p>How much less likely is a negative result in disease than without disease?</p></div></div>
+            <div class="lr-scale"><span><b>LR+ &gt;10</b> often provides a large probability increase</span><span><b>LR− &lt;0.1</b> often provides a large probability decrease</span></div>
+          </article>
+          <article id="concept-errors" class="concept-panel" data-concept-panel hidden>
+            <p class="panel-count">05 / 05</p><h3>Common diagnostic interpretation errors</h3>
+            <ul class="error-list"><li>Ordering broad testing in patients with very low pretest probability</li><li>Ignoring disease prevalence or the population in which performance was validated</li><li>Confusing detection of a biomarker with diagnosis of a disease</li><li>Treating false-positive and false-negative results as impossibilities</li><li>Overriding the clinical context with a single laboratory result</li><li>Using a test when the result will not change management</li></ul>
+          </article>
+        </div>
+      </div>
+      <div class="section-nav"><a href="#background">← Previous</a><a href="#mechanisms">Next: Mechanisms →</a></div>
+    </section>
+
+    <section id="mechanisms" class="page-section dark-section" data-section>
+      <header class="section-header"><p class="eyebrow">Mechanisms</p><h2>See prevalence reshape the meaning of a positive result.</h2><p>Adjust the population and assay. The same sensitivity and specificity can produce very different predictive values.</p></header>
+      <div class="calculator-layout">
+        <form id="bayes-controls" class="calculator-controls">
+          <label>Pretest probability <output id="prevalence-output">1%</output><input id="prevalence" type="range" min="0.1" max="50" value="1" step="0.1"></label>
+          <label>Sensitivity <output id="sensitivity-output">99%</output><input id="sensitivity" type="range" min="50" max="99.9" value="99" step="0.1"></label>
+          <label>Specificity <output id="specificity-output">99%</output><input id="specificity" type="range" min="50" max="99.9" value="99" step="0.1"></label>
+          <button id="reset-calculator" type="button">Restore low-prevalence example</button>
+        </form>
+        <div class="population-panel" aria-live="polite">
+          <div class="population-top"><div><small>Population</small><strong>10,000</strong></div><div><small>Positive predictive value</small><strong id="ppv-result">50.0%</strong></div><div><small>Negative predictive value</small><strong id="npv-result">100.0%</strong></div></div>
+          <div class="population-bar" aria-label="Composition of positive results"><span id="tp-bar"></span><i id="fp-bar"></i></div>
+          <div class="bar-key"><span><i class="true-dot"></i><b id="tp-count">99</b> true positives</span><span><i class="false-dot"></i><b id="fp-count">99</b> false positives</span></div>
+          <div class="population-table"><div><small>Disease present</small><b id="disease-count">100</b></div><div><small>Disease absent</small><b id="no-disease-count">9,900</b></div><div><small>False negatives</small><b id="fn-count">1</b></div><div><small>True negatives</small><b id="tn-count">9,801</b></div></div>
+          <p id="population-explanation">At 1% pretest probability, approximately half of all positive results are false positives despite 99% sensitivity and specificity.</p>
+        </div>
+      </div>
+      <div class="bayes-steps"><div><span>1</span><b>Pretest probability</b><small>Convert to odds</small></div><i>×</i><div><span>2</span><b>Likelihood ratio</b><small>Apply the test evidence</small></div><i>=</i><div><span>3</span><b>Post-test odds</b><small>Convert back to probability</small></div></div>
+      <div class="section-nav"><a href="#core">← Previous</a><a href="#cases">Next: Clinical Cases →</a></div>
+    </section>
+
+    <section id="cases" class="page-section" data-section>
+      <header class="section-header"><p class="eyebrow">Interactive clinical cases</p><h2>When the result and the context disagree, slow down.</h2><p>Choose a response, read the reasoning, and then reveal the consultation lens.</p></header>
+      <div class="case-tabs" role="tablist" aria-label="Clinical cases"><button class="active" data-case-target="screening">1 · Screening</button><button data-case-target="troponin">2 · Troponin</button><button data-case-target="hit">3 · HIT</button><button data-case-target="ttp">4 · TTP</button></div>
+      <div class="case-deck">
+        <article id="case-screening" class="clinical-case active" data-case-panel data-case-id="screening">
+          <div class="case-label">Case 1 · Base-rate effect</div><h3>A positive result in a healthy volunteer</h3><p>A healthy 24-year-old is screened for a disease with 0.1% prevalence. The test has 99% sensitivity and 99% specificity. The result is positive.</p>
+          <fieldset><legend>What is the best interpretation?</legend><button data-quality="poor" data-feedback="A 99% sensitivity does not mean a positive result has a 99% chance of representing disease. That confuses sensitivity with PPV.">The patient has a 99% probability of disease</button><button data-quality="best" data-feedback="Correct. In 100,000 people, about 99 true positives and 999 false positives are expected. PPV is only about 9%, so confirmation and clinical assessment matter.">The result is more likely false positive than true positive</button><button data-quality="partial" data-feedback="The result should not be ignored, but it also should not be treated as diagnostic. The next step depends on the disease and confirmatory pathway.">The result is meaningless and should be ignored</button></fieldset>
+          <div class="case-feedback" aria-live="polite">Choose a response to see the diagnostic reasoning.</div><button class="consult-button" type="button">Reveal population calculation</button><div class="consult-note" hidden><b>Expected per 100,000</b><p>100 have disease: about 99 test positive. Of 99,900 without disease: about 999 test positive. PPV ≈ 99 ÷ 1,098 = 9.0%.</p></div>
+        </article>
+        <article id="case-troponin" class="clinical-case" data-case-panel data-case-id="troponin" hidden>
+          <div class="case-label">Case 2 · Same number, different meaning</div><h3>Two patients, identical troponin concentrations</h3><p>Patient A has ischemic chest discomfort and dynamic ECG changes. Patient B has sepsis, renal dysfunction, and no ischemic symptoms. Both have the same elevated troponin concentration.</p>
+          <fieldset><legend>Which statement is most accurate?</legend><button data-quality="best" data-feedback="Correct. Troponin indicates myocardial injury. The diagnosis and cause require symptoms, ECG, serial change, imaging, and the broader clinical context.">Both have myocardial injury, but the cause and probability of infarction differ</button><button data-quality="poor" data-feedback="An elevated troponin is not synonymous with myocardial infarction. Multiple ischemic and nonischemic processes cause myocardial injury.">Both have myocardial infarction because the values match</button><button data-quality="partial" data-feedback="Renal dysfunction can complicate interpretation, but an elevated result should not be dismissed. Serial change and clinical context remain important.">Patient B's result is analytically false because of renal failure</button></fieldset>
+          <div class="case-feedback" aria-live="polite">Choose a response to see the diagnostic reasoning.</div><button class="consult-button" type="button">Reveal interpretation lens</button><div class="consult-note" hidden><b>Laboratory consultation</b><p>Clarify the assay cutoff and serial pattern. Separate the measured biomarker, myocardial injury, and the clinical diagnosis of myocardial infarction.</p></div>
+        </article>
+        <article id="case-hit" class="clinical-case" data-case-panel data-case-id="hit" hidden>
+          <div class="case-label">Case 3 · Inappropriate testing</div><h3>Low 4Ts score, positive HIT immunoassay</h3><p>A hospitalized patient with a clear alternative cause of thrombocytopenia has a low 4Ts score. A PF4/heparin ELISA ordered without risk stratification is positive at low optical density.</p>
+          <fieldset><legend>What principle best explains the discordance?</legend><button data-quality="poor" data-feedback="A positive immunoassay detects antibodies but does not by itself prove platelet-activating antibodies or clinical HIT.">Any positive ELISA establishes HIT</button><button data-quality="best" data-feedback="Correct. In a low-pretest-probability patient, a positive immunoassay has reduced PPV. Reassess the 4Ts inputs, assay strength, and need for functional testing with the clinical team.">Low pretest probability makes a false-positive clinical interpretation more likely</button><button data-quality="partial" data-feedback="Analytical error is possible in any assay, but the more immediate concern is inappropriate clinical inference from a sensitive immunoassay in a low-risk patient.">The laboratory necessarily made an analytical error</button></fieldset>
+          <div class="case-feedback" aria-live="polite">Choose a response to see the diagnostic reasoning.</div><button class="consult-button" type="button">Reveal stewardship lens</button><div class="consult-note" hidden><b>ASH-aligned stewardship</b><p>Use the 4Ts score first. Routine HIT laboratory testing is discouraged when the 4Ts score is low unless the score is uncertain because information is missing or inaccurate.</p></div>
+        </article>
+        <article id="case-ttp" class="clinical-case" data-case-panel data-case-id="ttp" hidden>
+          <div class="case-label">Case 4 · Unexpected discordance</div><h3>Low PLASMIC score, ADAMTS13 activity &lt;10%</h3><p>A patient evaluated for thrombotic microangiopathy has a low PLASMIC score, but ADAMTS13 activity returns severely deficient.</p>
+          <fieldset><legend>What is the best laboratory response?</legend><button data-quality="poor" data-feedback="A prediction score estimates risk; it does not invalidate a definitive, unexpected laboratory finding.">Dismiss the ADAMTS13 result because the score is low</button><button data-quality="partial" data-feedback="Immediate repetition may be appropriate, but first investigate specimen timing, handling, method, interference, and the clinical data used to calculate the score.">Repeat the same test and take no other action</button><button data-quality="best" data-feedback="Correct. This discordance warrants urgent consultation: verify preanalytical and analytical factors, review the score inputs and presentation, and consider confirmatory evaluation or uncommon causes of severe deficiency.">Investigate the full discordance and consult promptly</button></fieldset>
+          <div class="case-feedback" aria-live="polite">Choose a response to see the diagnostic reasoning.</div><button class="consult-button" type="button">Reveal discordance checklist</button><div class="consult-note" hidden><b>Ask before excluding immune TTP</b><p>Was the specimen collected before plasma therapy? Were score inputs complete? Is the method affected by interference? Does inhibitor or anti-ADAMTS13 testing clarify the result? Does the evolving presentation change the pretest assessment?</p></div>
+        </article>
+      </div>
+      <div class="case-status"><span id="case-progress-text">0 of 4 cases attempted</span><div><i id="case-progress-bar"></i></div></div>
+      <div class="section-nav"><a href="#mechanisms">← Previous</a><a href="#quiz">Next: Knowledge Check →</a></div>
+    </section>
+
+    <section id="quiz" class="page-section quiz-section" data-section>
+      <header class="section-header"><p class="eyebrow">Knowledge check</p><h2>Test the reasoning, not just the formulas.</h2><p>Each question locks after selection and immediately explains the answer.</p></header>
+      <div class="quiz-toolbar"><div><small>Score</small><strong id="quiz-score">0 / 10</strong></div><div><small>Answered</small><strong id="quiz-answered">0 / 10</strong></div><button id="retry-quiz" type="button">Retry quiz</button></div>
+      <div id="quiz-list"></div><div id="quiz-result" class="quiz-result" hidden></div>
+      <div class="section-nav"><a href="#cases">← Previous</a><a href="#summary">Next: Summary →</a></div>
+    </section>
+
+    <section id="summary" class="page-section" data-section>
+      <header class="section-header"><p class="eyebrow">Summary</p><h2>A disciplined interpretation is a sequence of questions.</h2></header>
+      <div class="summary-layout">
+        <div class="stewardship-checklist"><h3>Before and after every test</h3><label><input type="checkbox">Is there a clear clinical question?</label><label><input type="checkbox">What is the pretest probability?</label><label><input type="checkbox">Is this the right test and specimen?</label><label><input type="checkbox">Will the result change management?</label><label><input type="checkbox">What are the important false-positive and false-negative pathways?</label><label><input type="checkbox">Does the result fit the clinical picture?</label><label><input type="checkbox">Does discordance require laboratory consultation?</label></div>
+        <div class="pearls"><article><b>01</b><p>Analytical excellence does not guarantee clinical usefulness.</p></article><article><b>02</b><p>Laboratories measure biomarkers, not diseases.</p></article><article><b>03</b><p>Clinical interpretation begins before testing.</p></article><article><b>04</b><p>Sensitivity and specificity describe test performance against disease status.</p></article><article><b>05</b><p>Predictive values depend on the tested population.</p></article><article><b>06</b><p>A test changes probability; it rarely creates certainty.</p></article><article><b>07</b><p>The right patient, test, and time are the foundation of diagnostic stewardship.</p></article></div>
+      </div>
+      <div class="completion-card"><div><h3 id="completion-title">Module in progress</h3><p id="completion-copy">Visit each section, attempt every case, and complete the quiz.</p></div><button id="mark-summary" class="button primary" type="button">Mark summary reviewed</button></div>
+      <div class="section-nav"><a href="#quiz">← Previous</a><a href="#home">Return home ↑</a></div>
+    </section>
+  </main>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <script src="script.js"></script>
+</body>
+</html>
