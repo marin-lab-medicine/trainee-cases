@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="An interactive resident learning module on laboratory testing for thrombotic thrombocytopenic purpura.">
+  <title>Laboratory Testing of TTP | Resident Learning Module</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar" aria-label="Module navigation">
+      <div class="brand">
+        <div class="brand-mark" aria-hidden="true">T</div>
+        <div><span class="eyebrow">Coagulation curriculum</span><strong>Case 01 · TTP</strong></div>
+      </div>
+      <div class="progress-card" aria-live="polite">
+        <div class="progress-label"><span>Module progress</span><strong id="progress-percent">0%</strong></div>
+        <div class="progress-track"><span id="progress-bar"></span></div>
+        <small id="progress-detail">0 of 8 sections complete</small>
+      </div>
+      <nav class="section-nav" id="section-nav">
+        <button class="nav-link active" data-section="home"><span>01</span>Home<i></i></button>
+        <button class="nav-link" data-section="objectives"><span>02</span>Learning objectives<i></i></button>
+        <button class="nav-link" data-section="background"><span>03</span>Background<i></i></button>
+        <button class="nav-link" data-section="core"><span>04</span>Core content<i></i></button>
+        <button class="nav-link" data-section="mechanisms"><span>05</span>Mechanisms<i></i></button>
+        <button class="nav-link" data-section="cases"><span>06</span>Clinical case<i></i></button>
+        <button class="nav-link" data-section="quiz"><span>07</span>Knowledge check<i></i></button>
+        <button class="nav-link" data-section="summary"><span>08</span>Summary<i></i></button>
+      </nav>
+      <button class="reset-button" id="reset-progress">Reset module progress</button>
+    </aside>
+
+    <div class="main-column">
+      <header class="mobile-header">
+        <button id="menu-button" class="menu-button" aria-controls="sidebar" aria-expanded="false"><span></span><span></span><span></span><b class="sr-only">Open navigation</b></button>
+        <div><small>Case 01</small><strong>Laboratory Testing of TTP</strong></div>
+        <span class="mobile-progress" id="mobile-progress">0%</span>
+      </header>
+
+      <main id="main-content" tabindex="-1">
+        <section class="module-section active" id="home" data-title="Home">
+          <div class="hero">
+            <div class="hero-copy">
+              <span class="kicker">Interactive hematopathology case</span>
+              <h1>Laboratory Testing of <em>Thrombotic Thrombocytopenic Purpura</em></h1>
+              <p class="hero-lede">Follow a patient from the first concerning CBC through ADAMTS13 testing, inhibitor characterization, and remission monitoring.</p>
+              <div class="hero-actions">
+                <button class="button primary" data-go="objectives">Begin module <span aria-hidden="true">→</span></button>
+                <button class="button secondary" id="resume-button" hidden>Resume where you left off</button>
+              </div>
+              <div class="module-meta"><span><b>⏱</b> 25–30 minutes</span><span><b>◫</b> Resident level</span><span><b>✓</b> 8 sections</span></div>
+            </div>
+            <div class="hero-visual" aria-label="Stylized microvascular blood flow illustration">
+              <div class="vessel">
+                <span class="rbc r1"></span><span class="rbc r2"></span><span class="rbc r3"></span><span class="rbc r4"></span>
+                <span class="platelet p1"></span><span class="platelet p2"></span><span class="platelet p3"></span><span class="platelet p4"></span>
+                <div class="vwf-strand"></div>
+              </div>
+              <div class="visual-caption"><span>Clinical signal</span><strong>MAHA + thrombocytopenia</strong><small>Recognize the pattern. Protect the specimen. Confirm the mechanism.</small></div>
+            </div>
+          </div>
+          <div class="case-hook">
+            <div class="patient-avatar">25<span>F</span></div>
+            <div><span class="eyebrow">Your patient is waiting</span><h2>Fever, severe headache, and confusion</h2><p>A previously healthy 25-year-old woman presents after a two-week upper respiratory illness. Her head CT is unrevealing—but her laboratory results are not.</p></div>
+            <button class="text-link" data-go="cases">Preview the case →</button>
+          </div>
+        </section>
+
+        <section class="module-section" id="objectives" data-title="Learning Objectives">
+          <div class="section-heading"><span class="kicker">02 · Learning objectives</span><h1>What you will be able to do</h1><p>By the end of this module, you should be able to connect clinical suspicion with defensible laboratory decisions.</p></div>
+          <div class="objective-grid">
+            <article><span>01</span><h3>Recognize</h3><p>Identify the laboratory pattern of microangiopathic hemolytic anemia and thrombocytopenia.</p></article>
+            <article><span>02</span><h3>Estimate</h3><p>Apply the PLASMIC score to estimate the likelihood of severe ADAMTS13 deficiency.</p></article>
+            <article><span>03</span><h3>Protect</h3><p>Select and handle specimens correctly while anticipating preanalytical interference.</p></article>
+            <article><span>04</span><h3>Compare</h3><p>Distinguish activity, inhibitor, and antibody assays by principle and clinical role.</p></article>
+            <article><span>05</span><h3>Interpret</h3><p>Explain the significance and limitations of severe and modest ADAMTS13 reductions.</p></article>
+            <article><span>06</span><h3>Integrate</h3><p>Use reflex testing and follow-up results to classify disease and assess relapse risk.</p></article>
+          </div>
+          <div class="callout"><strong>Clinical frame</strong><p>TTP is a treatment emergency. Laboratory testing refines diagnosis, classification, and prognosis; treatment decisions should not wait for a send-out result when clinical suspicion is high.</p></div>
+        </section>
+
+        <section class="module-section" id="background" data-title="Background">
+          <div class="section-heading"><span class="kicker">03 · Background</span><h1>Start with the syndrome</h1><p>TTP lives within the thrombotic microangiopathy differential. The first laboratory task is to recognize MAHA and separate the pattern from common mimics.</p></div>
+          <div class="split-layout">
+            <div>
+              <h2>The diagnostic constellation</h2>
+              <div class="feature-list">
+                <button class="feature active" data-detail="fragment"><span class="feature-icon">⌁</span><span><strong>Red-cell fragmentation</strong><small>Schistocytes, elevated LDH, indirect hyperbilirubinemia, low haptoglobin</small></span></button>
+                <button class="feature" data-detail="platelets"><span class="feature-icon">••</span><span><strong>Platelet consumption</strong><small>Often marked thrombocytopenia from platelet-rich microthrombi</small></span></button>
+                <button class="feature" data-detail="organs"><span class="feature-icon">⌘</span><span><strong>Organ ischemia</strong><small>Neurologic findings are common; renal injury is variable</small></span></button>
+                <button class="feature" data-detail="coag"><span class="feature-icon">≈</span><span><strong>Preserved coagulation tests</strong><small>PT, aPTT, and fibrinogen are often normal, unlike overt DIC</small></span></button>
+              </div>
+            </div>
+            <div class="detail-panel" id="background-detail">
+              <span class="detail-number">01</span><h3>Mechanical hemolysis</h3><p>Red cells traversing platelet-rich microvascular thrombi fragment, producing schistocytes and intravascular hemolysis. A negative direct antiglobulin test supports a nonimmune mechanism.</p><div class="mini-pearl"><b>Peripheral smear</b><span>In the source case, schistocytes account for approximately 1–2% of red cells.</span></div>
+            </div>
+          </div>
+          <h2 class="subsection-title">A focused thrombotic microangiopathy differential</h2>
+          <div class="comparison-table" role="table" aria-label="TTP differential comparison">
+            <div class="tr th" role="row"><span>Disease process</span><span>ADAMTS13 activity</span><span>Helpful context</span></div>
+            <div class="tr" role="row"><strong>Immune TTP</strong><span><b class="tag red">Usually &lt;10%</b></span><span>Severe thrombocytopenia, MAHA; neurologic findings may predominate</span></div>
+            <div class="tr" role="row"><strong>HUS / complement-mediated TMA</strong><span>Not typically severely deficient</span><span>Renal involvement may be prominent; interpret in clinical context</span></div>
+            <div class="tr" role="row"><strong>DIC</strong><span>May be mildly or moderately reduced</span><span>PT/aPTT prolongation, low fibrinogen, and higher D-dimer support consumption</span></div>
+          </div>
+        </section>
+
+        <section class="module-section" id="core" data-title="Core Educational Content">
+          <div class="section-heading"><span class="kicker">04 · Core educational content</span><h1>From pretest probability to laboratory confirmation</h1><p>Work through the three decisions that matter most: estimate risk, protect the specimen, and select the right assay.</p></div>
+
+          <div class="content-tabs" role="tablist" aria-label="Core content topics">
+            <button class="content-tab active" role="tab" aria-selected="true" data-tab="plasmic">PLASMIC score</button>
+            <button class="content-tab" role="tab" aria-selected="false" data-tab="specimen">Preanalytics</button>
+            <button class="content-tab" role="tab" aria-selected="false" data-tab="assays">ADAMTS13 assays</button>
+            <button class="content-tab" role="tab" aria-selected="false" data-tab="antibodies">Antibody testing</button>
+          </div>
+
+          <div class="tab-panel active" id="tab-plasmic">
+            <div class="tool-header"><div><span class="eyebrow">Clinical calculator</span><h2>PLASMIC score</h2><p>Select each criterion present. One point is assigned for each.</p></div><div class="score-orb"><strong id="plasmic-score">0</strong><span>/ 7</span></div></div>
+            <div class="plasmic-layout">
+              <div class="criteria-list" id="plasmic-criteria">
+                <label><input type="checkbox" data-letter="P"><span class="letter">P</span><span><strong>Platelet count</strong><small>&lt;30 × 10⁹/L</small></span><i>+1</i></label>
+                <label><input type="checkbox" data-letter="L"><span class="letter">L</span><span><strong>Hemolysis</strong><small>Reticulocytes &gt;2.5%, undetectable haptoglobin, or indirect bilirubin &gt;2.0 mg/dL</small></span><i>+1</i></label>
+                <label><input type="checkbox" data-letter="A"><span class="letter">A</span><span><strong>No active cancer</strong><small>Absence of active malignancy</small></span><i>+1</i></label>
+                <label><input type="checkbox" data-letter="S"><span class="letter">S</span><span><strong>No transplant history</strong><small>No solid-organ or stem-cell transplant</small></span><i>+1</i></label>
+                <label><input type="checkbox" data-letter="M"><span class="letter">M</span><span><strong>MCV</strong><small>&lt;90 fL</small></span><i>+1</i></label>
+                <label><input type="checkbox" data-letter="I"><span class="letter">I</span><span><strong>INR</strong><small>&lt;1.5</small></span><i>+1</i></label>
+                <label><input type="checkbox" data-letter="C"><span class="letter">C</span><span><strong>Creatinine</strong><small>&lt;2.0 mg/dL</small></span><i>+1</i></label>
+              </div>
+              <aside class="score-result" id="plasmic-result"><span>Current interpretation</span><h3>Low risk</h3><strong>0% risk of severe ADAMTS13 deficiency*</strong><p>Select the criteria to calculate a score.</p><small>*Risk values reproduced from the supplied educational source.</small></aside>
+            </div>
+          </div>
+
+          <div class="tab-panel" id="tab-specimen">
+            <div class="tool-header"><div><span class="eyebrow">Bench decision activity</span><h2>Would you test this specimen?</h2><p>Choose the best laboratory disposition, then reveal the rationale.</p></div><span class="activity-counter" id="specimen-counter">1 / 6</span></div>
+            <div class="specimen-card" id="specimen-card"></div>
+          </div>
+
+          <div class="tab-panel" id="tab-assays">
+            <div class="tool-header"><div><span class="eyebrow">Method comparison</span><h2>Activity assays answer the first question</h2><p>Which method best detects loss of ADAMTS13 function—and what can mislead it?</p></div></div>
+            <div class="assay-grid">
+              <button class="assay-card active" data-assay="fret"><span>01</span><h3>FRET-VWF73</h3><p>Fluorescent activity assay</p></button>
+              <button class="assay-card" data-assay="chrom"><span>02</span><h3>Chromogenic ELISA</h3><p>Colorimetric activity assay</p></button>
+              <button class="assay-card" data-assay="antigen"><span>03</span><h3>Antigen assay</h3><p>Protein amount, not function</p></button>
+              <button class="assay-card" data-assay="ldt"><span>04</span><h3>Laboratory-developed</h3><p>FRET or specialized detection</p></button>
+            </div>
+            <div class="assay-detail" id="assay-detail"></div>
+            <div class="threshold-band"><strong>Severe deficiency</strong><span><b>&lt;10%</b> of normal activity</span><p>Approximately 90% sensitivity and approximately 90% or higher specificity for TTP in the source material, with variability across datasets and definitions.</p></div>
+          </div>
+
+          <div class="tab-panel" id="tab-antibodies">
+            <div class="tool-header"><div><span class="eyebrow">Etiologic classification</span><h2>Finding the antibody</h2><p>Activity confirms functional deficiency. Antibody testing helps distinguish acquired immune TTP from hereditary TTP.</p></div></div>
+            <div class="method-versus">
+              <article><span class="method-label">More specific</span><h3>Bethesda inhibitor assay</h3><p>Patient plasma is mixed with normal pooled plasma. Lower-than-expected recovery of activity indicates a neutralizing inhibitor.</p><strong>1 BU</strong><small>reduces residual activity to 50% of expected</small><ul><li>Detects neutralizing antibodies</li><li>Positive in roughly two-thirds of TTP cases</li><li>May miss titers below approximately 0.5 BU</li></ul></article>
+              <div class="versus">VS</div>
+              <article><span class="method-label teal">More sensitive</span><h3>ADAMTS13 antibody ELISA</h3><p>Full-length recombinant ADAMTS13 captures binding antibodies, including non-neutralizing antibodies.</p><strong>Binding</strong><small>does not by itself establish functional inhibition</small><ul><li>Detects neutralizing and non-neutralizing binding antibodies</li><li>May identify antibodies in some healthy individuals</li><li>Cannot detect antibody hidden in circulating immune complexes</li></ul></article>
+            </div>
+            <div class="algorithm-strip"><span>Low activity</span><b>→</b><span>Bethesda assay</span><b>→</b><span>If negative: antibody ELISA</span></div>
+          </div>
+        </section>
+
+        <section class="module-section" id="mechanisms" data-title="Mechanisms">
+          <div class="section-heading"><span class="kicker">05 · Mechanisms</span><h1>Why ADAMTS13 deficiency produces TTP</h1><p>Advance through the mechanism, then compare acquired immune and hereditary disease.</p></div>
+          <div class="mechanism-viewer">
+            <div class="mechanism-stage" id="mechanism-stage"></div>
+            <div class="step-rail" id="mechanism-rail"></div>
+            <div class="mechanism-controls"><button class="button secondary" id="mechanism-prev">← Previous</button><span id="mechanism-count">1 of 5</span><button class="button primary" id="mechanism-next">Next step →</button></div>
+          </div>
+          <div class="disease-toggle"><button class="active" data-disease="immune">Acquired immune TTP</button><button data-disease="hereditary">Hereditary TTP</button></div>
+          <div class="disease-panel" id="disease-panel"></div>
+        </section>
+
+        <section class="module-section" id="cases" data-title="Interactive Clinical Case">
+          <div class="section-heading"><span class="kicker">06 · Interactive clinical case</span><h1>Return to the bedside</h1><p>New information appears at each stage. Commit to a decision before viewing the teaching point.</p></div>
+          <div class="case-workspace">
+            <div class="case-timeline" id="case-timeline"></div>
+            <div class="case-stage" id="case-stage"></div>
+          </div>
+        </section>
+
+        <section class="module-section" id="quiz" data-title="Knowledge Check">
+          <div class="section-heading"><span class="kicker">07 · Knowledge check</span><h1>Test your laboratory judgment</h1><p>Eight questions. Each response includes immediate feedback and a focused explanation.</p></div>
+          <div class="quiz-shell">
+            <div class="quiz-status"><span id="quiz-count">Question 1 of 8</span><div class="quiz-track"><i id="quiz-progress"></i></div><strong id="quiz-score">0 correct</strong></div>
+            <div id="quiz-content"></div>
+          </div>
+        </section>
+
+        <section class="module-section" id="summary" data-title="Summary">
+          <div class="section-heading"><span class="kicker">08 · Summary</span><h1>The laboratory playbook</h1><p>Carry these decisions into your next thrombotic microangiopathy workup.</p></div>
+          <div class="summary-path">
+            <article><span>01</span><div><h3>Recognize the signal</h3><p>MAHA plus marked thrombocytopenia should trigger urgent evaluation for TTP.</p></div></article>
+            <article><span>02</span><div><h3>Estimate pretest probability</h3><p>Use PLASMIC to estimate the likelihood of severe ADAMTS13 deficiency—not as a replacement for testing or judgment.</p></div></article>
+            <article><span>03</span><div><h3>Collect before treatment</h3><p>Use citrated platelet-poor plasma. Avoid EDTA, serum, preventable hemolysis, delayed processing, and repeated freeze–thaw cycles.</p></div></article>
+            <article><span>04</span><div><h3>Measure function first</h3><p>An ADAMTS13 activity below 10% is strongly supportive of TTP in the appropriate clinical setting.</p></div></article>
+            <article><span>05</span><div><h3>Characterize the cause</h3><p>Use Bethesda and antibody ELISA methods reflexively to identify neutralizing and non-neutralizing autoantibodies.</p></div></article>
+            <article><span>06</span><div><h3>Keep monitoring</h3><p>Persistent low activity or inhibitor during remission signals meaningful relapse risk and supports close follow-up.</p></div></article>
+          </div>
+          <div class="final-card"><span class="eyebrow">Case resolution</span><h2>Severe deficiency confirmed immune TTP</h2><p>The patient’s acute specimen showed ADAMTS13 activity &lt;5% with a 1.8-BU inhibitor. Neurologic symptoms resolved after the first plasma exchange; thrombocytopenia and hemolysis resolved after additional exchanges and prednisone. During remission, activity remained low at 15% with a 0.6-BU inhibitor, supporting close relapse surveillance.</p><button class="button primary" id="complete-module">Complete module ✓</button></div>
+        </section>
+      </main>
+
+      <footer class="module-footer"><button id="previous-section">← Previous</button><span id="footer-section">01 / 08 · Home</span><button id="next-section">Next →</button></footer>
+    </div>
+  </div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="script.js"></script>
+</body>
+</html>
