@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="An interactive pathology resident module on thrombotic microangiopathy after solid-organ transplantation.">
+  <title>Case 02 · Thrombotic Microangiopathy | Resident Learning Module</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar" aria-label="Module navigation">
+      <div class="brand"><div class="brand-mark" aria-hidden="true">T</div><div><span class="eyebrow">Coagulation curriculum</span><strong>Case 02 · TMA</strong></div></div>
+      <div class="progress-card" aria-live="polite">
+        <div class="progress-label"><span>Module progress</span><strong id="progress-percent">0%</strong></div>
+        <div class="progress-track"><span id="progress-bar"></span></div>
+        <small id="progress-detail">0 of 8 sections complete</small>
+      </div>
+      <nav class="section-nav" id="section-nav">
+        <button class="nav-link active" data-section="home"><span>01</span>Home<i></i></button>
+        <button class="nav-link" data-section="objectives"><span>02</span>Learning objectives<i></i></button>
+        <button class="nav-link" data-section="background"><span>03</span>Background<i></i></button>
+        <button class="nav-link" data-section="core"><span>04</span>Core content<i></i></button>
+        <button class="nav-link" data-section="mechanisms"><span>05</span>Mechanisms<i></i></button>
+        <button class="nav-link" data-section="cases"><span>06</span>Clinical case<i></i></button>
+        <button class="nav-link" data-section="quiz"><span>07</span>Knowledge check<i></i></button>
+        <button class="nav-link" data-section="summary"><span>08</span>Summary<i></i></button>
+      </nav>
+      <button class="reset-button" id="reset-progress">Reset module progress</button>
+    </aside>
+
+    <div class="main-column">
+      <header class="mobile-header">
+        <button id="menu-button" class="menu-button" aria-controls="sidebar" aria-expanded="false"><span></span><span></span><span></span><b class="sr-only">Open navigation</b></button>
+        <div><small>Case 02</small><strong>Thrombotic Microangiopathy</strong></div><span class="mobile-progress" id="mobile-progress">0%</span>
+      </header>
+
+      <main id="main-content" tabindex="-1">
+        <section class="module-section active" id="home" data-title="Home">
+          <div class="hero">
+            <div class="hero-copy">
+              <span class="kicker">Interactive transplant pathology case</span>
+              <h1>Thrombotic <em>Microangiopathy</em></h1>
+              <p class="hero-lede">A post-transplant patient develops thrombocytopenia, hemolysis, and kidney injury. Recognize the syndrome—then decide whether it is truly TTP.</p>
+              <div class="hero-actions"><button class="button primary" data-go="objectives">Begin module <span aria-hidden="true">→</span></button><button class="button secondary" id="resume-button" hidden>Resume where you left off</button></div>
+              <div class="module-meta"><span><b>⏱</b> 25–30 minutes</span><span><b>◫</b> Resident level</span><span><b>✓</b> 8 sections</span></div>
+            </div>
+            <div class="hero-visual tma-hero" aria-label="Stylized microvascular injury illustration">
+              <div class="vessel"><span class="rbc r1"></span><span class="rbc r2 fragmented"></span><span class="rbc r3"></span><span class="rbc r4 fragmented"></span><span class="platelet p1"></span><span class="platelet p2"></span><span class="platelet p3"></span><span class="platelet p4"></span><div class="endothelium"></div></div>
+              <div class="visual-caption"><span>Diagnostic discipline</span><strong>TMA is a pattern. TTP is a mechanism.</strong><small>Classification changes urgent treatment.</small></div>
+            </div>
+          </div>
+          <div class="case-hook"><div class="patient-avatar">56<span>F</span></div><div><span class="eyebrow">Postoperative day 16</span><h2>Platelets 25 × 10⁹/L with schistocytes and acute kidney injury</h2><p>After heart–liver transplantation and tacrolimus exposure, the patient has altered mental status, oliguria, biochemical hemolysis, and progressive thrombocytopenia.</p></div><button class="text-link" data-go="cases">Open the case →</button></div>
+          <div class="thesis-card"><span>Opening question</span><h2>Does MAHA + thrombocytopenia + schistocytes equal TTP?</h2><div class="thesis-actions"><button class="thesis-choice" data-thesis="yes">Yes—this is sufficient</button><button class="thesis-choice" data-thesis="no">No—identify the mechanism</button></div><div id="thesis-feedback" aria-live="polite"></div></div>
+        </section>
+
+        <section class="module-section" id="objectives" data-title="Learning Objectives">
+          <div class="section-heading"><span class="kicker">02 · Learning objectives</span><h1>From morphologic pattern to defensible classification</h1><p>By the end, you should be able to connect the smear, laboratory profile, pathology, and exposure history without overcalling TTP.</p></div>
+          <div class="objective-grid">
+            <article><span>01</span><h3>Recognize</h3><p>Identify the clinicopathologic pattern of thrombotic microangiopathy and microangiopathic hemolytic anemia.</p></article>
+            <article><span>02</span><h3>Classify</h3><p>Distinguish TTP from drug-, transplant-, complement-, and hypertension-associated TMA.</p></article>
+            <article><span>03</span><h3>Interpret</h3><p>Use the &lt;10% ADAMTS13 threshold to separate severe deficiency from modest reductions.</p></article>
+            <article><span>04</span><h3>Estimate</h3><p>Apply the PLASMIC score while recognizing missing data and transplant-specific limitations.</p></article>
+            <article><span>05</span><h3>Correlate</h3><p>Relate schistocytes and biochemical hemolysis to microthrombi and cortical necrosis.</p></article>
+            <article><span>06</span><h3>Act</h3><p>Connect classification to plasma exchange, drug withdrawal, supportive care, and selected complement inhibition.</p></article>
+          </div>
+          <div class="callout warning"><strong>Language matters</strong><p>Historically, “TTP” was sometimes used almost synonymously with “TMA.” Contemporary practice reserves TTP for severe ADAMTS13 deficiency, because the label implies a specific emergency treatment pathway.</p></div>
+        </section>
+
+        <section class="module-section" id="background" data-title="Background">
+          <div class="section-heading"><span class="kicker">03 · Background</span><h1>Start with the syndrome</h1><p>TMA is a clinicopathologic pattern of endothelial injury, platelet-rich microthrombi, red-cell fragmentation, and ischemic organ damage.</p></div>
+          <div class="split-layout">
+            <div>
+              <h2>Four signals to integrate</h2>
+              <div class="feature-list">
+                <button class="feature active" data-detail="maha"><span class="feature-icon">⌁</span><span><strong>Microangiopathic hemolysis</strong><small>Schistocytes, increased LDH, low haptoglobin</small></span></button>
+                <button class="feature" data-detail="platelets"><span class="feature-icon">••</span><span><strong>Thrombocytopenia</strong><small>Platelet consumption within injured microvessels</small></span></button>
+                <button class="feature" data-detail="organs"><span class="feature-icon">⌘</span><span><strong>Organ injury</strong><small>Kidney, brain, heart, bowel, and other tissues</small></span></button>
+                <button class="feature" data-detail="path"><span class="feature-icon">◇</span><span><strong>Tissue microthrombi</strong><small>Support TMA but do not identify its cause</small></span></button>
+              </div>
+            </div>
+            <div class="detail-panel" id="background-detail"><span class="detail-number">01</span><h3>Mechanical red-cell injury</h3><p>Red cells fragment while traversing narrowed, thrombus-lined microvessels. The resulting intravascular hemolysis raises LDH and consumes circulating haptoglobin.</p><div class="mini-pearl"><b>Source case</b><span>Schistocytes, LDH 535 IU/L, and haptoglobin below 15 mg/dL establish microangiopathic hemolysis in context.</span></div></div>
+          </div>
+
+          <h2 class="subsection-title">TMA is the umbrella—not the final diagnosis</h2>
+          <div class="comparison-table wide-table" role="table" aria-label="TMA classification comparison">
+            <div class="tr th four" role="row"><span>Process</span><span>ADAMTS13</span><span>Typical mechanism</span><span>Teaching clue</span></div>
+            <div class="tr four" role="row"><strong>Immune TTP</strong><span><b class="tag red">&lt;10%</b></span><span>ADAMTS13 autoantibody</span><span>Often severe thrombocytopenia; neurologic involvement may predominate</span></div>
+            <div class="tr four" role="row"><strong>Congenital TTP</strong><span><b class="tag red">&lt;10%</b></span><span>Inherited ADAMTS13 deficiency</span><span>Recurrent episodes; immune inhibitor absent</span></div>
+            <div class="tr four" role="row"><strong>Drug-associated TMA</strong><span>Usually &gt;10%</span><span>Immune reaction or dose-related endothelial toxicity</span><span>Temporal relationship to an implicated drug</span></div>
+            <div class="tr four" role="row"><strong>Complement-mediated TMA</strong><span>Usually not severely deficient</span><span>Alternative complement pathway dysregulation</span><span>Renal-predominant injury; exclusion and targeted evaluation</span></div>
+            <div class="tr four" role="row"><strong>Transplant-associated TMA</strong><span>Usually not severely deficient</span><span>Multifactorial endothelial injury</span><span>Calcineurin inhibitors, infection, ischemia, rejection, complement activation</span></div>
+            <div class="tr four" role="row"><strong>Hypertension-associated TMA</strong><span>Usually not severely deficient</span><span>Pressure-related endothelial injury</span><span>Severe hypertension with target-organ damage</span></div>
+          </div>
+        </section>
+
+        <section class="module-section" id="core" data-title="Core Educational Content">
+          <div class="section-heading"><span class="kicker">04 · Core educational content</span><h1>Ask two different questions</h1><p>First: how likely is severe ADAMTS13 deficiency right now? Second: what mechanism best explains the confirmed TMA?</p></div>
+          <div class="content-tabs" role="tablist" aria-label="Core content topics">
+            <button class="content-tab active" role="tab" aria-selected="true" data-tab="plasmic">PLASMIC score</button>
+            <button class="content-tab" role="tab" aria-selected="false" data-tab="adamts13">ADAMTS13</button>
+            <button class="content-tab" role="tab" aria-selected="false" data-tab="workup">Diagnostic workup</button>
+            <button class="content-tab" role="tab" aria-selected="false" data-tab="management">Treatment implications</button>
+          </div>
+
+          <div class="tab-panel active" id="tab-plasmic">
+            <div class="tool-header"><div><span class="eyebrow">Interactive calculator</span><h2>PLASMIC score</h2><p>Choose Yes, No, or Unknown for every component. The score is only finalized when all inputs are known.</p></div><div class="score-orb"><strong id="plasmic-score">0</strong><span>/ 7</span></div></div>
+            <div class="plasmic-layout">
+              <div class="tri-criteria" id="plasmic-criteria">
+                <fieldset data-key="P"><legend><b>P</b><span><strong>Platelets &lt;30 × 10⁹/L</strong><small>Case: 25 × 10⁹/L</small></span></legend><div><button data-value="yes">Yes</button><button data-value="no">No</button><button class="selected" data-value="unknown">Unknown</button></div></fieldset>
+                <fieldset data-key="L"><legend><b>L</b><span><strong>Hemolysis criterion</strong><small>Reticulocytes &gt;2.5%, undetectable haptoglobin, or indirect bilirubin &gt;2.0 mg/dL</small></span></legend><div><button data-value="yes">Yes</button><button data-value="no">No</button><button class="selected" data-value="unknown">Unknown</button></div></fieldset>
+                <fieldset data-key="A"><legend><b>A</b><span><strong>No active cancer</strong><small>Case: no active malignancy described</small></span></legend><div><button data-value="yes">Yes</button><button data-value="no">No</button><button class="selected" data-value="unknown">Unknown</button></div></fieldset>
+                <fieldset data-key="S"><legend><b>S</b><span><strong>No transplant history</strong><small>Case: heart–liver transplant</small></span></legend><div><button data-value="yes">Yes</button><button data-value="no">No</button><button class="selected" data-value="unknown">Unknown</button></div></fieldset>
+                <fieldset data-key="M"><legend><b>M</b><span><strong>MCV &lt;90 fL</strong><small>Not provided in the source</small></span></legend><div><button data-value="yes">Yes</button><button data-value="no">No</button><button class="selected" data-value="unknown">Unknown</button></div></fieldset>
+                <fieldset data-key="I"><legend><b>I</b><span><strong>INR &lt;1.5</strong><small>Not provided in the source</small></span></legend><div><button data-value="yes">Yes</button><button data-value="no">No</button><button class="selected" data-value="unknown">Unknown</button></div></fieldset>
+                <fieldset data-key="C"><legend><b>C</b><span><strong>Creatinine &lt;2.0 mg/dL</strong><small>Elevated, but exact value not provided</small></span></legend><div><button data-value="yes">Yes</button><button data-value="no">No</button><button class="selected" data-value="unknown">Unknown</button></div></fieldset>
+                <button class="button secondary case-values" id="load-case-values">Load known case values</button>
+              </div>
+              <aside class="score-result" id="plasmic-result"><span>Current interpretation</span><h3>Incomplete</h3><strong>0 confirmed points · 7 unknown</strong><p>Resolve each unknown before assigning a formal risk category.</p><small>PLASMIC estimates the probability of severe ADAMTS13 deficiency; it does not establish a TMA etiology.</small></aside>
+            </div>
+          </div>
+
+          <div class="tab-panel" id="tab-adamts13">
+            <div class="tool-header"><div><span class="eyebrow">Threshold activity</span><h2>Interpret the result, not just the flag</h2><p>A mildly low value and a severe deficiency carry very different diagnostic weight.</p></div></div>
+            <div class="adamts13-meter" aria-label="ADAMTS13 activity interpretation scale"><div class="meter-scale"><span style="--x:0">0%</span><span style="--x:10">10%</span><span style="--x:67">67%</span><span style="--x:100">100%</span><i class="case-pin" style="--x:62"><b>Case</b>62%</i></div><div class="meter-bar"><span class="severe"></span><span class="reduced"></span><span class="reference"></span></div><div class="meter-labels"><span>Severe deficiency<br><b>supports TTP</b></span><span>Reduced but not diagnostic of TTP</span><span>Laboratory reference interval</span></div></div>
+            <div class="interpretation-grid"><article><span>01</span><h3>&lt;10%</h3><p>Severe ADAMTS13 deficiency supports immune or congenital TTP in the appropriate clinical setting.</p></article><article><span>02</span><h3>10–66%</h3><p>Reduced activity can occur in critical illness, inflammation, liver disease, sepsis, and other TMAs. It does not prove TTP.</p></article><article><span>03</span><h3>Case: 62%</h3><p>Mildly below the laboratory interval, but far above the threshold defining severe deficiency. True TTP is therefore not supported.</p></article></div>
+            <div class="callout"><strong>Do not delay emergency care</strong><p>When immune TTP is clinically likely, draw pretreatment ADAMTS13 testing and begin appropriate urgent therapy while the result is pending. Reassess the diagnosis when the result returns.</p></div>
+          </div>
+
+          <div class="tab-panel" id="tab-workup">
+            <div class="tool-header"><div><span class="eyebrow">Pattern → mechanism</span><h2>A disciplined TMA evaluation</h2><p>Reveal each layer of the workup and what it contributes.</p></div></div>
+            <div class="workup-accordion">
+              <details open><summary><span>01</span>Confirm microangiopathic hemolysis</summary><div><p>CBC and smear, reticulocyte count, LDH, bilirubin, haptoglobin, and direct antiglobulin testing. Schistocytes support fragmentation but are not specific for TTP.</p></div></details>
+              <details><summary><span>02</span>Assess coagulation and common mimics</summary><div><p>PT/INR, aPTT, fibrinogen, D-dimer, medication review, blood pressure, infection evaluation, and clinical assessment help distinguish DIC and other causes.</p></div></details>
+              <details><summary><span>03</span>Draw ADAMTS13 before plasma therapy</summary><div><p>Activity testing is central when TTP is possible. If activity is severely deficient, inhibitor or antibody evaluation helps classify immune versus congenital disease.</p></div></details>
+              <details><summary><span>04</span>Characterize organ injury and triggers</summary><div><p>Renal studies, neurologic assessment, transplant status, graft function, drug exposure, and selected complement evaluation help define the mechanism.</p></div></details>
+              <details><summary><span>05</span>Use biopsy selectively</summary><div><p>Microthrombi and cortical necrosis support renal TMA, but morphology alone usually cannot distinguish TTP from drug-, transplant-, or complement-associated TMA.</p></div></details>
+            </div>
+          </div>
+
+          <div class="tab-panel" id="tab-management">
+            <div class="tool-header"><div><span class="eyebrow">Why terminology matters</span><h2>The label changes the pathway</h2><p>Select a diagnosis to compare the first therapeutic priorities.</p></div></div>
+            <div class="management-selector"><button class="active" data-management="ttp">Immune TTP</button><button data-management="drug">Drug-associated TMA</button><button data-management="transplant">Transplant-associated TMA</button><button data-management="complement">Complement-mediated TMA</button></div>
+            <div class="management-panel" id="management-panel"></div>
+            <div class="safety-note"><strong>Clinical nuance</strong><p>Changing tacrolimus to another calcineurin inhibitor does not automatically remove the endothelial-injury risk. Management requires coordinated assessment of the implicated exposure, graft needs, concurrent triggers, and evolving organ injury.</p></div>
+          </div>
+        </section>
+
+        <section class="module-section" id="mechanisms" data-title="Mechanisms">
+          <div class="section-heading"><span class="kicker">05 · Mechanisms</span><h1>How endothelial injury becomes TMA</h1><p>Advance through the shared pathway, then inspect the trigger network relevant to transplantation.</p></div>
+          <div class="mechanism-viewer"><div class="mechanism-stage" id="mechanism-stage"></div><div class="step-rail" id="mechanism-rail"></div><div class="mechanism-controls"><button class="button secondary" id="mechanism-prev">← Previous</button><span id="mechanism-count">1 of 5</span><button class="button primary" id="mechanism-next">Next step →</button></div></div>
+          <h2 class="subsection-title">A multihit environment after transplantation</h2>
+          <div class="trigger-map" id="trigger-map"><button data-trigger="cni">Calcineurin inhibitor</button><button data-trigger="ischemia">Ischemia–reperfusion</button><button data-trigger="infection">Infection / inflammation</button><button data-trigger="rejection">Graft injury / rejection</button><button data-trigger="complement">Complement activation</button><div class="trigger-center"><strong>Endothelial injury</strong><span>shared final pathway</span></div></div>
+          <div class="trigger-detail" id="trigger-detail"><span class="eyebrow">Select a trigger</span><h3>Multiple insults may converge</h3><p>Transplant-associated TMA is often not attributable to a single factor. Use timing, exposure, graft status, infection data, pathology, and response to intervention together.</p></div>
+        </section>
+
+        <section class="module-section" id="cases" data-title="Interactive Clinical Case">
+          <div class="section-heading"><span class="kicker">06 · Interactive clinical case</span><h1>Reclassify as the evidence changes</h1><p>New data appear at each stage. Commit to a decision before viewing the teaching point.</p></div>
+          <div class="case-workspace"><div class="case-timeline" id="case-timeline"></div><div class="case-stage" id="case-stage"></div></div>
+        </section>
+
+        <section class="module-section" id="quiz" data-title="Knowledge Check">
+          <div class="section-heading"><span class="kicker">07 · Knowledge check</span><h1>Test your diagnostic precision</h1><p>Eight questions with immediate feedback. You may retry the quiz after completion.</p></div>
+          <div class="quiz-shell"><div class="quiz-status"><span id="quiz-count">Question 1 of 8</span><div class="quiz-track"><i id="quiz-progress"></i></div><strong id="quiz-score">0 correct</strong></div><div id="quiz-content"></div></div>
+        </section>
+
+        <section class="module-section" id="summary" data-title="Summary">
+          <div class="section-heading"><span class="kicker">08 · Summary</span><h1>The diagnostic playbook</h1><p>Carry these distinctions into the next thrombocytopenic patient with hemolysis and organ injury.</p></div>
+          <div class="summary-path">
+            <article><span>01</span><div><h3>Recognize the syndrome</h3><p>MAHA, thrombocytopenia, and organ injury should trigger urgent evaluation for TMA.</p></div></article>
+            <article><span>02</span><div><h3>Do not equate TMA with TTP</h3><p>Schistocytes and elevated LDH establish fragmentation—not severe ADAMTS13 deficiency.</p></div></article>
+            <article><span>03</span><div><h3>Estimate, then test</h3><p>PLASMIC estimates the probability of severe deficiency; ADAMTS13 testing addresses the mechanism.</p></div></article>
+            <article><span>04</span><div><h3>Honor the 10% threshold</h3><p>A mildly reduced activity such as 62% is not diagnostic of TTP.</p></div></article>
+            <article><span>05</span><div><h3>Integrate the context</h3><p>Transplantation, calcineurin-inhibitor exposure, kidney-predominant injury, and biopsy findings support secondary TMA.</p></div></article>
+            <article><span>06</span><div><h3>Treat the mechanism</h3><p>Urgent TTP therapy differs from management of drug-, transplant-, and complement-associated TMA.</p></div></article>
+          </div>
+          <div class="final-card"><span class="eyebrow">Case resolution</span><h2>Tacrolimus-/transplant-associated TMA—not confirmed TTP</h2><p>The patient had a genuine TMA syndrome with schistocytes, hemolysis, thrombocytopenia, renal cortical necrosis, and microthrombi. However, ADAMTS13 activity was 62%, far above the severe-deficiency threshold. The most defensible contemporary classification is tacrolimus-associated or transplant-associated TMA.</p><div class="resolution-badges"><span>TMA confirmed</span><span>ADAMTS13 62%</span><span>TTP not supported</span></div><button class="button primary" id="complete-module">Complete module ✓</button></div>
+        </section>
+      </main>
+
+      <footer class="module-footer"><button id="previous-section">← Previous</button><span id="footer-section">01 / 08 · Home</span><button id="next-section">Next →</button></footer>
+    </div>
+  </div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="script.js"></script>
+</body>
+</html>
